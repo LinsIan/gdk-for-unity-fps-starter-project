@@ -13,26 +13,30 @@ MonoBehaviour:
   m_Name: DeploymentLauncherConfig
   m_EditorClassIdentifier: 
   AssemblyConfig:
-    ProjectName: unity_gdk
-    AssemblyName: myassembly
+    ProjectName: beta_california_double_320
+    AssemblyName: fish_assembly
     ShouldForceUpload: 0
   DeploymentConfigs:
-  - ProjectName: unity_gdk
-    AssemblyName: myassembly
+  - ProjectName: beta_california_double_320
+    AssemblyName: fish_assembly
     Deployment:
-      Name: my_deployment
+      Name: fish_deployment
       SnapshotPath: snapshots/cloud.snapshot
       LaunchJson: cloud_launch_large.json
       Region: 1
+      Cluster: 
+      DeploymentLocationType: 0
       Tags:
       - dev_login
     SimulatedPlayerDeploymentConfigs:
-    - Name: my_deployment_sim1
+    - Name: fish_deployment_sim1
       SnapshotPath: 
       LaunchJson: cloud_launch_large_sim_players.json
       Region: 1
+      Cluster: 
+      DeploymentLocationType: 0
       Tags: []
-      TargetDeploymentName: my_deployment
+      TargetDeploymentName: fish_deployment
       FlagPrefix: fps
       WorkerType: SimulatedPlayerCoordinator
       WorkerTypeId: 1

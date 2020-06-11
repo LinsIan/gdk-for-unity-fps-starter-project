@@ -1,0 +1,7 @@
+package pickups;
+
+component HealthPickup {
+    id = 21001;
+    bool is_active = 1;
+    uint32 health_value = 2;
+}
