@@ -148,11 +148,23 @@ namespace Fps.Config
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(healthPickupComponent, WorkerUtils.UnityGameLogic);
 
+            //設定擁有Read Access的Worker
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+
             //也可以透過指定ID的方式來給予Client端權限(因為不能一個角色所有Client端都有改寫權限)
             //EX: template.AddComponent(clientMovement, EntityTemplate.GetWorkerAccessAttribute(workerId));
 
-            //設定擁有Read Access的Worker
-            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+            //補包周圍的玩家要加入興趣範圍，才能觸發補血事件
+            var query = InterestQuery.Query(Constraint.RelativeCylinder(radius: 25)).FilterResults(new[]
+            {
+                Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId, ServerMovement.ComponentId,
+                ClientRotation.ComponentId, HealthComponent.ComponentId, ShootingComponent.ComponentId
+            });
+
+            var interest = InterestTemplate.Create().AddQueries<Pickups.HealthPickup.Component>(query);
+            entityTemplate.AddComponent(interest.ToSnapshot());
+
+   
 
             return entityTemplate;
         }
