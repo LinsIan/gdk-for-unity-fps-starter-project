@@ -6,6 +6,8 @@ using Improbable;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.PlayerLifecycle;
 using Improbable.Gdk.QueryBasedInterest;
+using Pickups;
+using UnityEngine;
 
 namespace Fps.Config
 {
@@ -129,6 +131,29 @@ namespace Fps.Config
             template.SetReadAccess(WorkerUtils.UnityClient, WorkerUtils.UnityGameLogic, WorkerUtils.MobileClient);
 
             return template;
+        }
+
+        public static EntityTemplate HealthPickup(Vector3 posistion, uint healthValue)
+        {
+            // Create a HealthPickup component snapshot which is initially active and grants "heathValue" on pickup.
+            var healthPickupComponent = new Pickups.HealthPickup.Snapshot(true, healthValue);
+
+            var entityTemplate = new EntityTemplate();
+
+            //設置該Template擁有的Component以及有其Write Access的Worker Type
+            //Position、Metadata、Persistence都是SpatialOS會用到的資訊
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(posistion)), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Metadata.Snapshot("HealthPickup"), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(healthPickupComponent, WorkerUtils.UnityGameLogic);
+
+            //也可以透過指定ID的方式來給予Client端權限(因為不能一個角色所有Client端都有改寫權限)
+            //EX: template.AddComponent(clientMovement, EntityTemplate.GetWorkerAccessAttribute(workerId));
+
+            //設定擁有Read Access的Worker
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+
+            return entityTemplate;
         }
     }
 }
