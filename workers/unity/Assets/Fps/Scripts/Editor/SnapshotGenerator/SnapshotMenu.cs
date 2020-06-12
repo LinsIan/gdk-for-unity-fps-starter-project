@@ -36,6 +36,7 @@ namespace Fps.Editor
             Debug.LogFormat("Successfully generated initial world snapshot at {0}", path);
         }
 
+        //測試用功能，補包就是在場景中配置好然後生成Snapshot
         private static void AddHealthPacks(Snapshot snapshot)
         {
             //生成自訂的 Entity Templates並給初始值
