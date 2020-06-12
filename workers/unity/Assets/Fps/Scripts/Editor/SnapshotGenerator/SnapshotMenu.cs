@@ -26,6 +26,7 @@ namespace Fps.Editor
         {
             var snapshot = new Snapshot();
             snapshot.AddEntity(FpsEntityTemplates.Spawner(Coordinates.Zero));
+            AddHealthPacks(snapshot);
             return snapshot;
         }
 
@@ -33,6 +34,14 @@ namespace Fps.Editor
         {
             snapshot.WriteToFile(path);
             Debug.LogFormat("Successfully generated initial world snapshot at {0}", path);
+        }
+
+        private static void AddHealthPacks(Snapshot snapshot)
+        {
+            //生成自訂的 Entity Templates並給初始值
+            var healthPack = FpsEntityTemplates.HealthPickup(new Vector3(5, 0, 0), 100);
+            //加到Snapshot
+            snapshot.AddEntity(healthPack);
         }
     }
 }
