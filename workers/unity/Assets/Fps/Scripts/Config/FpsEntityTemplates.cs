@@ -102,7 +102,8 @@ namespace Fps.Config
             {
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
                 ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
-                GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId
+                GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
+                Pickups.HealthPickup.ComponentId
             });
 
             // ClientMovement is used by the ServerMovementDriver script.
