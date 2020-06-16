@@ -23,7 +23,7 @@ namespace Fps.Editor
 
             EditorGUILayout.PropertyField(textOptions, new GUIContent("Text Options"), true);
             serializedObject.ApplyModifiedProperties();
-
+            
             base.OnInspectorGUI();
         }
     }

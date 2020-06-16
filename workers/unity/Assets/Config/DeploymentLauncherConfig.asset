@@ -31,7 +31,7 @@ MonoBehaviour:
     SimulatedPlayerDeploymentConfigs:
     - Name: fish_deployment_sim1
       SnapshotPath: 
-      LaunchJson: cloud_launch_large_sim_players.json
+      LaunchJson: unch_large_sim_players.jsoners.json
       Region: 1
       Cluster: 
       DeploymentLocationType: 0
