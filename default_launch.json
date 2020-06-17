@@ -6,8 +6,8 @@
       "snapshotWritePeriodSeconds": 0
     },
     "dimensions": {
-      "xMeters": 300,
-      "zMeters": 300
+      "xMeters": 1800,
+      "zMeters": 1800
     },
     "legacy_flags": [
       {
@@ -46,7 +46,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "4"
+          "value": "24"
         }
       ],
       "permissions": [
@@ -60,7 +60,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "4"
+          "value": "24"
         },
         {
           "name": "fps_simulated_players_per_coordinator",
@@ -82,7 +82,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "4"
+          "value": "24"
         }
       ],
       "permissions": [
@@ -96,7 +96,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "4"
+          "value": "24"
         }
       ],
       "permissions": [{

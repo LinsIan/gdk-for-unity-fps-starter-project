@@ -74,7 +74,9 @@ namespace Fps.WorkerConnectors
             world.GetOrCreateSystem<HealthRegenSystem>();
 
             // HealthPickup
-            world.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            var healthPickupCreatingSystem = world.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            //healthPickupCreatingSystem.WorldScale = m_WorldSize/4;
+            //healthPickupCreatingSystem.CreateHealthPickups();
         }
     }
 }

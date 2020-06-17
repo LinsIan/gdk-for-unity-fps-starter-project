@@ -15,6 +15,8 @@ namespace Fps.WorkerConnectors
 
         [NonSerialized] internal GameObject LevelInstance;
 
+        protected int m_WorldSize = 0;
+
         public override void Dispose()
         {
             if (LevelInstance != null)
@@ -64,7 +66,7 @@ namespace Fps.WorkerConnectors
                 Worker.LogDispatcher.HandleLog(LogType.Error,
                     new LogEvent($"Invalid world_size worker flag. Expected an integer, got \"{flagValue}\""));
             }
-
+            m_WorldSize = worldSize;
             return worldSize;
         }
     }

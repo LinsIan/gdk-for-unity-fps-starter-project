@@ -6,32 +6,39 @@ using Fps.Config;
 
 namespace Fps.HealthPickup
 {
-    [UpdateInGroup(typeof(SpatialOSUpdateGroup))]
     public class HealthPickupCreatingSystem : ComponentSystem
     {
-        private const int AreaCol = 9;
-        private const int AreaWid = 9;
-        private const int HealthAmount = 50;
-        private const float CreationInterval = 36.0f;
+        public int WorldScale = 6;
+        private int AreaCol = 9;
+        private int AreaWid = 9;
+        private uint HealthAmount = 50;
+        private float CreationInterval = 36.0f;
+        private float HalfLength = 144.0f;
         private CommandSystem commandSystem;
 
         protected override void OnCreate()
         {
             base.OnCreate();
             commandSystem = World.GetExistingSystem<CommandSystem>();
-
             CreateHealthPickups();
         }
 
         protected override void OnUpdate() {}
 
-        private void CreateHealthPickups()
+        public void CreateHealthPickups()
         {
-            //Create HealthPickUps
-            var healthPickup = FpsEntityTemplates.HealthPickup(new Vector3(5, 0, 0), 100);
-            var request = new WorldCommands.CreateEntity.Request(healthPickup);
-
-            commandSystem.SendCommand(request);
+            Vector3 StartPoint = new Vector3();
+            for(int z = 0; z < AreaCol * WorldScale; ++z)
+            {
+                StartPoint.z = HalfLength * WorldScale - z * CreationInterval;
+                for (int x = 0; x < AreaWid * WorldScale; ++x)
+                {
+                    StartPoint.x = -HalfLength * WorldScale + x*CreationInterval;
+                    var healthPickup = FpsEntityTemplates.HealthPickup(StartPoint, HealthAmount);
+                    var request = new WorldCommands.CreateEntity.Request(healthPickup);
+                    commandSystem.SendCommand(request);
+                }
+            }
         }
     }
 }

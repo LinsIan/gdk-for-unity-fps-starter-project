@@ -15,7 +15,7 @@ MonoBehaviour:
   AssemblyConfig:
     ProjectName: beta_california_double_320
     AssemblyName: fish_assembly
-    ShouldForceUpload: 0
+    ShouldForceUpload: 1
   DeploymentConfigs:
   - ProjectName: beta_california_double_320
     AssemblyName: fish_assembly
@@ -30,13 +30,13 @@ MonoBehaviour:
       - dev_login
     SimulatedPlayerDeploymentConfigs:
     - Name: fish_deployment_sim1
-      SnapshotPath: 
-      LaunchJson: unch_large_sim_players.jsoners.json
+      SnapshotPath: snapshots/cloud.snapshot
+      LaunchJson: cloud_launch_large_sim_players.json
       Region: 1
       Cluster: 
       DeploymentLocationType: 0
       Tags: []
       TargetDeploymentName: fish_deployment
-      FlagPrefix: fps
+      FlagPrefix: sim
       WorkerType: SimulatedPlayerCoordinator
       WorkerTypeId: 1
