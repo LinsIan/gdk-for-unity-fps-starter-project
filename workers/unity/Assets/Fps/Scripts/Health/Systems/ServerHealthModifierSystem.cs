@@ -2,9 +2,6 @@ using Improbable.Gdk.Core;
 using Unity.Entities;
 using UnityEngine;
 
-using Improbable.Gdk.Core.Commands;
-using Fps.Config;
-
 namespace Fps.Health
 {
     [UpdateInGroup(typeof(SpatialOSUpdateGroup))]
@@ -23,15 +20,11 @@ namespace Fps.Health
             commandSystem = World.GetExistingSystem<CommandSystem>();
             componentUpdateSystem = World.GetExistingSystem<ComponentUpdateSystem>();
 
-            //Create HealthPickUps
-            var healthPickup = FpsEntityTemplates.HealthPickup(new Vector3(5, 0, 0), 100);
-            var request = new WorldCommands.CreateEntity.Request(healthPickup);
-            commandSystem.SendCommand(request);
-
         }
 
         protected override void OnUpdate()
         {
+            //抓有沒有收到補血的指令
             var requests = commandSystem.GetRequests<HealthComponent.ModifyHealth.ReceivedRequest>();
             if (requests.Count == 0)
             {

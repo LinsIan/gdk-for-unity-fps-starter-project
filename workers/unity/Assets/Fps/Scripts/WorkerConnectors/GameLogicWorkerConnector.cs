@@ -3,6 +3,7 @@ using Fps.Config;
 using Fps.Guns;
 using Fps.Health;
 using Fps.Metrics;
+using Fps.HealthPickup;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.GameObjectCreation;
 using Improbable.Gdk.PlayerLifecycle;
@@ -71,6 +72,9 @@ namespace Fps.WorkerConnectors
             // Health
             world.GetOrCreateSystem<ServerHealthModifierSystem>();
             world.GetOrCreateSystem<HealthRegenSystem>();
+
+            // HealthPickup
+            world.GetOrCreateSystem<HealthPickupCreatingSystem>();
         }
     }
 }
