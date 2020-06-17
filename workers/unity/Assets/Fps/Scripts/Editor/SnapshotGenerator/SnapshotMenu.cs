@@ -35,14 +35,5 @@ namespace Fps.Editor
             snapshot.WriteToFile(path);
             Debug.LogFormat("Successfully generated initial world snapshot at {0}", path);
         }
-
-        //測試用功能，補包就是在場景中配置好然後生成Snapshot
-        //private static void AddHealthPacks(Snapshot snapshot)
-        //{
-        //    //生成自訂的 Entity Templates並給初始值
-        //    var healthPack = FpsEntityTemplates.HealthPickup(new Vector3(5, 0, 0), 100);
-        //    //加到Snapshot
-        //    snapshot.AddEntity(healthPack);
-        //}
     }
 }

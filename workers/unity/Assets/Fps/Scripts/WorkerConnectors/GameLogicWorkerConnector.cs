@@ -71,10 +71,6 @@ namespace Fps.WorkerConnectors
             // Health
             world.GetOrCreateSystem<ServerHealthModifierSystem>();
             world.GetOrCreateSystem<HealthRegenSystem>();
-
-            //Create HealthPickUps
-            world.EntityManager.CreateEntity();
-            //world.EntityManager.CreateEntity(FpsEntityTemplates.HealthPickup(new Vector3(5, 0, 0), 100));
         }
     }
 }

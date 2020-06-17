@@ -2,11 +2,15 @@ using Improbable.Gdk.Core;
 using Unity.Entities;
 using UnityEngine;
 
+using Improbable.Gdk.Core.Commands;
+using Fps.Config;
+
 namespace Fps.Health
 {
     [UpdateInGroup(typeof(SpatialOSUpdateGroup))]
     public class ServerHealthModifierSystem : ComponentSystem
     {
+
         private WorkerSystem workerSystem;
         private CommandSystem commandSystem;
         private ComponentUpdateSystem componentUpdateSystem;
@@ -18,6 +22,12 @@ namespace Fps.Health
             workerSystem = World.GetExistingSystem<WorkerSystem>();
             commandSystem = World.GetExistingSystem<CommandSystem>();
             componentUpdateSystem = World.GetExistingSystem<ComponentUpdateSystem>();
+
+            //Create HealthPickUps
+            var healthPickup = FpsEntityTemplates.HealthPickup(new Vector3(5, 0, 0), 100);
+            var request = new WorldCommands.CreateEntity.Request(healthPickup);
+            commandSystem.SendCommand(request);
+
         }
 
         protected override void OnUpdate()
