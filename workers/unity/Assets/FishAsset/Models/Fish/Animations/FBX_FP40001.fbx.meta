@@ -1,0 +1,2560 @@
+fileFormatVersion: 2
+guid: 20578a46fd7171b4e91c533b402e8898
+timeCreated: 1585633952
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bn(w)_Box_001
+    100002: Bn(w)_Box_002
+    100004: Bn(w)_Ear_L
+    100006: Bn(w)_Ear_R
+    100008: Bn(w)_Eyelid_Ldn
+    100010: Bn(w)_Eyelid_Lup
+    100012: Bn(w)_Eyelid_Rdn
+    100014: Bn(w)_Eyelid_Rup
+    100016: Bn(w)_Head_001
+    100018: Bn(w)_Head_002
+    100020: Bn(w)_tentacle_L1_001
+    100022: Bn(w)_tentacle_L1_002
+    100024: Bn(w)_tentacle_L1_003
+    100026: Bn(w)_tentacle_L1_004
+    100028: Bn(w)_tentacle_L1_005
+    100030: Bn(w)_tentacle_L1_006
+    100032: Bn(w)_tentacle_L2_001
+    100034: Bn(w)_tentacle_L2_002
+    100036: Bn(w)_tentacle_L2_003
+    100038: Bn(w)_tentacle_L2_004
+    100040: Bn(w)_tentacle_L2_005
+    100042: Bn(w)_tentacle_L2_006
+    100044: Bn(w)_tentacle_L3_001
+    100046: Bn(w)_tentacle_L3_002
+    100048: Bn(w)_tentacle_L3_003
+    100050: Bn(w)_tentacle_L3_004
+    100052: Bn(w)_tentacle_L3_005
+    100054: Bn(w)_tentacle_L3_006
+    100056: Bn(w)_tentacle_L4_001
+    100058: Bn(w)_tentacle_L4_002
+    100060: Bn(w)_tentacle_L4_003
+    100062: Bn(w)_tentacle_L4_004
+    100064: Bn(w)_tentacle_L4_005
+    100066: Bn(w)_tentacle_L4_006
+    100068: Bn(w)_tentacle_Lup_01
+    100070: Bn(w)_tentacle_Lup_02
+    100072: Bn(w)_tentacle_R1_001
+    100074: Bn(w)_tentacle_R1_002
+    100076: Bn(w)_tentacle_R1_003
+    100078: Bn(w)_tentacle_R1_004
+    100080: Bn(w)_tentacle_R1_005
+    100082: Bn(w)_tentacle_R1_006
+    100084: Bn(w)_tentacle_R2_001
+    100086: Bn(w)_tentacle_R2_002
+    100088: Bn(w)_tentacle_R2_003
+    100090: Bn(w)_tentacle_R2_004
+    100092: Bn(w)_tentacle_R2_005
+    100094: Bn(w)_tentacle_R2_006
+    100096: Bn(w)_tentacle_R3_001
+    100098: Bn(w)_tentacle_R3_002
+    100100: Bn(w)_tentacle_R3_003
+    100102: Bn(w)_tentacle_R3_004
+    100104: Bn(w)_tentacle_R3_005
+    100106: Bn(w)_tentacle_R3_006
+    100108: Bn(w)_tentacle_R4_001
+    100110: Bn(w)_tentacle_R4_002
+    100112: Bn(w)_tentacle_R4_003
+    100114: Bn(w)_tentacle_R4_004
+    100116: Bn(w)_tentacle_R4_005
+    100118: Bn(w)_tentacle_R4_006
+    100120: Bn(w)_tentacle_Rup_01
+    100122: Bn(w)_tentacle_Rup_02
+    100124: //RootNode
+    100126: Mesh_FP40001_Body
+    100128: Mesh_FP40001_Box
+    100130: Mesh_FP40001_Hat
+    100132: Root_Box
+    100134: Root_Hat
+    100136: Root_Octopus
+    400000: Bn(w)_Box_001
+    400002: Bn(w)_Box_002
+    400004: Bn(w)_Ear_L
+    400006: Bn(w)_Ear_R
+    400008: Bn(w)_Eyelid_Ldn
+    400010: Bn(w)_Eyelid_Lup
+    400012: Bn(w)_Eyelid_Rdn
+    400014: Bn(w)_Eyelid_Rup
+    400016: Bn(w)_Head_001
+    400018: Bn(w)_Head_002
+    400020: Bn(w)_tentacle_L1_001
+    400022: Bn(w)_tentacle_L1_002
+    400024: Bn(w)_tentacle_L1_003
+    400026: Bn(w)_tentacle_L1_004
+    400028: Bn(w)_tentacle_L1_005
+    400030: Bn(w)_tentacle_L1_006
+    400032: Bn(w)_tentacle_L2_001
+    400034: Bn(w)_tentacle_L2_002
+    400036: Bn(w)_tentacle_L2_003
+    400038: Bn(w)_tentacle_L2_004
+    400040: Bn(w)_tentacle_L2_005
+    400042: Bn(w)_tentacle_L2_006
+    400044: Bn(w)_tentacle_L3_001
+    400046: Bn(w)_tentacle_L3_002
+    400048: Bn(w)_tentacle_L3_003
+    400050: Bn(w)_tentacle_L3_004
+    400052: Bn(w)_tentacle_L3_005
+    400054: Bn(w)_tentacle_L3_006
+    400056: Bn(w)_tentacle_L4_001
+    400058: Bn(w)_tentacle_L4_002
+    400060: Bn(w)_tentacle_L4_003
+    400062: Bn(w)_tentacle_L4_004
+    400064: Bn(w)_tentacle_L4_005
+    400066: Bn(w)_tentacle_L4_006
+    400068: Bn(w)_tentacle_Lup_01
+    400070: Bn(w)_tentacle_Lup_02
+    400072: Bn(w)_tentacle_R1_001
+    400074: Bn(w)_tentacle_R1_002
+    400076: Bn(w)_tentacle_R1_003
+    400078: Bn(w)_tentacle_R1_004
+    400080: Bn(w)_tentacle_R1_005
+    400082: Bn(w)_tentacle_R1_006
+    400084: Bn(w)_tentacle_R2_001
+    400086: Bn(w)_tentacle_R2_002
+    400088: Bn(w)_tentacle_R2_003
+    400090: Bn(w)_tentacle_R2_004
+    400092: Bn(w)_tentacle_R2_005
+    400094: Bn(w)_tentacle_R2_006
+    400096: Bn(w)_tentacle_R3_001
+    400098: Bn(w)_tentacle_R3_002
+    400100: Bn(w)_tentacle_R3_003
+    400102: Bn(w)_tentacle_R3_004
+    400104: Bn(w)_tentacle_R3_005
+    400106: Bn(w)_tentacle_R3_006
+    400108: Bn(w)_tentacle_R4_001
+    400110: Bn(w)_tentacle_R4_002
+    400112: Bn(w)_tentacle_R4_003
+    400114: Bn(w)_tentacle_R4_004
+    400116: Bn(w)_tentacle_R4_005
+    400118: Bn(w)_tentacle_R4_006
+    400120: Bn(w)_tentacle_Rup_01
+    400122: Bn(w)_tentacle_Rup_02
+    400124: //RootNode
+    400126: Mesh_FP40001_Body
+    400128: Mesh_FP40001_Box
+    400130: Mesh_FP40001_Hat
+    400132: Root_Box
+    400134: Root_Hat
+    400136: Root_Octopus
+    4300000: Mesh_FP40001_Body
+    4300002: Mesh_FP40001_Hat
+    4300004: Mesh_FP40001_Box
+    7400000: Swin01
+    7400002: TurnLeft
+    7400004: TurnRight
+    7400006: Hit
+    7400008: SpecialSwin01
+    7400010: Die
+    7400012: AttackRight01
+    7400014: AttackRight02
+    7400016: AttackRight03
+    7400018: AttackLeft01
+    7400020: AttackLeft02
+    7400022: AttackLeft03
+    7400024: SpecialAttack01
+    7400026: SpecialAttack02
+    9500000: //RootNode
+    13700000: Mesh_FP40001_Body
+    13700002: Mesh_FP40001_Box
+    13700004: Mesh_FP40001_Hat
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Swin01
+      takeName: ANI_FP40001_Move01
+      firstFrame: 10
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnLeft
+      takeName: ANI_FP40001_TurnLeft
+      firstFrame: 700
+      lastFrame: 750
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnRight
+      takeName: ANI_FP40001_TurnRight
+      firstFrame: 750
+      lastFrame: 800
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hit
+      takeName: ANI_FP40001_Hit
+      firstFrame: 890
+      lastFrame: 920
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SpecialSwin01
+      takeName: ANI_FP40001_Move_Sp_01
+      firstFrame: 990
+      lastFrame: 1110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Die
+      takeName: ANI_FP40001_Die
+      firstFrame: 1490
+      lastFrame: 1550
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackRight01
+      takeName: ANI_FP40001_Attack_Right_01
+      firstFrame: 100
+      lastFrame: 168
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackRight02
+      takeName: ANI_FP40001_Attack_Right_02
+      firstFrame: 190
+      lastFrame: 258
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackRight03
+      takeName: ANI_FP40001_Attack_Right_03
+      firstFrame: 290
+      lastFrame: 358
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackLeft01
+      takeName: ANI_FP40001_Attack_Left_01
+      firstFrame: 390
+      lastFrame: 458
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackLeft02
+      takeName: ANI_FP40001_Attack_Left_02
+      firstFrame: 490
+      lastFrame: 558
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AttackLeft03
+      takeName: ANI_FP40001_Attack_Left_03
+      firstFrame: 590
+      lastFrame: 658
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SpecialAttack01
+      takeName: ANI_FP40001_Attack_Sp_01
+      firstFrame: 1190
+      lastFrame: 1250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SpecialAttack02
+      takeName: ANI_FP40001_Attack_Sp_02
+      firstFrame: 1290
+      lastFrame: 1411
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Mesh_FP40001_Body
+        weight: 1
+      - path: Mesh_FP40001_Box
+        weight: 1
+      - path: Mesh_FP40001_Hat
+        weight: 1
+      - path: Root_Octopus
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_L
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Ear_R
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Ldn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Lup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rdn
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Eyelid_Rup
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_Head_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Lup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_01
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Bn(w)_tentacle_Rup_02
+        weight: 1
+      - path: Root_Octopus/Bn(w)_Head_001/Root_Hat
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L1_001/Bn(w)_tentacle_L1_002/Bn(w)_tentacle_L1_003/Bn(w)_tentacle_L1_004/Bn(w)_tentacle_L1_005/Bn(w)_tentacle_L1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L2_001/Bn(w)_tentacle_L2_002/Bn(w)_tentacle_L2_003/Bn(w)_tentacle_L2_004/Bn(w)_tentacle_L2_005/Bn(w)_tentacle_L2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L3_001/Bn(w)_tentacle_L3_002/Bn(w)_tentacle_L3_003/Bn(w)_tentacle_L3_004/Bn(w)_tentacle_L3_005/Bn(w)_tentacle_L3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_L4_001/Bn(w)_tentacle_L4_002/Bn(w)_tentacle_L4_003/Bn(w)_tentacle_L4_004/Bn(w)_tentacle_L4_005/Bn(w)_tentacle_L4_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R1_001/Bn(w)_tentacle_R1_002/Bn(w)_tentacle_R1_003/Bn(w)_tentacle_R1_004/Bn(w)_tentacle_R1_005/Bn(w)_tentacle_R1_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R2_001/Bn(w)_tentacle_R2_002/Bn(w)_tentacle_R2_003/Bn(w)_tentacle_R2_004/Bn(w)_tentacle_R2_005/Bn(w)_tentacle_R2_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R3_001/Bn(w)_tentacle_R3_002/Bn(w)_tentacle_R3_003/Bn(w)_tentacle_R3_004/Bn(w)_tentacle_R3_005/Bn(w)_tentacle_R3_006
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005
+        weight: 1
+      - path: Root_Octopus/Bn(w)_tentacle_R4_001/Bn(w)_tentacle_R4_002/Bn(w)_tentacle_R4_003/Bn(w)_tentacle_R4_004/Bn(w)_tentacle_R4_005/Bn(w)_tentacle_R4_006
+        weight: 1
+      - path: Root_Octopus/Root_Box
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001
+        weight: 1
+      - path: Root_Octopus/Root_Box/Bn(w)_Box_001/Bn(w)_Box_002
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

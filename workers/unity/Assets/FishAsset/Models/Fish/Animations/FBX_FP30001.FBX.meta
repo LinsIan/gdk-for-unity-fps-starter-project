@@ -1,0 +1,1289 @@
+fileFormatVersion: 2
+guid: 5dd2c1be5c07582468856111fc119edc
+timeCreated: 1583388347
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: HitPoint
+    100004: MESH_FP30001
+    100006: Root
+    100008: Shark_00
+    100010: Shark_001
+    100012: Shark_01
+    100014: Shark_02
+    100016: Shark_03
+    100018: Shark_04
+    100020: Shark_05
+    100022: Shark_06
+    100024: Shark_07
+    100026: Shark_08
+    100028: Shark_09
+    100030: Shark_10
+    100032: Shark_11
+    100034: Shark_12
+    100036: Shark_13
+    100038: Shark_14
+    100040: Shark_15
+    100042: Shark_16
+    100044: Shark_d_00
+    100046: Shark_d_01
+    100048: Shark_d_02
+    100050: Shark_d_03
+    100052: Shark_end_00
+    100054: Shark_end_01
+    100056: Shark_end_02
+    100058: Shark_end_03
+    100060: Shark_end_04
+    100062: Shark_end_05
+    100064: Shark_end_06
+    100066: Shark_end_07
+    100068: Shark_end_08
+    100070: Shark_end_09
+    100072: Shark_end_10
+    100074: Shark_end_11
+    100076: Shark_end_12
+    100078: Shark_end_13
+    100080: Shark_L_00
+    100082: Shark_L_00 1
+    100084: Shark_L_01
+    100086: Shark_L_01 1
+    100088: Shark_L_02
+    100090: Shark_L_02 1
+    100092: Shark_L_03
+    100094: Shark_L_03 1
+    100096: Shark_L_04
+    100098: Shark_L_05
+    100100: Shark_L_06
+    100102: Shark_R_00
+    100104: Shark_R_00 1
+    100106: Shark_R_01
+    100108: Shark_R_01 1
+    100110: Shark_R_02
+    100112: Shark_R_02 1
+    100114: Shark_R_03
+    100116: Shark_R_03 1
+    100118: Shark_R_04
+    100120: Shark_R_05
+    100122: Shark_R_06
+    400000: //RootNode
+    400002: HitPoint
+    400004: MESH_FP30001
+    400006: Root
+    400008: Shark_00
+    400010: Shark_001
+    400012: Shark_01
+    400014: Shark_02
+    400016: Shark_03
+    400018: Shark_04
+    400020: Shark_05
+    400022: Shark_06
+    400024: Shark_07
+    400026: Shark_08
+    400028: Shark_09
+    400030: Shark_10
+    400032: Shark_11
+    400034: Shark_12
+    400036: Shark_13
+    400038: Shark_14
+    400040: Shark_15
+    400042: Shark_16
+    400044: Shark_d_00
+    400046: Shark_d_01
+    400048: Shark_d_02
+    400050: Shark_d_03
+    400052: Shark_end_00
+    400054: Shark_end_01
+    400056: Shark_end_02
+    400058: Shark_end_03
+    400060: Shark_end_04
+    400062: Shark_end_05
+    400064: Shark_end_06
+    400066: Shark_end_07
+    400068: Shark_end_08
+    400070: Shark_end_09
+    400072: Shark_end_10
+    400074: Shark_end_11
+    400076: Shark_end_12
+    400078: Shark_end_13
+    400080: Shark_L_00
+    400082: Shark_L_00 1
+    400084: Shark_L_01
+    400086: Shark_L_01 1
+    400088: Shark_L_02
+    400090: Shark_L_02 1
+    400092: Shark_L_03
+    400094: Shark_L_03 1
+    400096: Shark_L_04
+    400098: Shark_L_05
+    400100: Shark_L_06
+    400102: Shark_R_00
+    400104: Shark_R_00 1
+    400106: Shark_R_01
+    400108: Shark_R_01 1
+    400110: Shark_R_02
+    400112: Shark_R_02 1
+    400114: Shark_R_03
+    400116: Shark_R_03 1
+    400118: Shark_R_04
+    400120: Shark_R_05
+    400122: Shark_R_06
+    4300000: MESH_FP30001
+    7400000: Swin
+    7400002: SpecialSwin1
+    7400004: SpecialSwin2
+    7400006: Hurt
+    7400008: Die
+    7400010: TurnLeft
+    7400012: TurnRight
+    9500000: //RootNode
+    13700000: MESH_FP30001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Swin
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP30001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Shark_001
+        weight: 1
+      - path: Root/Shark_001/HitPoint
+        weight: 1
+      - path: Root/Shark_001/Shark_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13/Shark_end_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_end_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_end_09
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04/Shark_end_08
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_06
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_end_11
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1/Shark_end_10
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12/Shark_end_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09/Shark_end_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_end_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1/Shark_end_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04/Shark_end_13
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16/Shark_end_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1/Shark_end_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1/Shark_end_12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SpecialSwin1
+      takeName: Take 001
+      firstFrame: 400
+      lastFrame: 460
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP30001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Shark_001
+        weight: 1
+      - path: Root/Shark_001/HitPoint
+        weight: 1
+      - path: Root/Shark_001/Shark_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13/Shark_end_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_end_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_end_09
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04/Shark_end_08
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_06
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_end_11
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1/Shark_end_10
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12/Shark_end_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09/Shark_end_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_end_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1/Shark_end_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04/Shark_end_13
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16/Shark_end_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1/Shark_end_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1/Shark_end_12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SpecialSwin2
+      takeName: Take 001
+      firstFrame: 500
+      lastFrame: 575
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP30001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Shark_001
+        weight: 1
+      - path: Root/Shark_001/HitPoint
+        weight: 1
+      - path: Root/Shark_001/Shark_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13/Shark_end_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_end_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_end_09
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04/Shark_end_08
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_06
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_end_11
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1/Shark_end_10
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12/Shark_end_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09/Shark_end_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_end_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1/Shark_end_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04/Shark_end_13
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16/Shark_end_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1/Shark_end_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1/Shark_end_12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hurt
+      takeName: Take 001
+      firstFrame: 300
+      lastFrame: 315
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP30001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Shark_001
+        weight: 1
+      - path: Root/Shark_001/HitPoint
+        weight: 1
+      - path: Root/Shark_001/Shark_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13/Shark_end_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_end_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_end_09
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04/Shark_end_08
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_06
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_end_11
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1/Shark_end_10
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12/Shark_end_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09/Shark_end_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_end_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1/Shark_end_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04/Shark_end_13
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16/Shark_end_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1/Shark_end_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1/Shark_end_12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Die
+      takeName: Take 001
+      firstFrame: 600
+      lastFrame: 650
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP30001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Shark_001
+        weight: 1
+      - path: Root/Shark_001/HitPoint
+        weight: 1
+      - path: Root/Shark_001/Shark_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13/Shark_end_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_end_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_end_09
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04/Shark_end_08
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_06
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_end_11
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1/Shark_end_10
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12/Shark_end_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09/Shark_end_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_end_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1/Shark_end_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04/Shark_end_13
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16/Shark_end_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1/Shark_end_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1/Shark_end_12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnLeft
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP30001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Shark_001
+        weight: 1
+      - path: Root/Shark_001/HitPoint
+        weight: 1
+      - path: Root/Shark_001/Shark_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13/Shark_end_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_end_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_end_09
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04/Shark_end_08
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_06
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_end_11
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1/Shark_end_10
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12/Shark_end_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09/Shark_end_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_end_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1/Shark_end_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04/Shark_end_13
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16/Shark_end_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1/Shark_end_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1/Shark_end_12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnRight
+      takeName: Take 001
+      firstFrame: 233
+      lastFrame: 263
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP30001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Shark_001
+        weight: 1
+      - path: Root/Shark_001/HitPoint
+        weight: 1
+      - path: Root/Shark_001/Shark_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_d_03/Shark_13/Shark_end_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_end_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_end_09
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_04/Shark_end_08
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_L_02/Shark_L_03/Shark_L_03 1/Shark_L_06
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_end_11
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_01
+          1/Shark_end_10
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_05
+        weight: 1
+      - path: Root/Shark_001/Shark_00/Shark_R_00/Shark_R_00 1/Shark_R_01/Shark_R_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_00/Shark_10/Shark_11/Shark_12/Shark_end_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_d_01/Shark_07/Shark_08/Shark_09/Shark_end_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_04/Shark_05/Shark_06/Shark_end_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_L_01 1/Shark_L_02 1/Shark_end_07
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_01/Shark_03/Shark_R_03 1/Shark_R_04/Shark_end_13
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_d_02/Shark_14/Shark_15/Shark_16/Shark_end_05
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_L_00/Shark_L_01/Shark_L_00 1/Shark_end_06
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1
+        weight: 1
+      - path: Root/Shark_001/Shark_02/Shark_R_02/Shark_R_03/Shark_R_02 1/Shark_end_12
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

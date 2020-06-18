@@ -1,0 +1,786 @@
+fileFormatVersion: 2
+guid: 7c2838e769b80a54db826e9e914a9a0d
+timeCreated: 1585635364
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone080
+    100002: Bone082
+    100004: Bone084
+    100006: Bone084(mirrored)
+    100008: Bone086
+    100010: Bone086(mirrored)
+    100012: Bone088
+    100014: Bone088(mirrored)
+    100016: Bone089
+    100018: Bone_Fin_01
+    100020: Bone_Fin_02
+    100022: Bone_Fin_03
+    100024: Bone_Fin_04
+    100026: Bone_Fin_05
+    100028: Bone_Fin_06
+    100030: Bone_Fin_07
+    100032: Bone_Fin_08
+    100034: Bone_Fin_09
+    100036: Bone_Fin_10
+    100038: Bone_Fin_11
+    100040: Bone_Fin_12
+    100042: Bone_Fin_13
+    100044: Bone_Fin_14
+    100046: Bone_Fin_15
+    100048: Bone_Fin_16
+    100050: Bone_Fin_17
+    100052: Bone_Fin_18
+    100054: Bone_Fin_19
+    100056: Bone_Fin_20
+    100058: Bone_Fin_21
+    100060: Bone_Fin_22
+    100062: Bone_Fin_23
+    100064: Bone_Fin_24
+    100066: Dummy_Pivot_01_Rotate
+    100068: //RootNode
+    100070: HitPoint
+    100072: MESH_FP20001
+    100074: Root
+    400000: Bone080
+    400002: Bone082
+    400004: Bone084
+    400006: Bone084(mirrored)
+    400008: Bone086
+    400010: Bone086(mirrored)
+    400012: Bone088
+    400014: Bone088(mirrored)
+    400016: Bone089
+    400018: Bone_Fin_01
+    400020: Bone_Fin_02
+    400022: Bone_Fin_03
+    400024: Bone_Fin_04
+    400026: Bone_Fin_05
+    400028: Bone_Fin_06
+    400030: Bone_Fin_07
+    400032: Bone_Fin_08
+    400034: Bone_Fin_09
+    400036: Bone_Fin_10
+    400038: Bone_Fin_11
+    400040: Bone_Fin_12
+    400042: Bone_Fin_13
+    400044: Bone_Fin_14
+    400046: Bone_Fin_15
+    400048: Bone_Fin_16
+    400050: Bone_Fin_17
+    400052: Bone_Fin_18
+    400054: Bone_Fin_19
+    400056: Bone_Fin_20
+    400058: Bone_Fin_21
+    400060: Bone_Fin_22
+    400062: Bone_Fin_23
+    400064: Bone_Fin_24
+    400066: Dummy_Pivot_01_Rotate
+    400068: //RootNode
+    400070: HitPoint
+    400072: MESH_FP20001
+    400074: Root
+    4300000: MESH_FP20001
+    7400000: Swin01
+    7400002: TurnLeft
+    7400004: TurnRight
+    7400006: Hit
+    7400008: SpecialSwin01
+    7400010: Die
+    9500000: //RootNode
+    13700000: MESH_FP20001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Swin01
+      takeName: ANI_FP20001_Move01
+      firstFrame: 10
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP20001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13/Bone089
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/HitPoint
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone080
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21/Bone086
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22/Bone088
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23/Bone086(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24/Bone088(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16/Bone082
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18/Bone084
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20/Bone084(mirrored)
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnLeft
+      takeName: ANI_FP20001_TurnLeft
+      firstFrame: 200
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP20001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13/Bone089
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/HitPoint
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone080
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21/Bone086
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22/Bone088
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23/Bone086(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24/Bone088(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16/Bone082
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18/Bone084
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20/Bone084(mirrored)
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TurnRight
+      takeName: ANI_FP20001_TurnRight
+      firstFrame: 300
+      lastFrame: 330
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP20001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13/Bone089
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/HitPoint
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone080
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21/Bone086
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22/Bone088
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23/Bone086(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24/Bone088(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16/Bone082
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18/Bone084
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20/Bone084(mirrored)
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hit
+      takeName: ANI_FP20001_Hit
+      firstFrame: 400
+      lastFrame: 415
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP20001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13/Bone089
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/HitPoint
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone080
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21/Bone086
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22/Bone088
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23/Bone086(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24/Bone088(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16/Bone082
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18/Bone084
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20/Bone084(mirrored)
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SpecialSwin01
+      takeName: ANI_FP20001_Move_Sp_01
+      firstFrame: 100
+      lastFrame: 160
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP20001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13/Bone089
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/HitPoint
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone080
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21/Bone086
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22/Bone088
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23/Bone086(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24/Bone088(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16/Bone082
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18/Bone084
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20/Bone084(mirrored)
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Die
+      takeName: ANI_FP20001_Die
+      firstFrame: 500
+      lastFrame: 540
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: MESH_FP20001
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/Bone_Fin_04/Bone_Fin_05/Bone_Fin_06/Bone_Fin_07/Bone_Fin_08/Bone_Fin_09/Bone_Fin_10/Bone_Fin_11/Bone_Fin_12/Bone_Fin_13/Bone089
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_02/Bone_Fin_03/HitPoint
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone080
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_21/Bone086
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_22/Bone088
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_23/Bone086(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_15/Bone_Fin_24/Bone088(mirrored)
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_16/Bone082
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_17/Bone_Fin_18/Bone084
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20
+        weight: 1
+      - path: Root/Dummy_Pivot_01_Rotate/Bone_Fin_01/Bone_Fin_14/Bone_Fin_19/Bone_Fin_20/Bone084(mirrored)
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
