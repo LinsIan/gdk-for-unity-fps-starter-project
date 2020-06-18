@@ -20,7 +20,6 @@ namespace Fps.HealthPickup
         {
             base.OnCreate();
             commandSystem = World.GetExistingSystem<CommandSystem>();
-            CreateHealthPickups();
         }
 
         protected override void OnUpdate() {}
@@ -28,10 +27,10 @@ namespace Fps.HealthPickup
         public void CreateHealthPickups()
         {
             Vector3 StartPoint = new Vector3();
-            for(int z = 0; z < AreaCol * WorldScale; ++z)
+            for(int z = 0; z <= (AreaCol-1) * WorldScale; ++z)
             {
                 StartPoint.z = HalfLength * WorldScale - z * CreationInterval;
-                for (int x = 0; x < AreaWid * WorldScale; ++x)
+                for (int x = 0; x <= (AreaWid-1) * WorldScale; ++x)
                 {
                     StartPoint.x = -HalfLength * WorldScale + x*CreationInterval;
                     var healthPickup = FpsEntityTemplates.HealthPickup(StartPoint, HealthAmount);

@@ -1,14 +1,17 @@
-using System.Collections;
 using Fps.Config;
 using Fps.Guns;
 using Fps.Health;
 using Fps.Metrics;
 using Fps.HealthPickup;
+using Fps.WorldTiles;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.GameObjectCreation;
 using Improbable.Gdk.PlayerLifecycle;
 using Improbable.Worker.CInterop;
 using UnityEngine;
+using System.Threading;
+using System;
+using System.Threading.Tasks;
 
 namespace Fps.WorkerConnectors
 {
@@ -72,11 +75,24 @@ namespace Fps.WorkerConnectors
             // Health
             world.GetOrCreateSystem<ServerHealthModifierSystem>();
             world.GetOrCreateSystem<HealthRegenSystem>();
+        }
 
-            // HealthPickup
-            var healthPickupCreatingSystem = world.GetOrCreateSystem<HealthPickupCreatingSystem>();
-            //healthPickupCreatingSystem.WorldScale = m_WorldSize/4;
-            //healthPickupCreatingSystem.CreateHealthPickups();
+        protected override async Task LoadWorld()
+        {
+            var worldSize = await GetWorldSize();
+
+            if (worldSize <= 0)
+            {
+                throw new ArgumentException("Received a world size of 0 or less.");
+            }
+
+            LevelInstance = await MapBuilder.GenerateMap(mapTemplate, worldSize, transform, Worker.WorkerType);
+
+            //Create Healthpickup
+            var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            healthPickupCreatingSystem.WorldScale = worldSize / 4;
+            Debug.Log("Oh yeah" + healthPickupCreatingSystem.WorldScale);
+            healthPickupCreatingSystem.CreateHealthPickups();
         }
     }
 }
