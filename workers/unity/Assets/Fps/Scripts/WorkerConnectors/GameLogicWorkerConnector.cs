@@ -9,7 +9,6 @@ using Improbable.Gdk.GameObjectCreation;
 using Improbable.Gdk.PlayerLifecycle;
 using Improbable.Worker.CInterop;
 using UnityEngine;
-using System.Threading;
 using System;
 using System.Threading.Tasks;
 
@@ -91,7 +90,6 @@ namespace Fps.WorkerConnectors
             //Create Healthpickup
             var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
             healthPickupCreatingSystem.WorldScale = worldSize / 4;
-            Debug.Log("Oh yeah" + healthPickupCreatingSystem.WorldScale);
             healthPickupCreatingSystem.CreateHealthPickups();
         }
     }

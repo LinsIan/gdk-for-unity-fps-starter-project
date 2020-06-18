@@ -46,7 +46,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "4"
         }
       ],
       "permissions": [
@@ -60,7 +60,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "4"
         },
         {
           "name": "fps_simulated_players_per_coordinator",
@@ -82,7 +82,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "4"
         }
       ],
       "permissions": [
@@ -96,7 +96,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "4"
         }
       ],
       "permissions": [{

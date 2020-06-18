@@ -58,7 +58,7 @@ namespace Fps
         {
             var playerSpatialOSComponent = player.GetComponent<LinkedEntityComponent>();
             if (playerSpatialOSComponent == null) return;
-      
+
             //檢查玩家是否滿血
             var playerHealthComponent = player.GetComponent<PlayerHealthComponent>();
             if (playerHealthComponent == null || playerHealthComponent.IsHealthy()) return;

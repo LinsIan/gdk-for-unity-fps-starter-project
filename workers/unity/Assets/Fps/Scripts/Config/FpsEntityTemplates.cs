@@ -164,7 +164,17 @@ namespace Fps.Config
             var interest = InterestTemplate.Create().AddQueries<Pickups.HealthPickup.Component>(query);
             entityTemplate.AddComponent(interest.ToSnapshot());
 
-   
+            return entityTemplate;
+        }
+
+        public static EntityTemplate Fish(Vector3 position)
+        {
+            var entityTemplate = new EntityTemplate();
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(position)), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Metadata.Snapshot("Fish"), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
+
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
 
             return entityTemplate;
         }
