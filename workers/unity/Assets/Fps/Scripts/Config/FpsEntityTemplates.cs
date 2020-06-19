@@ -167,7 +167,7 @@ namespace Fps.Config
             return entityTemplate;
         }
 
-        public static EntityTemplate Fish(EFishType eFishType)
+        public static EntityTemplate NormalFish()
         {
             //資料和讀寫權限設定
             var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
@@ -176,7 +176,7 @@ namespace Fps.Config
                 Yaw = spawnYaw.ToInt1k(),
                 Pitch = spawnPitch.ToInt1k()
             };
-            float MaxHp = FishHealthSettings.FishHealthDic[eFishType];
+            float MaxHp = FishHealthSettings.FishHealthDic[EFishType.NORMAL];
 
             var entityTemplate = new EntityTemplate();
             entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
@@ -188,7 +188,8 @@ namespace Fps.Config
             entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
 
             //興趣範圍設定
-            
+
+
 
             return entityTemplate;
         }
