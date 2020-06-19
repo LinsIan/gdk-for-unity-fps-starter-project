@@ -1,18 +1,33 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Improbable.Gdk.Subscriptions;
+using Fps.Config;
 
-public class FishClientDriver : MonoBehaviour
+namespace Fps
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum EFishState
     {
-        
+        SWIM,
+        DEAD
     }
 
-    // Update is called once per frame
-    void Update()
+    [WorkerType(WorkerUtils.UnityClient)]
+    public class FishClientDriver : MonoBehaviour
     {
-        
+        [Require] private ClientRotationWriter rotation;
+        [Require] private HealthComponentReader health;
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
+

@@ -1,18 +1,17 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Improbable.Gdk.Subscriptions;
+using Fps.Config;
 
-public class FishAnimator : MonoBehaviour
+namespace Fps.Animation
 {
-    // Start is called before the first frame update
-    void Start()
+    public class FishAnimator : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private Animator m_Animator;
+        private const string SWIM_ANIMATION = "Swim";
+        private const string DEAD_ANIMATION = "Dead";
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
     }
 }
