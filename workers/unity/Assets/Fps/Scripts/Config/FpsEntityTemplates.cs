@@ -160,21 +160,35 @@ namespace Fps.Config
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId, ServerMovement.ComponentId,
                 ClientRotation.ComponentId, HealthComponent.ComponentId, ShootingComponent.ComponentId
             });
-
+            
             var interest = InterestTemplate.Create().AddQueries<Pickups.HealthPickup.Component>(query);
             entityTemplate.AddComponent(interest.ToSnapshot());
 
             return entityTemplate;
         }
 
-        public static EntityTemplate Fish(Vector3 position)
+        public static EntityTemplate Fish(EFishType eFishType)
         {
+            //資料和讀寫權限設定
+            var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            var rotationUpdate = new RotationUpdate
+            {
+                Yaw = spawnYaw.ToInt1k(),
+                Pitch = spawnPitch.ToInt1k()
+            };
+            float MaxHp = FishHealthSettings.FishHealthDic[eFishType];
+
             var entityTemplate = new EntityTemplate();
-            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(position)), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new Metadata.Snapshot("Fish"), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
 
             entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+
+            //興趣範圍設定
+            
 
             return entityTemplate;
         }
