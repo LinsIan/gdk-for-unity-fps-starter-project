@@ -90,7 +90,7 @@ namespace Fps.SimulatedPlayer
                 SetPlayerState(PlayerState.LookingForTarget);
             }
         }
-
+        
         private IEnumerator RandomlyJump()
         {
             while (true)

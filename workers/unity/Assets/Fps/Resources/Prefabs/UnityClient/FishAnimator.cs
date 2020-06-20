@@ -4,6 +4,13 @@ using UnityEngine;
 using Improbable.Gdk.Subscriptions;
 using Fps.Config;
 
+public enum EFishState
+{
+    SWIM,
+    DEAD,
+    IDLE
+}
+
 namespace Fps.Animation
 {
     public class FishAnimator : MonoBehaviour

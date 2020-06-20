@@ -17,6 +17,8 @@ namespace Fps.WorkerConnectors
     public class GameLogicWorkerConnector : WorkerConnectorBase
     {
         public bool DisableRenderers = true;
+        public Bounds Bounds { get; private set; }
+
 
         protected async void Start()
         {
@@ -24,6 +26,8 @@ namespace Fps.WorkerConnectors
 
             await Connect(GetConnectionHandlerBuilder(), new ForwardingDispatcher());
             await LoadWorld();
+
+            Bounds = await GetWorldBounds();
 
             if (DisableRenderers)
             {
@@ -91,6 +95,12 @@ namespace Fps.WorkerConnectors
             var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
             healthPickupCreatingSystem.WorldScale = worldSize / 4;
             healthPickupCreatingSystem.CreateHealthPickups();
+        }
+
+        public async Task<Bounds> GetWorldBounds()
+        {
+            var worldSize = await GetWorldSize();
+            return new Bounds(Worker.Origin, MapBuilder.GetWorldDimensions(worldSize));
         }
     }
 }

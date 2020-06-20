@@ -8,11 +8,6 @@ using Improbable;
 
 namespace Fps
 {
-    public enum EFishState
-    {
-        SWIM,
-        DEAD
-    }
 
     [WorkerType(WorkerUtils.UnityClient)]
     public class FishClientDriver : MonoBehaviour
@@ -30,7 +25,7 @@ namespace Fps
             animator = GetComponent<Animation.FishAnimator>();
             position.OnUpdate += OnPositionUpdate;
             rotation.OnUpdate += OnRotationUpdate;
-            health.OnUpdate += OnHealthComponentUpdate;
+            health.OnHealthModifiedEvent += OnHealthModified;
             eState = EFishState.SWIM;
         }
 
@@ -46,10 +41,10 @@ namespace Fps
             float paw = rotation.Data.Latest.Yaw.ToFloat1k();
             transform.rotation = Quaternion.Euler(pitch, roll, paw);
         }
-
-        private void OnHealthComponentUpdate(HealthComponent.Update update)
+        
+        private void OnHealthModified(HealthModifiedInfo info)
         {
-            if(health.Data.Health <= 0)
+            if(info.Died)
             {
                 eState = EFishState.DEAD;
                 animator.PlayAnimation(eState);
