@@ -154,7 +154,7 @@ namespace Fps.Config
             //也可以透過指定ID的方式來給予Client端權限(因為不能一個角色所有Client端都有改寫權限)
             //EX: template.AddComponent(clientMovement, EntityTemplate.GetWorkerAccessAttribute(workerId));
 
-            //補包周圍的玩家要加入興趣範圍，才能觸發補血事件
+            //加入在範圍內的玩家(就是有這些component的)的興趣列表
             var query = InterestQuery.Query(Constraint.RelativeCylinder(radius: 25)).FilterResults(new[]
             {
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId, ServerMovement.ComponentId,
