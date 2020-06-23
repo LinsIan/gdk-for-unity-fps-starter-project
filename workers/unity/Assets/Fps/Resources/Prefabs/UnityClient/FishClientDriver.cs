@@ -13,7 +13,7 @@ namespace Fps
     public class FishClientDriver : MonoBehaviour
     {
         [Require] private PositionReader position;
-        [Require] private ClientRotationWriter rotation;
+        [Require] private ClientRotationReader rotation;
         [Require] private HealthComponentReader health;
 
         private Animation.FishAnimator animator;

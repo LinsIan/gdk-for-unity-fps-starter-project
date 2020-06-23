@@ -37,7 +37,7 @@ namespace Fps.Config
             {
                 Position = spawnPosition.ToVector3Int()
             };
-
+            
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = spawnYaw.ToInt1k(),
@@ -154,15 +154,23 @@ namespace Fps.Config
             //也可以透過指定ID的方式來給予Client端權限(因為不能一個角色所有Client端都有改寫權限)
             //EX: template.AddComponent(clientMovement, EntityTemplate.GetWorkerAccessAttribute(workerId));
 
-            //加入在範圍內的玩家(就是有這些component的)的興趣列表
+            //設置單一興趣條件，條件：半徑25內的所有Entity，對其FilterResults中的這些Component感興趣
             var query = InterestQuery.Query(Constraint.RelativeCylinder(radius: 25)).FilterResults(new[]
             {
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId, ServerMovement.ComponentId,
                 ClientRotation.ComponentId, HealthComponent.ComponentId, ShootingComponent.ComponentId
             });
-            
+
+            //HealthPickup Component有寫入權的Worker，在其半徑25內的所有Entity，對其FilterResults中的這些Component感興趣
             var interest = InterestTemplate.Create().AddQueries<Pickups.HealthPickup.Component>(query);
             entityTemplate.AddComponent(interest.ToSnapshot());
+
+
+            //多重條件的寫法，多重條件，在半徑25內且有Metadata Component的Entity，對其Position感興趣
+            //var query2 = InterestQuery.Query(Constraint.All(Constraint.RelativeCylinder(radius: 25),Constraint.Component(Metadata.ComponentId))).FilterResults(new[]
+            //{
+            //     Position.ComponentId
+            //});
 
             return entityTemplate;
         }
@@ -171,6 +179,8 @@ namespace Fps.Config
         {
             //資料和讀寫權限設定
             var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            spawnPosition.y += 1000;//這個生成點是給Simuldated player的，要調整Y軸
+            spawnPosition = new Vector3(0, 0, 5);
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = spawnYaw.ToInt1k(),
@@ -180,7 +190,7 @@ namespace Fps.Config
 
             var entityTemplate = new EntityTemplate();
             entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new Metadata.Snapshot("Fish"), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Metadata.Snapshot("NormalFish"), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
@@ -188,8 +198,17 @@ namespace Fps.Config
             entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
 
             //興趣範圍設定
+            const int serverRadius = 150;
+            var query = InterestQuery.Query(Constraint.RelativeCylinder(serverRadius)).FilterResults(new[]
+            {
+                Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
+                ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
+                GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
+                Pickups.HealthPickup.ComponentId
+            });
 
-
+            var interest = InterestTemplate.Create().AddQueries<Position.Component>(query);
+            entityTemplate.AddComponent(interest.ToSnapshot());
 
             return entityTemplate;
         }
