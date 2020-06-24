@@ -9,6 +9,7 @@ namespace Fps.Guns
     {
 #pragma warning disable 649
         [Require] private ShootingComponentWriter shooting;
+        [Require] private EntityId self_entityId;
 #pragma warning restore 649
 
         [SerializeField] private LayerMask shootingLayerMask;
@@ -88,12 +89,12 @@ namespace Fps.Guns
 
             var shotInfo = new ShotInfo()
             {
-                EntityId = entityId,
+                HitEntityId = entityId,
+                ShooterEntityId = self_entityId,
                 HitSomething = hitSomething,
                 HitLocation = (hitLocation - workerOrigin).ToVector3Int(),
                 HitOrigin = (ray.origin - workerOrigin).ToVector3Int(),
             };
-
             shooting.SendShotsEvent(shotInfo);
         }
     }

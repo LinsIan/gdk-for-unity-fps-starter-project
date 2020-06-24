@@ -4,9 +4,10 @@ import "fps/common.schema";
 
 type ShotInfo {
   bool hit_something = 1;
-  EntityId entity_id = 2;
-  fps.Vector3Int hit_location = 3;
-  fps.Vector3Int hit_origin = 4;
+  EntityId hit_entity_id = 2;
+  EntityId shooter_entity_id = 3;
+  fps.Vector3Int hit_location = 4;
+  fps.Vector3Int hit_origin = 5;
 }
 
 component ShootingComponent {

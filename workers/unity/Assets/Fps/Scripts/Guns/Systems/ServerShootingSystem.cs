@@ -1,5 +1,6 @@
 using Improbable.Gdk.Core;
 using Unity.Entities;
+using UnityEngine;
 
 namespace Fps.Guns
 {
@@ -33,17 +34,17 @@ namespace Fps.Guns
             {
                 ref readonly var shotEvent = ref events[i];
                 var shotInfo = shotEvent.Event.Payload;
-                if (!shotInfo.HitSomething || !shotInfo.EntityId.IsValid())
+                if (!shotInfo.HitSomething || !shotInfo.HitEntityId.IsValid() || !shotInfo.ShooterEntityId.IsValid())
                 {
                     continue;
                 }
 
-                var shooterSpatialID = shotInfo.EntityId;
+                var shooterSpatialID = shotInfo.ShooterEntityId;
+
                 if (!workerSystem.TryGetEntity(shooterSpatialID, out var shooterEntity))
                 {
                     continue;
                 }
-
                 if (!gunDataForEntity.Exists(shooterEntity))
                 {
                     continue;
@@ -53,16 +54,15 @@ namespace Fps.Guns
                 var damage = GunDictionary.Get(gunComponent.GunId).ShotDamage;
 
                 var modifyHealthRequest = new HealthComponent.ModifyHealth.Request(
-                    shotInfo.EntityId,
+                    shotInfo.HitEntityId,
                     new HealthModifier
                     {
                         Amount = -damage,
                         Origin = shotInfo.HitOrigin,
                         AppliedLocation = shotInfo.HitLocation,
-                        Owner = shotInfo.EntityId,
+                        Owner = shotInfo.HitEntityId,
                     }
                 );
-
                 commandSystem.SendCommand(modifyHealthRequest);
             }
         }

@@ -16,7 +16,7 @@ namespace Fps.Animation
     public class FishAnimator : MonoBehaviour
     {
         private const string SWIM_ANIMATION = "Swim";
-        private const string DEAD_ANIMATION = "Dead";
+        private const string DEAD_ANIMATION = "Die";
         private Animator m_Animator;
 
         private void OnEnable()
