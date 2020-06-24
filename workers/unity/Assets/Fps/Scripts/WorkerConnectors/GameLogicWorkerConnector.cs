@@ -98,7 +98,7 @@ namespace Fps.WorkerConnectors
         }
 
         public async Task<Bounds> GetWorldBounds()
-        {
+        {   
             var worldSize = await GetWorldSize();
             return new Bounds(Worker.Origin, MapBuilder.GetWorldDimensions(worldSize));
         }

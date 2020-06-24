@@ -179,8 +179,7 @@ namespace Fps.Config
         {
             //資料和讀寫權限設定
             var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
-            spawnPosition.y += 1000;//這個生成點是給Simuldated player的，要調整Y軸
-            spawnPosition = new Vector3(0, 0, 5);
+            spawnPosition = new Vector3(0, 5, 5);
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = spawnYaw.ToInt1k(),
