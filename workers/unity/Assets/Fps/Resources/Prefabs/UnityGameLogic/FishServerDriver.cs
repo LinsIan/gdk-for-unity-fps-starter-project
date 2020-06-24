@@ -69,7 +69,9 @@ namespace Fps
 
         private void UpdateTransform()
         {
-            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(transform.position) });
+            Vector3 pos = transform.position;
+            pos.y += 1000;
+            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(pos) });
 
             var rotationUpdate = new RotationUpdate
             {

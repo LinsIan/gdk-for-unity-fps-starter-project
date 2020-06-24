@@ -31,19 +31,22 @@ namespace Fps
 
         private void OnPositionUpdate(Position.Update update)
         {
-            transform.position = position.Data.Coords.ToUnityVector();
+            Vector3 pos = position.Data.Coords.ToUnityVector();
+            pos.y = transform.position.y;
+            transform.position = pos;
         }
 
         private void OnRotationUpdate(ClientRotation.Update update)
         {
             float pitch = rotation.Data.Latest.Pitch.ToFloat1k();
             float roll = rotation.Data.Latest.Roll.ToFloat1k();
-            float paw = rotation.Data.Latest.Yaw.ToFloat1k();
-            transform.rotation = Quaternion.Euler(pitch, roll, paw);
+            float yaw = rotation.Data.Latest.Yaw.ToFloat1k();
+            transform.rotation = Quaternion.Euler(pitch, yaw, roll);
         }
         
         private void OnHealthModified(HealthModifiedInfo info)
         {
+            Debug.Log(info.HealthAfter);
             if(info.Died)
             {
                 eState = EFishState.DEAD;
