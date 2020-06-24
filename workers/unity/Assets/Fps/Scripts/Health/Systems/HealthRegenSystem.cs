@@ -103,6 +103,10 @@ namespace Fps.Health
             foreach (var entityId in recentlyDamagedCache)
             {
                 workerSystem.TryGetEntity(entityId, out var entity);
+                if(!healthRegenComponentDataForEntity.Exists(entity))
+                {
+                    continue;
+                }
                 var regenComponent = healthRegenComponentDataForEntity[entity];
                 var regenData = healthRegenDataForEntity[entity];
 

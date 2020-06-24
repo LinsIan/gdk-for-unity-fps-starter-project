@@ -175,11 +175,10 @@ namespace Fps.Config
             return entityTemplate;
         }
 
-        public static EntityTemplate NormalFish()
+        public static EntityTemplate NormalFish(Vector3 pos)
         {
             //資料和讀寫權限設定
             var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
-            spawnPosition = new Vector3(0, 5, 5);
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = spawnYaw.ToInt1k(),
@@ -188,7 +187,7 @@ namespace Fps.Config
             float MaxHp = FishHealthSettings.FishHealthDic[EFishType.NORMAL];
 
             var entityTemplate = new EntityTemplate();
-            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(pos)), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new Metadata.Snapshot("NormalFish"), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
