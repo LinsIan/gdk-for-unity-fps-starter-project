@@ -321,6 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6234630910118065458}
   - component: {fileID: 6299522727644308016}
+  - component: {fileID: 5939630346562330154}
   m_Layer: 0
   m_Name: MESH_FP10001
   m_TagString: Untagged
@@ -405,6 +406,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.3698644, y: 0.09186901, z: 0.000000014901161}
     m_Extent: {x: 0.72831494, y: 0.5149822, z: 0.3855495}
   m_DirtyAABB: 0
+--- !u!65 &5939630346562330154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237078014499473124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14686015, y: 0.34967712, z: 0.61236936}
+  m_Center: {x: -0.001232496, y: -0.30735302, z: -0.1612307}
 --- !u!1 &6237083054668203412
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +523,6 @@ GameObject:
   - component: {fileID: -4520854908529747982}
   - component: {fileID: 2965032549578919380}
   - component: {fileID: -353237526627186368}
-  - component: {fileID: 3862677283248170539}
   m_Layer: 0
   m_Name: NormalFish
   m_TagString: Fish
@@ -592,19 +605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9f2cb14aeb44b4c9a45d78cb99bee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &3862677283248170539
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6237229462257013488}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.75731915, y: 1.2041926, z: 1.6273968}
-  m_Center: {x: 0.06996244, y: -0.1014992, z: -0.29522145}
 --- !u!1 &6237237911733803868
 GameObject:
   m_ObjectHideFlags: 0
