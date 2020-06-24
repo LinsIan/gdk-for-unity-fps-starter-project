@@ -11,6 +11,7 @@ using Improbable.Worker.CInterop;
 using UnityEngine;
 using System;
 using System.Threading.Tasks;
+using UnityEngine.AI;
 
 namespace Fps.WorkerConnectors
 {
@@ -26,7 +27,7 @@ namespace Fps.WorkerConnectors
 
             await Connect(GetConnectionHandlerBuilder(), new ForwardingDispatcher());
             await LoadWorld();
-
+            
             Bounds = await GetWorldBounds();
 
             if (DisableRenderers)
