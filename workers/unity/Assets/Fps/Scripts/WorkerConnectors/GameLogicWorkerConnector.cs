@@ -27,7 +27,7 @@ namespace Fps.WorkerConnectors
 
             await Connect(GetConnectionHandlerBuilder(), new ForwardingDispatcher());
             await LoadWorld();
-            
+
             Bounds = await GetWorldBounds();
 
             if (DisableRenderers)
@@ -37,6 +37,8 @@ namespace Fps.WorkerConnectors
                     childRenderer.enabled = false;
                 }
             }
+            //動態生成NavMesh
+            GetComponent<NavMeshSurface>().BuildNavMesh();
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()
