@@ -46,10 +46,14 @@ namespace Fps
         
         private void OnHealthModified(HealthModifiedInfo info)
         {
-            Debug.Log(info.HealthAfter);
             if(info.Died)
             {
                 eState = EFishState.DEAD;
+                animator.PlayAnimation(eState);
+            }
+            else if(eState == EFishState.DEAD)
+            {
+                eState = EFishState.SWIM;
                 animator.PlayAnimation(eState);
             }
         }

@@ -17,8 +17,8 @@ namespace Fps.Health
         public static Dictionary<EFishType, float> FishHealthDic = new Dictionary<EFishType, float>()
         {
             {EFishType.NORMAL, 80 },
-            {EFishType.SPEED, 50 },
-            {EFishType.OCTOPUS, 200 }
+            {EFishType.SPEED, 40 },
+            {EFishType.OCTOPUS, 600 }
         };
 
     }

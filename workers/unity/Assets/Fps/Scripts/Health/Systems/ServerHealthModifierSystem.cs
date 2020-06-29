@@ -43,13 +43,14 @@ namespace Fps.Health
 
                 var health = healthComponentData[entity];
 
-                // Skip if already dead
-                if (health.Health <= 0)
+                var modifier = request.Payload;
+
+                // Skip if already dead and still getting damage
+                if (health.Health <= 0 && modifier.Amount < 0)
                 {
                     continue;
                 }
 
-                var modifier = request.Payload;
                 var healthModifiedInfo = new HealthModifiedInfo
                 {
                     Modifier = modifier,

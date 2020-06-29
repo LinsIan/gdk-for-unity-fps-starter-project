@@ -1,7 +1,9 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 using Fps.Config;
 using Fps.WorkerConnectors;
+using Improbable.Gdk.Core;
 using Improbable.Gdk.Subscriptions;
 using Fps.SchemaExtensions;
 using Improbable;
@@ -13,10 +15,13 @@ namespace Fps
         [Require] private PositionWriter positionWriter;
         [Require] private ClientRotationWriter rotationWriter;
         [Require] private HealthComponentReader health;
+        [Require] private HealthComponentCommandSender healthCommandSender;
+        [Require] private EntityId entityId;
 
         private const float MovementRadius = 50f;
         private const float NavMeshSnapDistance = 5f;
         private const float MinRemainingDistance = 0.3f;
+        private const float RespawnTime = 5.0f;
 
         private EFishState eState;
         private NavMeshAgent agent;
@@ -28,15 +33,21 @@ namespace Fps
         {
             agent = GetComponent<NavMeshAgent>();
             health.OnHealthModifiedEvent += OnHealthModified;
-            agent.Warp(transform.position);
             eState = EFishState.IDLE;
         }
 
         private void Start()
         {
             eState = EFishState.SWIM;
-            anchorPoint = transform.position;
+            InitialAI();
             worldBounds = FindObjectOfType<GameLogicWorkerConnector>().Bounds;
+        }
+
+        private void InitialAI()
+        {
+            anchorPoint = transform.position;
+            agent.Warp(transform.position);
+            SetRandomDestination();
         }
 
         private void Update()
@@ -45,6 +56,7 @@ namespace Fps
             {
                 Swimming();
             }
+            Debug.Log(agent.pathStatus);
         }
 
         private void Swimming()
@@ -70,7 +82,9 @@ namespace Fps
         private void UpdateTransform()
         {
             Vector3 pos = transform.position;
+
             pos.y += 1000;
+
             positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(pos) });
 
             var rotationUpdate = new RotationUpdate
@@ -91,10 +105,17 @@ namespace Fps
             if (info.Died)
             {
                 eState = EFishState.DEAD;
+                agent.isStopped = true;
+                StartCoroutine(WaitForRespawn());
+            }
+            else if (eState == EFishState.DEAD)
+            {
+                agent.isStopped = false;
+                eState = EFishState.SWIM;
             }
         }
-
-        public void SetRandomDestination()
+        
+        private void SetRandomDestination()
         {
             var destination = anchorPoint + Random.insideUnitSphere * MovementRadius;
             destination.y = anchorPoint.y;
@@ -107,6 +128,33 @@ namespace Fps
                     agent.SetDestination(hit.position);
                 }
             }
+        }
+
+        private IEnumerator WaitForRespawn()
+        {
+            yield return new WaitForSeconds(RespawnTime);
+            Respawn();
+        }
+
+        private void Respawn()
+        {
+            //重設Health
+            var modifyHealthRequest = new HealthComponent.ModifyHealth.Request(
+                    entityId,
+                    new HealthModifier
+                    {
+                        Amount = health.Data.MaxHealth - health.Data.Health,
+                        Owner = entityId,
+                    }
+                );
+            healthCommandSender.SendModifyHealthCommand(modifyHealthRequest);
+
+            //重設transform與目標
+            var (spawnPosition, spawnYaw, spawnPitch) = Respawning.SpawnPoints.GetRandomSpawnPoint();
+            spawnPosition.y -= 997;
+            transform.position = spawnPosition;
+            InitialAI();
+            UpdateTransform();
         }
     }
 }
