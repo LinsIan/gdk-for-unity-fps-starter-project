@@ -27,6 +27,7 @@ namespace Fps.Movement
         [Require] private GunStateComponentWriter gunState;
         [Require] private HealthComponentReader health;
         [Require] private HealthComponentCommandSender commandSender;
+        [Require] private ScoreComponentCommandSender scoreCommandSender;
         [Require] private EntityId entityId;
 
         private ClientMovementDriver movement;
@@ -82,6 +83,7 @@ namespace Fps.Movement
             Cursor.visible = false;
             serverMovement.OnForcedRotationEvent += OnForcedRotation;
             health.OnRespawnEvent += OnRespawn;
+            health.OnHealthModifiedEvent += OnHealthModified;
         }
 
         private void Update()
@@ -175,6 +177,20 @@ namespace Fps.Movement
             var wasGroundedBeforeMovement = movement.IsGrounded;
             movement.ApplyMovement(toMove, rotation, movementSpeed, isJumpPressed);
             Animations(isJumpPressed && wasGroundedBeforeMovement);
+        }
+
+        private void OnHealthModified(HealthModifiedInfo healthModifiedInfo)
+        {
+            if(healthModifiedInfo.Died)
+            {
+                var scoreModifier = new ScoreModifier
+                {
+                    Amount = PlayerSettings.PlayerScore,
+                    Owner = healthModifiedInfo.Modifier.ModifierId,
+                };
+                Debug.Log("送出加分指令");
+                scoreCommandSender.SendModifyScoreCommand(healthModifiedInfo.Modifier.ModifierId, scoreModifier);
+            }
         }
 
         private IEnumerator RequestRespawn()

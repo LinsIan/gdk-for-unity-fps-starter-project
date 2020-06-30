@@ -78,6 +78,7 @@ namespace Fps.Config
             template.AddComponent(gunStateComponent, client);
             template.AddComponent(healthComponent, WorkerUtils.UnityGameLogic);
             template.AddComponent(healthRegenComponent, WorkerUtils.UnityGameLogic);
+            template.AddComponent(new ScoreComponent.Snapshot { Score = 0 }, WorkerUtils.UnityGameLogic);
 
             PlayerLifecycleHelper.AddPlayerLifecycleComponents(template, workerId, WorkerUtils.UnityGameLogic);
 
@@ -106,6 +107,12 @@ namespace Fps.Config
                 Pickups.HealthPickup.ComponentId
             });
 
+            //記分板UI需要
+            var clientScoreInterest = InterestQuery.Query(Constraint.Component(ScoreComponent.ComponentId)).FilterResults(new[]
+            {
+                ScoreComponent.ComponentId
+            });
+
             // ClientMovement is used by the ServerMovementDriver script.
             // ShootingComponent is used by the ServerShootingSystem.
             var serverSelfInterest = InterestQuery.Query(Constraint.EntityId(entityId)).FilterResults(new[]
@@ -124,10 +131,12 @@ namespace Fps.Config
             });
 
             var interest = InterestTemplate.Create()
-                .AddQueries<ClientMovement.Component>(clientSelfInterest, clientRangeInterest)
+                .AddQueries<ClientMovement.Component>(clientSelfInterest, clientRangeInterest, clientScoreInterest)
                 .AddQueries<ServerMovement.Component>(serverSelfInterest, serverRangeInterest);
 
             template.AddComponent(interest.ToSnapshot());
+
+
 
             template.SetReadAccess(WorkerUtils.UnityClient, WorkerUtils.UnityGameLogic, WorkerUtils.MobileClient);
 

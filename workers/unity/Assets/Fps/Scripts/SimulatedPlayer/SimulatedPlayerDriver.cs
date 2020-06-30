@@ -23,6 +23,7 @@ namespace Fps.SimulatedPlayer
 
         [Require] private HealthComponentReader HealthReader;
         [Require] private HealthComponentCommandSender HealthCommands;
+        [Require] private ScoreComponentCommandSender scoreCommandSender;
         [Require] private EntityId entityId;
 
         private ClientMovementDriver movementDriver;
@@ -78,6 +79,13 @@ namespace Fps.SimulatedPlayer
             if (info.Died)
             {
                 SetPlayerState(PlayerState.Dead);
+                var scoreModifier = new ScoreModifier
+                {
+                    Amount = PlayerSettings.PlayerScore,
+                    Owner = info.Modifier.ModifierId,
+                };
+                Debug.Log("送出加分指令");
+                scoreCommandSender.SendModifyScoreCommand(info.Modifier.ModifierId, scoreModifier);
             }
         }
 
