@@ -25,7 +25,14 @@ namespace Fps
         {
             {EFishType.NORMAL, 50 },
             {EFishType.SPEED, 100 },
-            {EFishType.OCTOPUS, 1000 }
+            {EFishType.OCTOPUS, 500 }
+        };
+
+        public static Dictionary<EFishType, float> FishRespawnTimeDic = new Dictionary<EFishType, float>()
+        {
+            {EFishType.NORMAL, 5 },
+            {EFishType.SPEED, 7.5f },
+            {EFishType.OCTOPUS, 15 }
         };
     }
 

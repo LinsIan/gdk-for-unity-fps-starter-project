@@ -40,13 +40,24 @@ namespace Fps.HealthPickup
             }
 
             //fish測試
-            for(int i=0; i<20;++i)
+            for(int i=0; i<15;++i)
             {
                 var fish = FpsEntityTemplates.NormalFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                 commandSystem.SendCommand(fishrequest);
             }
-            
+
+            for(int i=0; i<5; ++i)
+            {
+                var fish = FpsEntityTemplates.SpeedFish();
+                var fishrequest = new WorldCommands.CreateEntity.Request(fish);
+                commandSystem.SendCommand(fishrequest);
+            }
+
+            var octopus = FpsEntityTemplates.Octopus();
+            var octopusrequest = new WorldCommands.CreateEntity.Request(octopus);
+            commandSystem.SendCommand(octopusrequest);
+
         }
     }
 }

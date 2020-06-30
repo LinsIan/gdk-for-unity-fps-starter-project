@@ -287,7 +287,22 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 4647811023647179863, guid: d52364553e6842940944c62b73e5e1b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647967378768296483, guid: d52364553e6842940944c62b73e5e1b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4648737916515989303, guid: d52364553e6842940944c62b73e5e1b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d52364553e6842940944c62b73e5e1b1, type: 3}
 --- !u!114 &1345553513 stripped
@@ -605,7 +620,7 @@ PrefabInstance:
     - target: {fileID: 114510834623507516, guid: a18c738cbcda9914591d9af24a618907,
         type: 3}
       propertyPath: MaxSimulatedPlayerCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a18c738cbcda9914591d9af24a618907, type: 3}

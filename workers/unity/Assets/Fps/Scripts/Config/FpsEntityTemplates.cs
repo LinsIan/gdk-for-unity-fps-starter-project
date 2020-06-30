@@ -221,5 +221,81 @@ namespace Fps.Config
 
             return entityTemplate;
         }
+
+        public static EntityTemplate SpeedFish()
+        {
+            //資料和讀寫權限設定
+            var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            var rotationUpdate = new RotationUpdate
+            {
+                Yaw = spawnYaw.ToInt1k(),
+                Pitch = spawnPitch.ToInt1k()
+            };
+            spawnPosition.y += 3;
+            float MaxHp = FishSettings.FishHealthDic[EFishType.SPEED];
+
+            var entityTemplate = new EntityTemplate();
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Metadata.Snapshot("SpeedFish"), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.SPEED), WorkerUtils.UnityGameLogic);
+
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+
+            //興趣範圍設定
+            const int serverRadius = 150;
+            var query = InterestQuery.Query(Constraint.RelativeCylinder(serverRadius)).FilterResults(new[]
+            {
+                Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
+                ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
+                GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
+                Pickups.HealthPickup.ComponentId
+            });
+
+            var interest = InterestTemplate.Create().AddQueries<Position.Component>(query);
+            entityTemplate.AddComponent(interest.ToSnapshot());
+
+            return entityTemplate;
+        }
+
+        public static EntityTemplate Octopus()
+        {
+            //資料和讀寫權限設定
+            var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            var rotationUpdate = new RotationUpdate
+            {
+                Yaw = spawnYaw.ToInt1k(),
+                Pitch = spawnPitch.ToInt1k()
+            };
+            spawnPosition = new Vector3(0,0,7.5f);
+            float MaxHp = FishSettings.FishHealthDic[EFishType.OCTOPUS];
+
+            var entityTemplate = new EntityTemplate();
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Metadata.Snapshot("Octopus"), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.OCTOPUS), WorkerUtils.UnityGameLogic);
+
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+
+            //興趣範圍設定
+            const int serverRadius = 150;
+            var query = InterestQuery.Query(Constraint.RelativeCylinder(serverRadius)).FilterResults(new[]
+            {
+                Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
+                ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
+                GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
+                Pickups.HealthPickup.ComponentId
+            });
+
+            var interest = InterestTemplate.Create().AddQueries<Position.Component>(query);
+            entityTemplate.AddComponent(interest.ToSnapshot());
+
+            return entityTemplate;
+        }
     }
 }

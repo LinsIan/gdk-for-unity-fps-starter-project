@@ -23,13 +23,13 @@ namespace Fps
         private const float MovementRadius = 50f;
         private const float NavMeshSnapDistance = 5f;
         private const float MinRemainingDistance = 0.3f;
-        private const float RespawnTime = 5.0f;
 
         private EFishState eState;
         private NavMeshAgent agent;
         private Bounds worldBounds;
         private Vector3 anchorPoint;
         private float score;
+        private float RespawnTime = 5.0f;
 
 
         private void OnEnable()
@@ -38,6 +38,7 @@ namespace Fps
             health.OnHealthModifiedEvent += OnHealthModified;
             eState = EFishState.IDLE;
             score = FishSettings.FishScoreDic[fishComponentReader.Data.Type];
+            RespawnTime = FishSettings.FishRespawnTimeDic[fishComponentReader.Data.Type];
         }
 
         private void Start()
@@ -127,7 +128,6 @@ namespace Fps
                 Amount = score,
                 Owner = modifierId,
             };
-            Debug.Log("送出加分指令");
             scoreCommandSender.SendModifyScoreCommand(modifierId, scoreModifier);
         }
         
