@@ -9,6 +9,7 @@ type HealthModifier {
   fps.Vector3Int applied_location = 3;
   fps.Vector3Int origin = 4;
   EntityId owner = 5;
+  EntityId modifier_id = 6;
 }
 
 type HealthModifiedInfo {

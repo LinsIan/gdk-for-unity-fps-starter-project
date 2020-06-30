@@ -81,6 +81,8 @@ namespace Fps.WorkerConnectors
             // Health
             world.GetOrCreateSystem<ServerHealthModifierSystem>();
             world.GetOrCreateSystem<HealthRegenSystem>();
+
+            // Score
         }
 
         protected override async Task LoadWorld()

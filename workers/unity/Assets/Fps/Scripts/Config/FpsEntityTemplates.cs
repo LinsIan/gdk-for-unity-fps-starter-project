@@ -185,7 +185,7 @@ namespace Fps.Config
                 Pitch = spawnPitch.ToInt1k()
             };
             spawnPosition.y += 3;
-            float MaxHp = FishHealthSettings.FishHealthDic[EFishType.NORMAL];
+            float MaxHp = FishSettings.FishHealthDic[EFishType.NORMAL];
 
             var entityTemplate = new EntityTemplate();
             entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
@@ -193,6 +193,7 @@ namespace Fps.Config
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.NORMAL), WorkerUtils.UnityGameLogic);
 
             entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
 

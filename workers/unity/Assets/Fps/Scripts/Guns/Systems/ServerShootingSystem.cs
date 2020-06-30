@@ -61,6 +61,7 @@ namespace Fps.Guns
                         Origin = shotInfo.HitOrigin,
                         AppliedLocation = shotInfo.HitLocation,
                         Owner = shotInfo.HitEntityId,
+                        ModifierId = shotInfo.ShooterEntityId,
                     }
                 );
                 commandSystem.SendCommand(modifyHealthRequest);

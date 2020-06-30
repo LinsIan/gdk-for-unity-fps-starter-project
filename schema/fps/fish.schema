@@ -1,0 +1,15 @@
+package fps;
+
+enum EFishType
+{
+    NORMAL = 0;
+    SPEED = 1;
+    OCTOPUS = 2;
+}
+
+component FishComponent {
+    id = 2070;
+    
+    EFishType type = 1;
+}
+    

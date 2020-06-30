@@ -16,6 +16,8 @@ namespace Fps
         [Require] private ClientRotationWriter rotationWriter;
         [Require] private HealthComponentReader health;
         [Require] private HealthComponentCommandSender healthCommandSender;
+        [Require] private FishComponentReader fishComponentReader;
+        [Require] private ScoreComponentCommandSender scoreCommandSender;
         [Require] private EntityId entityId;
 
         private const float MovementRadius = 50f;
@@ -27,6 +29,7 @@ namespace Fps
         private NavMeshAgent agent;
         private Bounds worldBounds;
         private Vector3 anchorPoint;
+        private float score;
 
 
         private void OnEnable()
@@ -34,6 +37,7 @@ namespace Fps
             agent = GetComponent<NavMeshAgent>();
             health.OnHealthModifiedEvent += OnHealthModified;
             eState = EFishState.IDLE;
+            score = FishSettings.FishScoreDic[fishComponentReader.Data.Type];
         }
 
         private void Start()
@@ -56,7 +60,6 @@ namespace Fps
             {
                 Swimming();
             }
-            Debug.Log(agent.pathStatus);
         }
 
         private void Swimming()
@@ -106,13 +109,26 @@ namespace Fps
             {
                 eState = EFishState.DEAD;
                 agent.isStopped = true;
+                SendScoreCommand(info.Modifier.ModifierId);
                 StartCoroutine(WaitForRespawn());
+
             }
             else if (eState == EFishState.DEAD)
             {
                 agent.isStopped = false;
                 eState = EFishState.SWIM;
             }
+        }
+
+        private void SendScoreCommand(EntityId modifierId)
+        {
+            var scoreModifier = new ScoreModifier
+            {
+                Amount = score,
+                Owner = modifierId,
+            };
+            Debug.Log("送出加分指令");
+            scoreCommandSender.SendModifyScoreCommand(modifierId, scoreModifier);
         }
         
         private void SetRandomDestination()

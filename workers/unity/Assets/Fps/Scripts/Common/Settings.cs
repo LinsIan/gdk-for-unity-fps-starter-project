@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+//public enum EFishType
+//{
+//    NORMAL,
+//    SPEED,
+//    OCTOPUS
+//}
+
+
+namespace Fps
+{
+    public static class FishSettings
+    {
+        public static Dictionary<EFishType, float> FishHealthDic = new Dictionary<EFishType, float>()
+        {
+            {EFishType.NORMAL, 80 },
+            {EFishType.SPEED, 40 },
+            {EFishType.OCTOPUS, 600 }
+        };
+
+        public static Dictionary<EFishType, float> FishScoreDic = new Dictionary<EFishType, float>()
+        {
+            {EFishType.NORMAL, 50 },
+            {EFishType.SPEED, 100 },
+            {EFishType.OCTOPUS, 1000 }
+        };
+    }
+
+    public static class PlayerSettings
+    {
+        public const float PlayerScore = 150;
+    }
+}
