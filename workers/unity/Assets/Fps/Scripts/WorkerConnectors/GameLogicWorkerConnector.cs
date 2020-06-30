@@ -20,7 +20,6 @@ namespace Fps.WorkerConnectors
         public bool DisableRenderers = true;
         public Bounds Bounds { get; private set; }
 
-
         protected async void Start()
         {
             Application.targetFrameRate = 60;
@@ -83,6 +82,7 @@ namespace Fps.WorkerConnectors
             world.GetOrCreateSystem<HealthRegenSystem>();
 
             // Score
+            world.GetOrCreateSystem<ScoreModifierSystem>();
         }
 
         protected override async Task LoadWorld()

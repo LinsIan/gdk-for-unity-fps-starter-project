@@ -18,6 +18,7 @@ namespace Fps.UI
 
         [Require] private HealthComponentReader healthReader;
         [Require] private GunStateComponentReader gunStateReader;
+        [Require] private ScoreComponentReader scoreReader;
 
         private float currentFocus;
         private InGameScreenManager inGameScreenManager;
@@ -55,6 +56,7 @@ namespace Fps.UI
         {
             healthReader.OnHealthModifiedEvent += OnHealthModified;
             healthReader.OnRespawnEvent += OnRespawn;
+            scoreReader.OnScoreUpdate += OnScoreUpdate;
             gunStateReader.OnIsAimingUpdate += AimingUpdated;
         }
 
@@ -85,6 +87,11 @@ namespace Fps.UI
             var currentHealth = healthReader.Data.Health / healthReader.Data.MaxHealth;
             SetHealthEffect(currentHealth);
             SetHealthBar(currentHealth);
+        }
+
+        private void OnScoreUpdate(float newScore)
+        {
+            Debug.Log("新分數：" + newScore);
         }
 
         private void AimingUpdated(bool isAiming)
