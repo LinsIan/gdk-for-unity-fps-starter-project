@@ -167,6 +167,7 @@ namespace Fps
 
             //重設transform與目標
             var (spawnPosition, spawnYaw, spawnPitch) = Respawning.SpawnPoints.GetRandomSpawnPoint();
+            if(fishComponentReader.Data.Type == EFishType.OCTOPUS){ spawnPosition = new Vector3(5, 0, 5); }
             spawnPosition.y -= 997;
             transform.position = spawnPosition;
             InitialAI();

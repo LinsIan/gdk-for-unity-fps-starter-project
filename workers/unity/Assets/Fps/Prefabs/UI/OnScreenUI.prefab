@@ -1,5 +1,96 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1737430910521519090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6894624150637159232}
+  - component: {fileID: 4769129025424707224}
+  - component: {fileID: 213010605088170937}
+  - component: {fileID: 9163396830199279298}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6894624150637159232
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737430910521519090}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000141, y: 1.0000141, z: 1.0000141}
+  m_Children: []
+  m_Father: {fileID: 4871242725162739437}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1500.3999, y: 1382.0002}
+  m_SizeDelta: {x: 609.2, y: 137.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4769129025424707224
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737430910521519090}
+  m_CullTransparentMesh: 0
+--- !u!114 &213010605088170937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737430910521519090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 100
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score : '
+--- !u!114 &9163396830199279298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737430910521519090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfead70ce98c024193ca00607768c4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 213010605088170937}
 --- !u!1 &2722040838019423836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1270,7 @@ RectTransform:
   m_Children:
   - {fileID: 4871450084833471097}
   - {fileID: 2713151890105405233}
+  - {fileID: 6894624150637159232}
   m_Father: {fileID: 4870972351327799887}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5503,15 +5595,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfcc4340f6ca61643b2833d039bd6cc2, type: 3}
---- !u!1 &4647841878372046309 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2491039826350760906, guid: cfcc4340f6ca61643b2833d039bd6cc2,
-    type: 3}
-  m_PrefabInstance: {fileID: 7066570122406671919}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4871450084833471097 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2417129102620990550, guid: cfcc4340f6ca61643b2833d039bd6cc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7066570122406671919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4647841878372046309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2491039826350760906, guid: cfcc4340f6ca61643b2833d039bd6cc2,
     type: 3}
   m_PrefabInstance: {fileID: 7066570122406671919}
   m_PrefabAsset: {fileID: 0}

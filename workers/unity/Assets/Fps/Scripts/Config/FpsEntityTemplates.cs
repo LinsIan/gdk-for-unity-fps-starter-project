@@ -269,7 +269,7 @@ namespace Fps.Config
                 Yaw = spawnYaw.ToInt1k(),
                 Pitch = spawnPitch.ToInt1k()
             };
-            spawnPosition = new Vector3(0,0,7.5f);
+            spawnPosition = new Vector3(5,3,5);
             float MaxHp = FishSettings.FishHealthDic[EFishType.OCTOPUS];
 
             var entityTemplate = new EntityTemplate();

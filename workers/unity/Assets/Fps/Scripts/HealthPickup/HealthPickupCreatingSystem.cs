@@ -40,14 +40,14 @@ namespace Fps.HealthPickup
             }
 
             //fish測試
-            for(int i=0; i<15;++i)
+            for(int i=0; i<150;++i)
             {
                 var fish = FpsEntityTemplates.NormalFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                 commandSystem.SendCommand(fishrequest);
             }
 
-            for(int i=0; i<5; ++i)
+            for(int i=0; i<50; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);

@@ -24,6 +24,7 @@ namespace Fps.UI
         private InGameScreenManager inGameScreenManager;
         private HealthBarController healthBarController;
         private LowHealthVignette damageVolumeSettings;
+        private ScoreTextController scoreTextController;
 
         private void Awake()
         {
@@ -40,7 +41,7 @@ namespace Fps.UI
             }
 
             healthBarController = inGameScreenManager.GetComponentInChildren<HealthBarController>(true);
-
+            scoreTextController = inGameScreenManager.GetComponentInChildren<ScoreTextController>(true);
 
             postProcessObject = GameObject.FindGameObjectWithTag("PostProcessing");
             if (postProcessObject == null)
@@ -58,6 +59,7 @@ namespace Fps.UI
             healthReader.OnRespawnEvent += OnRespawn;
             scoreReader.OnScoreUpdate += OnScoreUpdate;
             gunStateReader.OnIsAimingUpdate += AimingUpdated;
+            scoreTextController.UpdateScore(scoreReader.Data.Score);
         }
 
         private void OnRespawn(Empty obj)
@@ -91,7 +93,7 @@ namespace Fps.UI
 
         private void OnScoreUpdate(float newScore)
         {
-            Debug.Log("新分數：" + newScore);
+            scoreTextController.UpdateScore(newScore);
         }
 
         private void AimingUpdated(bool isAiming)
