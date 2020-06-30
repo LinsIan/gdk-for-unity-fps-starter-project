@@ -23,7 +23,7 @@ namespace Fps.HealthPickup
         }
 
         protected override void OnUpdate() {}
-
+        //
         public void CreateHealthPickups()
         {
             Vector3 StartPoint = new Vector3();
@@ -40,14 +40,14 @@ namespace Fps.HealthPickup
             }
 
             //fish測試
-            for(int i=0; i<150;++i)
+            for(int i=0; i<15;++i)
             {
                 var fish = FpsEntityTemplates.NormalFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                 commandSystem.SendCommand(fishrequest);
             }
 
-            for(int i=0; i<50; ++i)
+            for(int i=0; i<5; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);

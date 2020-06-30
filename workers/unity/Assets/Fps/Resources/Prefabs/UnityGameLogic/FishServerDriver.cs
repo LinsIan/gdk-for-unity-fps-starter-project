@@ -87,7 +87,7 @@ namespace Fps
         {
             Vector3 pos = transform.position;
 
-            pos.y += 1000;
+            pos.y = positionWriter.Data.Coords.ToUnityVector().y;
 
             positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(pos) });
 
@@ -165,13 +165,13 @@ namespace Fps
                 );
             healthCommandSender.SendModifyHealthCommand(modifyHealthRequest);
 
-            //重設transform與目標
+            //重設座標與目標
             var (spawnPosition, spawnYaw, spawnPitch) = Respawning.SpawnPoints.GetRandomSpawnPoint();
             if(fishComponentReader.Data.Type == EFishType.OCTOPUS){ spawnPosition = new Vector3(5, 0, 5); }
-            spawnPosition.y -= 997;
-            transform.position = spawnPosition;
+            float offsetY = spawnPosition.y - positionWriter.Data.Coords.ToUnityVector().y;
+            transform.position = new Vector3(spawnPosition.x, transform.position.y + offsetY, spawnPosition.z);
+            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
             InitialAI();
-            UpdateTransform();
         }
     }
 }
