@@ -20,6 +20,8 @@ namespace Fps.WorkerConnectors
         public bool DisableRenderers = true;
         public Bounds Bounds { get; private set; }
 
+        private int worldSize;
+
         protected async void Start()
         {
             Application.targetFrameRate = 60;
@@ -38,6 +40,12 @@ namespace Fps.WorkerConnectors
             }
             //動態生成NavMesh
             GetComponent<NavMeshSurface>().BuildNavMesh();
+
+            //Create Healthpickup & fish
+            var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            healthPickupCreatingSystem.WorldScale = worldSize / 4;
+            RandomPoint.Instance.mapScale = healthPickupCreatingSystem.WorldScale;
+            healthPickupCreatingSystem.CreateHealthPickups();
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()
@@ -87,7 +95,7 @@ namespace Fps.WorkerConnectors
 
         protected override async Task LoadWorld()
         {
-            var worldSize = await GetWorldSize();
+            worldSize = await GetWorldSize();
 
             if (worldSize <= 0)
             {
@@ -95,11 +103,6 @@ namespace Fps.WorkerConnectors
             }
 
             LevelInstance = await MapBuilder.GenerateMap(mapTemplate, worldSize, transform, Worker.WorkerType);
-
-            //Create Healthpickup
-            var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
-            healthPickupCreatingSystem.WorldScale = worldSize / 4;
-            healthPickupCreatingSystem.CreateHealthPickups();
         }
 
         public async Task<Bounds> GetWorldBounds()

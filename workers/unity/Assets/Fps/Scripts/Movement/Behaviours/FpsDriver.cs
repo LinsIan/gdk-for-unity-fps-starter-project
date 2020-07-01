@@ -8,6 +8,7 @@ using Fps.UI;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.Subscriptions;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace Fps.Movement
 {
@@ -85,6 +86,8 @@ namespace Fps.Movement
             health.OnRespawnEvent += OnRespawn;
             health.OnHealthModifiedEvent += OnHealthModified;
         }
+
+
 
         private void Update()
         {

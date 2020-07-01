@@ -14,29 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AssemblyConfig:
     ProjectName: beta_california_double_320
-    AssemblyName: fish_assembly
+    AssemblyName: fish_machine_assembly
     ShouldForceUpload: 1
   DeploymentConfigs:
   - ProjectName: beta_california_double_320
-    AssemblyName: fish_assembly
+    AssemblyName: fish_machine_assembly
     Deployment:
       Name: fish_deployment
       SnapshotPath: snapshots/cloud.snapshot
-      LaunchJson: cloud_launch_large.json
+      LaunchJson: cloud_launch_small.json
       Region: 1
       Cluster: 
       DeploymentLocationType: 0
       Tags:
       - dev_login
-    SimulatedPlayerDeploymentConfigs:
-    - Name: fish_deployment_sim1
-      SnapshotPath: snapshots/cloud.snapshot
-      LaunchJson: cloud_launch_large_sim_players.json
-      Region: 1
-      Cluster: 
-      DeploymentLocationType: 0
-      Tags: []
-      TargetDeploymentName: fish_deployment
-      FlagPrefix: sim
-      WorkerType: SimulatedPlayerCoordinator
-      WorkerTypeId: 1
+    SimulatedPlayerDeploymentConfigs: []

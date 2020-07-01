@@ -57,7 +57,7 @@ namespace Fps
 
         private void Update()
         {
-            if(eState == EFishState.SWIM)
+            if (eState == EFishState.SWIM)
             {
                 Swimming();
             }
@@ -166,8 +166,9 @@ namespace Fps
             healthCommandSender.SendModifyHealthCommand(modifyHealthRequest);
 
             //重設座標與目標
-            var (spawnPosition, spawnYaw, spawnPitch) = Respawning.SpawnPoints.GetRandomSpawnPoint();
-            if(fishComponentReader.Data.Type == EFishType.OCTOPUS){ spawnPosition = new Vector3(5, 0, 5); }
+            var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
+            //if(fishComponentReader.Data.Type == EFishType.OCTOPUS){ spawnPosition = new Vector3(5, 0, 5); }
+            spawnPosition.y += 3;
             float offsetY = spawnPosition.y - positionWriter.Data.Coords.ToUnityVector().y;
             transform.position = new Vector3(spawnPosition.x, transform.position.y + offsetY, spawnPosition.z);
             positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });

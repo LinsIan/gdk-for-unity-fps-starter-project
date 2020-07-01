@@ -23,7 +23,7 @@ namespace Fps.HealthPickup
         }
 
         protected override void OnUpdate() {}
-        //
+        
         public void CreateHealthPickups()
         {
             Vector3 StartPoint = new Vector3();

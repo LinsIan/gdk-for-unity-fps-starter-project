@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4877581869204892}
   - component: {fileID: 114219126016241412}
   - component: {fileID: -7065339257977952260}
+  - component: {fileID: 42492759370112341}
   m_Layer: 0
   m_Name: GameLogicWorker
   m_TagString: Untagged
@@ -76,7 +77,21 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.10333333
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 4062dec9f5f863f4297e7d458e0f3eb9, type: 2}
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &42492759370112341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455626031769568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11bb51941adc52488ba7672ddc514a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseRadius: 150
+  mapScale: 1
 --- !u!1 &5331897553443245636
 GameObject:
   m_ObjectHideFlags: 0

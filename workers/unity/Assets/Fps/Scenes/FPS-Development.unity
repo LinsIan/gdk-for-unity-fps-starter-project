@@ -651,6 +651,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7065339257977952260, guid: 75d29a39b8a626e42bdfc2e1d7af6746,
+        type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1455626031769568, guid: 75d29a39b8a626e42bdfc2e1d7af6746, type: 3}
       propertyPath: m_Name
       value: GameLogicWorker

@@ -1,173 +1,506 @@
 fileFormatVersion: 2
 guid: 20578a46fd7171b4e91c533b402e8898
-timeCreated: 1585633952
-licenseType: Free
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Bn(w)_Box_001
-    100002: Bn(w)_Box_002
-    100004: Bn(w)_Ear_L
-    100006: Bn(w)_Ear_R
-    100008: Bn(w)_Eyelid_Ldn
-    100010: Bn(w)_Eyelid_Lup
-    100012: Bn(w)_Eyelid_Rdn
-    100014: Bn(w)_Eyelid_Rup
-    100016: Bn(w)_Head_001
-    100018: Bn(w)_Head_002
-    100020: Bn(w)_tentacle_L1_001
-    100022: Bn(w)_tentacle_L1_002
-    100024: Bn(w)_tentacle_L1_003
-    100026: Bn(w)_tentacle_L1_004
-    100028: Bn(w)_tentacle_L1_005
-    100030: Bn(w)_tentacle_L1_006
-    100032: Bn(w)_tentacle_L2_001
-    100034: Bn(w)_tentacle_L2_002
-    100036: Bn(w)_tentacle_L2_003
-    100038: Bn(w)_tentacle_L2_004
-    100040: Bn(w)_tentacle_L2_005
-    100042: Bn(w)_tentacle_L2_006
-    100044: Bn(w)_tentacle_L3_001
-    100046: Bn(w)_tentacle_L3_002
-    100048: Bn(w)_tentacle_L3_003
-    100050: Bn(w)_tentacle_L3_004
-    100052: Bn(w)_tentacle_L3_005
-    100054: Bn(w)_tentacle_L3_006
-    100056: Bn(w)_tentacle_L4_001
-    100058: Bn(w)_tentacle_L4_002
-    100060: Bn(w)_tentacle_L4_003
-    100062: Bn(w)_tentacle_L4_004
-    100064: Bn(w)_tentacle_L4_005
-    100066: Bn(w)_tentacle_L4_006
-    100068: Bn(w)_tentacle_Lup_01
-    100070: Bn(w)_tentacle_Lup_02
-    100072: Bn(w)_tentacle_R1_001
-    100074: Bn(w)_tentacle_R1_002
-    100076: Bn(w)_tentacle_R1_003
-    100078: Bn(w)_tentacle_R1_004
-    100080: Bn(w)_tentacle_R1_005
-    100082: Bn(w)_tentacle_R1_006
-    100084: Bn(w)_tentacle_R2_001
-    100086: Bn(w)_tentacle_R2_002
-    100088: Bn(w)_tentacle_R2_003
-    100090: Bn(w)_tentacle_R2_004
-    100092: Bn(w)_tentacle_R2_005
-    100094: Bn(w)_tentacle_R2_006
-    100096: Bn(w)_tentacle_R3_001
-    100098: Bn(w)_tentacle_R3_002
-    100100: Bn(w)_tentacle_R3_003
-    100102: Bn(w)_tentacle_R3_004
-    100104: Bn(w)_tentacle_R3_005
-    100106: Bn(w)_tentacle_R3_006
-    100108: Bn(w)_tentacle_R4_001
-    100110: Bn(w)_tentacle_R4_002
-    100112: Bn(w)_tentacle_R4_003
-    100114: Bn(w)_tentacle_R4_004
-    100116: Bn(w)_tentacle_R4_005
-    100118: Bn(w)_tentacle_R4_006
-    100120: Bn(w)_tentacle_Rup_01
-    100122: Bn(w)_tentacle_Rup_02
-    100124: //RootNode
-    100126: Mesh_FP40001_Body
-    100128: Mesh_FP40001_Box
-    100130: Mesh_FP40001_Hat
-    100132: Root_Box
-    100134: Root_Hat
-    100136: Root_Octopus
-    400000: Bn(w)_Box_001
-    400002: Bn(w)_Box_002
-    400004: Bn(w)_Ear_L
-    400006: Bn(w)_Ear_R
-    400008: Bn(w)_Eyelid_Ldn
-    400010: Bn(w)_Eyelid_Lup
-    400012: Bn(w)_Eyelid_Rdn
-    400014: Bn(w)_Eyelid_Rup
-    400016: Bn(w)_Head_001
-    400018: Bn(w)_Head_002
-    400020: Bn(w)_tentacle_L1_001
-    400022: Bn(w)_tentacle_L1_002
-    400024: Bn(w)_tentacle_L1_003
-    400026: Bn(w)_tentacle_L1_004
-    400028: Bn(w)_tentacle_L1_005
-    400030: Bn(w)_tentacle_L1_006
-    400032: Bn(w)_tentacle_L2_001
-    400034: Bn(w)_tentacle_L2_002
-    400036: Bn(w)_tentacle_L2_003
-    400038: Bn(w)_tentacle_L2_004
-    400040: Bn(w)_tentacle_L2_005
-    400042: Bn(w)_tentacle_L2_006
-    400044: Bn(w)_tentacle_L3_001
-    400046: Bn(w)_tentacle_L3_002
-    400048: Bn(w)_tentacle_L3_003
-    400050: Bn(w)_tentacle_L3_004
-    400052: Bn(w)_tentacle_L3_005
-    400054: Bn(w)_tentacle_L3_006
-    400056: Bn(w)_tentacle_L4_001
-    400058: Bn(w)_tentacle_L4_002
-    400060: Bn(w)_tentacle_L4_003
-    400062: Bn(w)_tentacle_L4_004
-    400064: Bn(w)_tentacle_L4_005
-    400066: Bn(w)_tentacle_L4_006
-    400068: Bn(w)_tentacle_Lup_01
-    400070: Bn(w)_tentacle_Lup_02
-    400072: Bn(w)_tentacle_R1_001
-    400074: Bn(w)_tentacle_R1_002
-    400076: Bn(w)_tentacle_R1_003
-    400078: Bn(w)_tentacle_R1_004
-    400080: Bn(w)_tentacle_R1_005
-    400082: Bn(w)_tentacle_R1_006
-    400084: Bn(w)_tentacle_R2_001
-    400086: Bn(w)_tentacle_R2_002
-    400088: Bn(w)_tentacle_R2_003
-    400090: Bn(w)_tentacle_R2_004
-    400092: Bn(w)_tentacle_R2_005
-    400094: Bn(w)_tentacle_R2_006
-    400096: Bn(w)_tentacle_R3_001
-    400098: Bn(w)_tentacle_R3_002
-    400100: Bn(w)_tentacle_R3_003
-    400102: Bn(w)_tentacle_R3_004
-    400104: Bn(w)_tentacle_R3_005
-    400106: Bn(w)_tentacle_R3_006
-    400108: Bn(w)_tentacle_R4_001
-    400110: Bn(w)_tentacle_R4_002
-    400112: Bn(w)_tentacle_R4_003
-    400114: Bn(w)_tentacle_R4_004
-    400116: Bn(w)_tentacle_R4_005
-    400118: Bn(w)_tentacle_R4_006
-    400120: Bn(w)_tentacle_Rup_01
-    400122: Bn(w)_tentacle_Rup_02
-    400124: //RootNode
-    400126: Mesh_FP40001_Body
-    400128: Mesh_FP40001_Box
-    400130: Mesh_FP40001_Hat
-    400132: Root_Box
-    400134: Root_Hat
-    400136: Root_Octopus
-    4300000: Mesh_FP40001_Body
-    4300002: Mesh_FP40001_Hat
-    4300004: Mesh_FP40001_Box
-    7400000: Swin01
-    7400002: TurnLeft
-    7400004: TurnRight
-    7400006: Hit
-    7400008: SpecialSwin01
-    7400010: Die
-    7400012: AttackRight01
-    7400014: AttackRight02
-    7400016: AttackRight03
-    7400018: AttackLeft01
-    7400020: AttackLeft02
-    7400022: AttackLeft03
-    7400024: SpecialAttack01
-    7400026: SpecialAttack02
-    9500000: //RootNode
-    13700000: Mesh_FP40001_Body
-    13700002: Mesh_FP40001_Box
-    13700004: Mesh_FP40001_Hat
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bn(w)_Box_001
+  - first:
+      1: 100002
+    second: Bn(w)_Box_002
+  - first:
+      1: 100004
+    second: Bn(w)_Ear_L
+  - first:
+      1: 100006
+    second: Bn(w)_Ear_R
+  - first:
+      1: 100008
+    second: Bn(w)_Eyelid_Ldn
+  - first:
+      1: 100010
+    second: Bn(w)_Eyelid_Lup
+  - first:
+      1: 100012
+    second: Bn(w)_Eyelid_Rdn
+  - first:
+      1: 100014
+    second: Bn(w)_Eyelid_Rup
+  - first:
+      1: 100016
+    second: Bn(w)_Head_001
+  - first:
+      1: 100018
+    second: Bn(w)_Head_002
+  - first:
+      1: 100020
+    second: Bn(w)_tentacle_L1_001
+  - first:
+      1: 100022
+    second: Bn(w)_tentacle_L1_002
+  - first:
+      1: 100024
+    second: Bn(w)_tentacle_L1_003
+  - first:
+      1: 100026
+    second: Bn(w)_tentacle_L1_004
+  - first:
+      1: 100028
+    second: Bn(w)_tentacle_L1_005
+  - first:
+      1: 100030
+    second: Bn(w)_tentacle_L1_006
+  - first:
+      1: 100032
+    second: Bn(w)_tentacle_L2_001
+  - first:
+      1: 100034
+    second: Bn(w)_tentacle_L2_002
+  - first:
+      1: 100036
+    second: Bn(w)_tentacle_L2_003
+  - first:
+      1: 100038
+    second: Bn(w)_tentacle_L2_004
+  - first:
+      1: 100040
+    second: Bn(w)_tentacle_L2_005
+  - first:
+      1: 100042
+    second: Bn(w)_tentacle_L2_006
+  - first:
+      1: 100044
+    second: Bn(w)_tentacle_L3_001
+  - first:
+      1: 100046
+    second: Bn(w)_tentacle_L3_002
+  - first:
+      1: 100048
+    second: Bn(w)_tentacle_L3_003
+  - first:
+      1: 100050
+    second: Bn(w)_tentacle_L3_004
+  - first:
+      1: 100052
+    second: Bn(w)_tentacle_L3_005
+  - first:
+      1: 100054
+    second: Bn(w)_tentacle_L3_006
+  - first:
+      1: 100056
+    second: Bn(w)_tentacle_L4_001
+  - first:
+      1: 100058
+    second: Bn(w)_tentacle_L4_002
+  - first:
+      1: 100060
+    second: Bn(w)_tentacle_L4_003
+  - first:
+      1: 100062
+    second: Bn(w)_tentacle_L4_004
+  - first:
+      1: 100064
+    second: Bn(w)_tentacle_L4_005
+  - first:
+      1: 100066
+    second: Bn(w)_tentacle_L4_006
+  - first:
+      1: 100068
+    second: Bn(w)_tentacle_Lup_01
+  - first:
+      1: 100070
+    second: Bn(w)_tentacle_Lup_02
+  - first:
+      1: 100072
+    second: Bn(w)_tentacle_R1_001
+  - first:
+      1: 100074
+    second: Bn(w)_tentacle_R1_002
+  - first:
+      1: 100076
+    second: Bn(w)_tentacle_R1_003
+  - first:
+      1: 100078
+    second: Bn(w)_tentacle_R1_004
+  - first:
+      1: 100080
+    second: Bn(w)_tentacle_R1_005
+  - first:
+      1: 100082
+    second: Bn(w)_tentacle_R1_006
+  - first:
+      1: 100084
+    second: Bn(w)_tentacle_R2_001
+  - first:
+      1: 100086
+    second: Bn(w)_tentacle_R2_002
+  - first:
+      1: 100088
+    second: Bn(w)_tentacle_R2_003
+  - first:
+      1: 100090
+    second: Bn(w)_tentacle_R2_004
+  - first:
+      1: 100092
+    second: Bn(w)_tentacle_R2_005
+  - first:
+      1: 100094
+    second: Bn(w)_tentacle_R2_006
+  - first:
+      1: 100096
+    second: Bn(w)_tentacle_R3_001
+  - first:
+      1: 100098
+    second: Bn(w)_tentacle_R3_002
+  - first:
+      1: 100100
+    second: Bn(w)_tentacle_R3_003
+  - first:
+      1: 100102
+    second: Bn(w)_tentacle_R3_004
+  - first:
+      1: 100104
+    second: Bn(w)_tentacle_R3_005
+  - first:
+      1: 100106
+    second: Bn(w)_tentacle_R3_006
+  - first:
+      1: 100108
+    second: Bn(w)_tentacle_R4_001
+  - first:
+      1: 100110
+    second: Bn(w)_tentacle_R4_002
+  - first:
+      1: 100112
+    second: Bn(w)_tentacle_R4_003
+  - first:
+      1: 100114
+    second: Bn(w)_tentacle_R4_004
+  - first:
+      1: 100116
+    second: Bn(w)_tentacle_R4_005
+  - first:
+      1: 100118
+    second: Bn(w)_tentacle_R4_006
+  - first:
+      1: 100120
+    second: Bn(w)_tentacle_Rup_01
+  - first:
+      1: 100122
+    second: Bn(w)_tentacle_Rup_02
+  - first:
+      1: 100124
+    second: //RootNode
+  - first:
+      1: 100126
+    second: Mesh_FP40001_Body
+  - first:
+      1: 100128
+    second: Mesh_FP40001_Box
+  - first:
+      1: 100130
+    second: Mesh_FP40001_Hat
+  - first:
+      1: 100132
+    second: Root_Box
+  - first:
+      1: 100134
+    second: Root_Hat
+  - first:
+      1: 100136
+    second: Root_Octopus
+  - first:
+      4: 400000
+    second: Bn(w)_Box_001
+  - first:
+      4: 400002
+    second: Bn(w)_Box_002
+  - first:
+      4: 400004
+    second: Bn(w)_Ear_L
+  - first:
+      4: 400006
+    second: Bn(w)_Ear_R
+  - first:
+      4: 400008
+    second: Bn(w)_Eyelid_Ldn
+  - first:
+      4: 400010
+    second: Bn(w)_Eyelid_Lup
+  - first:
+      4: 400012
+    second: Bn(w)_Eyelid_Rdn
+  - first:
+      4: 400014
+    second: Bn(w)_Eyelid_Rup
+  - first:
+      4: 400016
+    second: Bn(w)_Head_001
+  - first:
+      4: 400018
+    second: Bn(w)_Head_002
+  - first:
+      4: 400020
+    second: Bn(w)_tentacle_L1_001
+  - first:
+      4: 400022
+    second: Bn(w)_tentacle_L1_002
+  - first:
+      4: 400024
+    second: Bn(w)_tentacle_L1_003
+  - first:
+      4: 400026
+    second: Bn(w)_tentacle_L1_004
+  - first:
+      4: 400028
+    second: Bn(w)_tentacle_L1_005
+  - first:
+      4: 400030
+    second: Bn(w)_tentacle_L1_006
+  - first:
+      4: 400032
+    second: Bn(w)_tentacle_L2_001
+  - first:
+      4: 400034
+    second: Bn(w)_tentacle_L2_002
+  - first:
+      4: 400036
+    second: Bn(w)_tentacle_L2_003
+  - first:
+      4: 400038
+    second: Bn(w)_tentacle_L2_004
+  - first:
+      4: 400040
+    second: Bn(w)_tentacle_L2_005
+  - first:
+      4: 400042
+    second: Bn(w)_tentacle_L2_006
+  - first:
+      4: 400044
+    second: Bn(w)_tentacle_L3_001
+  - first:
+      4: 400046
+    second: Bn(w)_tentacle_L3_002
+  - first:
+      4: 400048
+    second: Bn(w)_tentacle_L3_003
+  - first:
+      4: 400050
+    second: Bn(w)_tentacle_L3_004
+  - first:
+      4: 400052
+    second: Bn(w)_tentacle_L3_005
+  - first:
+      4: 400054
+    second: Bn(w)_tentacle_L3_006
+  - first:
+      4: 400056
+    second: Bn(w)_tentacle_L4_001
+  - first:
+      4: 400058
+    second: Bn(w)_tentacle_L4_002
+  - first:
+      4: 400060
+    second: Bn(w)_tentacle_L4_003
+  - first:
+      4: 400062
+    second: Bn(w)_tentacle_L4_004
+  - first:
+      4: 400064
+    second: Bn(w)_tentacle_L4_005
+  - first:
+      4: 400066
+    second: Bn(w)_tentacle_L4_006
+  - first:
+      4: 400068
+    second: Bn(w)_tentacle_Lup_01
+  - first:
+      4: 400070
+    second: Bn(w)_tentacle_Lup_02
+  - first:
+      4: 400072
+    second: Bn(w)_tentacle_R1_001
+  - first:
+      4: 400074
+    second: Bn(w)_tentacle_R1_002
+  - first:
+      4: 400076
+    second: Bn(w)_tentacle_R1_003
+  - first:
+      4: 400078
+    second: Bn(w)_tentacle_R1_004
+  - first:
+      4: 400080
+    second: Bn(w)_tentacle_R1_005
+  - first:
+      4: 400082
+    second: Bn(w)_tentacle_R1_006
+  - first:
+      4: 400084
+    second: Bn(w)_tentacle_R2_001
+  - first:
+      4: 400086
+    second: Bn(w)_tentacle_R2_002
+  - first:
+      4: 400088
+    second: Bn(w)_tentacle_R2_003
+  - first:
+      4: 400090
+    second: Bn(w)_tentacle_R2_004
+  - first:
+      4: 400092
+    second: Bn(w)_tentacle_R2_005
+  - first:
+      4: 400094
+    second: Bn(w)_tentacle_R2_006
+  - first:
+      4: 400096
+    second: Bn(w)_tentacle_R3_001
+  - first:
+      4: 400098
+    second: Bn(w)_tentacle_R3_002
+  - first:
+      4: 400100
+    second: Bn(w)_tentacle_R3_003
+  - first:
+      4: 400102
+    second: Bn(w)_tentacle_R3_004
+  - first:
+      4: 400104
+    second: Bn(w)_tentacle_R3_005
+  - first:
+      4: 400106
+    second: Bn(w)_tentacle_R3_006
+  - first:
+      4: 400108
+    second: Bn(w)_tentacle_R4_001
+  - first:
+      4: 400110
+    second: Bn(w)_tentacle_R4_002
+  - first:
+      4: 400112
+    second: Bn(w)_tentacle_R4_003
+  - first:
+      4: 400114
+    second: Bn(w)_tentacle_R4_004
+  - first:
+      4: 400116
+    second: Bn(w)_tentacle_R4_005
+  - first:
+      4: 400118
+    second: Bn(w)_tentacle_R4_006
+  - first:
+      4: 400120
+    second: Bn(w)_tentacle_Rup_01
+  - first:
+      4: 400122
+    second: Bn(w)_tentacle_Rup_02
+  - first:
+      4: 400124
+    second: //RootNode
+  - first:
+      4: 400126
+    second: Mesh_FP40001_Body
+  - first:
+      4: 400128
+    second: Mesh_FP40001_Box
+  - first:
+      4: 400130
+    second: Mesh_FP40001_Hat
+  - first:
+      4: 400132
+    second: Root_Box
+  - first:
+      4: 400134
+    second: Root_Hat
+  - first:
+      4: 400136
+    second: Root_Octopus
+  - first:
+      43: 4300000
+    second: Mesh_FP40001_Body
+  - first:
+      43: 4300002
+    second: Mesh_FP40001_Hat
+  - first:
+      43: 4300004
+    second: Mesh_FP40001_Box
+  - first:
+      74: 7400000
+    second: Swim
+  - first:
+      74: 7400002
+    second: TurnLeft
+  - first:
+      74: 7400004
+    second: TurnRight
+  - first:
+      74: 7400006
+    second: Hit
+  - first:
+      74: 7400008
+    second: SpecialSwin01
+  - first:
+      74: 7400010
+    second: Die
+  - first:
+      74: 7400012
+    second: AttackRight01
+  - first:
+      74: 7400014
+    second: AttackRight02
+  - first:
+      74: 7400016
+    second: AttackRight03
+  - first:
+      74: 7400018
+    second: AttackLeft01
+  - first:
+      74: 7400020
+    second: AttackLeft02
+  - first:
+      74: 7400022
+    second: AttackLeft03
+  - first:
+      74: 7400024
+    second: SpecialAttack01
+  - first:
+      74: 7400026
+    second: SpecialAttack02
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Mesh_FP40001_Body
+  - first:
+      137: 13700002
+    second: Mesh_FP40001_Box
+  - first:
+      137: 13700004
+    second: Mesh_FP40001_Hat
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_FP40001_BOX
+    second: {fileID: 2100000, guid: ee1b027c2bca1bd449e630dd9075d224, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_FP40001_Hat
+    second: {fileID: 2100000, guid: 631e798988830124aa5fb6a0bce3f8ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_FP40001_body
+    second: {fileID: 2100000, guid: 9397c0663e4098448b964cff4ea104ed, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -180,16 +513,20 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Swin01
+      name: Swim
       takeName: ANI_FP40001_Move01
+      internalID: 0
       firstFrame: 10
       lastFrame: 70
       wrapMode: 0
@@ -356,6 +693,7 @@ ModelImporter:
     - serializedVersion: 16
       name: TurnLeft
       takeName: ANI_FP40001_TurnLeft
+      internalID: 0
       firstFrame: 700
       lastFrame: 750
       wrapMode: 0
@@ -522,6 +860,7 @@ ModelImporter:
     - serializedVersion: 16
       name: TurnRight
       takeName: ANI_FP40001_TurnRight
+      internalID: 0
       firstFrame: 750
       lastFrame: 800
       wrapMode: 0
@@ -688,6 +1027,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Hit
       takeName: ANI_FP40001_Hit
+      internalID: 0
       firstFrame: 890
       lastFrame: 920
       wrapMode: 0
@@ -854,6 +1194,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SpecialSwin01
       takeName: ANI_FP40001_Move_Sp_01
+      internalID: 0
       firstFrame: 990
       lastFrame: 1110
       wrapMode: 0
@@ -1020,6 +1361,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Die
       takeName: ANI_FP40001_Die
+      internalID: 0
       firstFrame: 1490
       lastFrame: 1550
       wrapMode: 0
@@ -1186,6 +1528,7 @@ ModelImporter:
     - serializedVersion: 16
       name: AttackRight01
       takeName: ANI_FP40001_Attack_Right_01
+      internalID: 0
       firstFrame: 100
       lastFrame: 168
       wrapMode: 0
@@ -1352,6 +1695,7 @@ ModelImporter:
     - serializedVersion: 16
       name: AttackRight02
       takeName: ANI_FP40001_Attack_Right_02
+      internalID: 0
       firstFrame: 190
       lastFrame: 258
       wrapMode: 0
@@ -1518,6 +1862,7 @@ ModelImporter:
     - serializedVersion: 16
       name: AttackRight03
       takeName: ANI_FP40001_Attack_Right_03
+      internalID: 0
       firstFrame: 290
       lastFrame: 358
       wrapMode: 0
@@ -1684,6 +2029,7 @@ ModelImporter:
     - serializedVersion: 16
       name: AttackLeft01
       takeName: ANI_FP40001_Attack_Left_01
+      internalID: 0
       firstFrame: 390
       lastFrame: 458
       wrapMode: 0
@@ -1850,6 +2196,7 @@ ModelImporter:
     - serializedVersion: 16
       name: AttackLeft02
       takeName: ANI_FP40001_Attack_Left_02
+      internalID: 0
       firstFrame: 490
       lastFrame: 558
       wrapMode: 0
@@ -2016,6 +2363,7 @@ ModelImporter:
     - serializedVersion: 16
       name: AttackLeft03
       takeName: ANI_FP40001_Attack_Left_03
+      internalID: 0
       firstFrame: 590
       lastFrame: 658
       wrapMode: 0
@@ -2182,6 +2530,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SpecialAttack01
       takeName: ANI_FP40001_Attack_Sp_01
+      internalID: 0
       firstFrame: 1190
       lastFrame: 1250
       wrapMode: 0
@@ -2348,6 +2697,7 @@ ModelImporter:
     - serializedVersion: 16
       name: SpecialAttack02
       takeName: ANI_FP40001_Attack_Sp_02
+      internalID: 0
       firstFrame: 1290
       lastFrame: 1411
       wrapMode: 0
@@ -2517,13 +2867,23 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -2533,10 +2893,14 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -2546,14 +2910,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

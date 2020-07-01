@@ -6,8 +6,8 @@
       "snapshotWritePeriodSeconds": 0
     },
     "dimensions": {
-      "xMeters": 1800,
-      "zMeters": 1800
+      "xMeters": 300,
+      "zMeters": 300
     },
     "legacy_flags": [
       {

@@ -187,11 +187,11 @@ namespace Fps.Config
         public static EntityTemplate NormalFish()
         {
             //資料和讀寫權限設定
-            var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
             var rotationUpdate = new RotationUpdate
             {
-                Yaw = spawnYaw.ToInt1k(),
-                Pitch = spawnPitch.ToInt1k()
+                Yaw = 0f.ToInt1k(),
+                Pitch = 0f.ToInt1k()
             };
             spawnPosition.y += 3;
             float MaxHp = FishSettings.FishHealthDic[EFishType.NORMAL];
@@ -225,11 +225,11 @@ namespace Fps.Config
         public static EntityTemplate SpeedFish()
         {
             //資料和讀寫權限設定
-            var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
             var rotationUpdate = new RotationUpdate
             {
-                Yaw = spawnYaw.ToInt1k(),
-                Pitch = spawnPitch.ToInt1k()
+                Yaw = 0f.ToInt1k(),
+                Pitch = 0f.ToInt1k()
             };
             spawnPosition.y += 3;
             float MaxHp = FishSettings.FishHealthDic[EFishType.SPEED];
@@ -263,13 +263,14 @@ namespace Fps.Config
         public static EntityTemplate Octopus()
         {
             //資料和讀寫權限設定
-            var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
             var rotationUpdate = new RotationUpdate
             {
-                Yaw = spawnYaw.ToInt1k(),
-                Pitch = spawnPitch.ToInt1k()
+                Yaw = 0f.ToInt1k(),
+                Pitch = 0f.ToInt1k()
             };
-            spawnPosition = new Vector3(5,3,5);
+            spawnPosition.y += 3;
+
             float MaxHp = FishSettings.FishHealthDic[EFishType.OCTOPUS];
 
             var entityTemplate = new EntityTemplate();
