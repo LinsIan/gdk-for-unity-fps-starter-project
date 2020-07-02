@@ -30,9 +30,20 @@ namespace Fps.Guns
 
             var gunDataForEntity = GetComponentDataFromEntity<GunComponent.Component>();
 
+            EntityQuery query = GetEntityQuery(
+            ComponentType.ReadOnly<SpatialEntityId>(),
+            ComponentType.ReadWrite<GunComponent.Component>(),
+            ComponentType.ReadOnly<GunComponent.HasAuthority>()
+        );
+            Entities.With(query).ForEach((ref GunComponent.Component gun) =>
+            {
+                //有權限的list
+            });
+
             for (var i = 0; i < events.Count; ++i)
             {
                 ref readonly var shotEvent = ref events[i];
+                
                 var shotInfo = shotEvent.Event.Payload;
                 if (!shotInfo.HitSomething || !shotInfo.HitEntityId.IsValid() || !shotInfo.ShooterEntityId.IsValid())
                 {
@@ -40,7 +51,7 @@ namespace Fps.Guns
                 }
 
                 var shooterSpatialID = shotInfo.ShooterEntityId;
-
+                
                 if (!workerSystem.TryGetEntity(shooterSpatialID, out var shooterEntity))
                 {
                     continue;
@@ -49,8 +60,9 @@ namespace Fps.Guns
                 {
                     continue;
                 }
-
+                
                 var gunComponent = gunDataForEntity[shooterEntity];
+
                 var damage = GunDictionary.Get(gunComponent.GunId).ShotDamage;
 
                 var modifyHealthRequest = new HealthComponent.ModifyHealth.Request(
