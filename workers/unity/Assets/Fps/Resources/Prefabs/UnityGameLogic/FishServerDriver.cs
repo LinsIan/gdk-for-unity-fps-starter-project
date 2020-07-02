@@ -64,6 +64,7 @@ namespace Fps
             {
                 Swimming();
             }
+            UpdateTransform();
         }
 
         private void Swimming()
@@ -80,10 +81,7 @@ namespace Fps
             {
                 SetRandomDestination();
             }
-            else
-            {
-                UpdateTransform();
-            }
+
         }
 
         private void UpdateTransform()
