@@ -1,0 +1,14 @@
+package fps;
+
+import "improbable/gdk/core/common.schema";
+
+type LogMessage
+{
+    string message = 1;
+}
+
+component LogComponent {
+   id = 2080;
+   
+   command improbable.gdk.core.Empty debug_log(LogMessage);
+}

@@ -29,7 +29,7 @@ namespace Fps.Config
 
         public static EntityTemplate Player(EntityId entityId, string workerId, byte[] args)
         {
-            var client = EntityTemplate.GetWorkerAccessAttribute(workerId);
+            var client = EntityTemplate.GetWorkerAccessAttribute(workerId); 
 
             var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
 
@@ -79,6 +79,7 @@ namespace Fps.Config
             template.AddComponent(healthComponent, WorkerUtils.UnityGameLogic);
             template.AddComponent(healthRegenComponent, WorkerUtils.UnityGameLogic);
             template.AddComponent(new ScoreComponent.Snapshot { Score = 0 }, WorkerUtils.UnityGameLogic);
+            template.AddComponent(new LogComponent.Snapshot(), client);
 
             PlayerLifecycleHelper.AddPlayerLifecycleComponents(template, workerId, WorkerUtils.UnityGameLogic);
 
@@ -93,7 +94,7 @@ namespace Fps.Config
             var clientSelfInterest = InterestQuery.Query(Constraint.EntityId(entityId)).FilterResults(new[]
             {
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
-                ServerMovement.ComponentId, HealthComponent.ComponentId, GunComponent.ComponentId
+                ServerMovement.ComponentId, HealthComponent.ComponentId, GunComponent.ComponentId,
             });
 
             // ClientRotation is used for rendering other players.

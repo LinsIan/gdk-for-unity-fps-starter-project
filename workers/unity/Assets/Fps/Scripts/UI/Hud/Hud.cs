@@ -19,12 +19,19 @@ namespace Fps.UI
         [Require] private HealthComponentReader healthReader;
         [Require] private GunStateComponentReader gunStateReader;
         [Require] private ScoreComponentReader scoreReader;
+        [Require] private LogComponentCommandReceiver logReceiver;
 
         private float currentFocus;
         private InGameScreenManager inGameScreenManager;
         private HealthBarController healthBarController;
         private LowHealthVignette damageVolumeSettings;
         private ScoreTextController scoreTextController;
+
+
+        private void OnReceiveLog(LogComponent.DebugLog.ReceivedRequest message)
+        {
+            scoreTextController.Log(message.Payload.Message);
+        }
 
         private void Awake()
         {
@@ -60,6 +67,7 @@ namespace Fps.UI
             scoreReader.OnScoreUpdate += OnScoreUpdate;
             gunStateReader.OnIsAimingUpdate += AimingUpdated;
             scoreTextController.UpdateScore(scoreReader.Data.Score);
+            logReceiver.OnDebugLogRequestReceived += OnReceiveLog;
         }
 
         private void OnRespawn(Empty obj)

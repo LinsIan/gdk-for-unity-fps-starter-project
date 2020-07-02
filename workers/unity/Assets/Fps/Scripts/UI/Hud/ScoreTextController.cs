@@ -11,4 +11,9 @@ public class ScoreTextController : MonoBehaviour
     {
         scoreText.text = "Score: "+ score.ToString();
     }
+
+    public void Log(string message)
+    {
+        scoreText.text += " " + message;
+    }
 }
