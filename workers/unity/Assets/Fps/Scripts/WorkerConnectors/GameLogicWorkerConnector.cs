@@ -21,6 +21,7 @@ namespace Fps.WorkerConnectors
         public Bounds Bounds { get; private set; }
 
         private int worldSize;
+        NavMeshSurface navMeshSurface;
 
         protected async void Start()
         {
@@ -39,7 +40,9 @@ namespace Fps.WorkerConnectors
                 }
             }
             //動態生成NavMesh
-            GetComponent<NavMeshSurface>().BuildNavMesh();
+            navMeshSurface = GetComponent<NavMeshSurface>();
+            navMeshSurface.BuildNavMesh();
+            
 
             //Create Healthpickup & fish
             var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
@@ -80,7 +83,7 @@ namespace Fps.WorkerConnectors
             GameObjectCreationHelper.EnableStandardGameObjectCreation(world);
 
             // Shooting
-            world.GetOrCreateSystem<ServerShootingSystem>();
+            var shootingsystem = world.GetOrCreateSystem<ServerShootingSystem>();
 
             // Metrics
             world.GetOrCreateSystem<MetricSendSystem>();

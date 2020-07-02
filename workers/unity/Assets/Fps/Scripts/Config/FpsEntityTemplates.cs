@@ -194,7 +194,7 @@ namespace Fps.Config
                 Yaw = 0f.ToInt1k(),
                 Pitch = 0f.ToInt1k()
             };
-            spawnPosition.y += 3;
+            //spawnPosition.y += 3;
             float MaxHp = FishSettings.FishHealthDic[EFishType.NORMAL];
 
             var entityTemplate = new EntityTemplate();
@@ -232,7 +232,7 @@ namespace Fps.Config
                 Yaw = 0f.ToInt1k(),
                 Pitch = 0f.ToInt1k()
             };
-            spawnPosition.y += 3;
+            //spawnPosition.y += 3;
             float MaxHp = FishSettings.FishHealthDic[EFishType.SPEED];
 
             var entityTemplate = new EntityTemplate();

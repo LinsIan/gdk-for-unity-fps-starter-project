@@ -1,5 +1,6 @@
 using Unity.Entities;
 using UnityEngine;
+using System.Collections;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.Core.Commands;
 using Fps.Config;
@@ -40,14 +41,14 @@ namespace Fps.HealthPickup
             }
 
             //fish測試
-            for(int i=0; i<15;++i)
+            for(int i=0; i<5;++i)
             {
                 var fish = FpsEntityTemplates.NormalFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                 commandSystem.SendCommand(fishrequest);
             }
 
-            for(int i=0; i<5; ++i)
+            for(int i=0; i<2; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
