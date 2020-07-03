@@ -10,25 +10,25 @@ namespace Fps
     public class PlayerHealthComponent : MonoBehaviour
     {
         [Require] private HealthComponentReader healthComponentReader;
-        //[Require] private EntityId entityId;
-        //[Require] private LogComponentCommandSender commandSender;
+        [Require] private EntityId entityId;
+        [Require] private LogComponentCommandSender commandSender;
 
         public bool IsHealthy()
         {
             if (healthComponentReader == null) return false;
             return (healthComponentReader.Data.Health >= healthComponentReader.Data.MaxHealth);
         }
-
-        //float timer = 0;
-        //private void Update()
-        //{ 
-        //    timer += Time.deltaTime;
-        //    if(timer >= 3)
-        //    {
-        //        timer = 0;
-        //        string message = "Obj:" + gameObject.activeSelf + " ";
-        //        commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = message }));
-        //    }
-        //}
+        
+        float timer = 0;
+        private void Update()
+        {
+            timer += Time.deltaTime;
+            if(timer >= 3)
+            {
+                timer = 0;
+                string message = "pos:" + transform.position + " ";
+                commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = message }));
+            }
+        }
     }
 }

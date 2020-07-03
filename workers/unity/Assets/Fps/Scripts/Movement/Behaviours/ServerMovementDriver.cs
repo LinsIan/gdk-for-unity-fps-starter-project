@@ -42,6 +42,12 @@ namespace Fps.Movement
             client.OnLatestUpdate += OnClientUpdate;
         }
 
+        //重要：在交出寫入權的時候要清空update事件
+        private void OnDisable()
+        {
+            //client.OnLatestUpdate -= OnClientUpdate;
+        }
+        
         private void OnClientUpdate(ClientRequest request)
         {
             // Move the player by the given delta.
