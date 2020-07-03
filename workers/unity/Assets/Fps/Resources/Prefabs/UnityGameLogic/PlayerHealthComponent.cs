@@ -10,7 +10,7 @@ namespace Fps
     public class PlayerHealthComponent : MonoBehaviour
     {
         [Require] private HealthComponentReader healthComponentReader;
-        [Require] private EntityId entityId;
+        //[Require] private EntityId entityId;
         //[Require] private LogComponentCommandSender commandSender;
 
         public bool IsHealthy()
@@ -21,12 +21,12 @@ namespace Fps
 
         //float timer = 0;
         //private void Update()
-        //{
+        //{ 
         //    timer += Time.deltaTime;
-        //    if(timer >= 1)
+        //    if(timer >= 3)
         //    {
         //        timer = 0;
-        //        string message = "level : " + RandomPoint.Instance.levelpos.ToString() + ", Mesh : " + RandomPoint.Instance.meshpos.ToString();
+        //        string message = "Obj:" + gameObject.activeSelf + " ";
         //        commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = message }));
         //    }
         //}

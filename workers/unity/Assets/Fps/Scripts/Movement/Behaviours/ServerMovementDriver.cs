@@ -61,12 +61,13 @@ namespace Fps.Movement
             var update = new ServerMovement.Update { Latest = response };
             server.SendUpdate(update);
 
-            if (Time.time - lastSpatialPositionTime > spatialPositionUpdateDelta)
-            {
+            //if (Time.time - lastSpatialPositionTime > spatialPositionUpdateDelta)
+            //{
                 var positionUpdate = new Position.Update { Coords = Coordinates.FromUnityVector(positionNoOffset) };
                 spatialPosition.SendUpdate(positionUpdate);
                 lastSpatialPositionTime = Time.time;
-            }
+            //}
+            Debug.Log("test");
         }
     }
 }
