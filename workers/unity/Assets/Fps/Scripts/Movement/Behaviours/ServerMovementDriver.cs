@@ -67,7 +67,6 @@ namespace Fps.Movement
                 spatialPosition.SendUpdate(positionUpdate);
                 lastSpatialPositionTime = Time.time;
             //}
-            Debug.Log("test");
         }
     }
 }
