@@ -42,7 +42,6 @@ namespace Fps.WorkerConnectors
             //動態生成NavMesh
             navMeshSurface = GetComponent<NavMeshSurface>();
             navMeshSurface.BuildNavMesh();
-            
 
             //Create Healthpickup & fish
             var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();

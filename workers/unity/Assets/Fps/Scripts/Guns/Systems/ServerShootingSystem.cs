@@ -1,4 +1,5 @@
 using Improbable.Gdk.Core;
+using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 
@@ -27,17 +28,20 @@ namespace Fps.Guns
             {
                 return;
             }
-
+            //觀測的到的
             var gunDataForEntity = GetComponentDataFromEntity<GunComponent.Component>();
+            //具有讀寫權的
+            var gunDic = new Dictionary<EntityId, GunComponent.Component>();
 
             EntityQuery query = GetEntityQuery(
-            ComponentType.ReadOnly<SpatialEntityId>(),
-            ComponentType.ReadWrite<GunComponent.Component>(),
-            ComponentType.ReadOnly<GunComponent.HasAuthority>()
-        );
-            Entities.With(query).ForEach((ref GunComponent.Component gun) =>
+                ComponentType.ReadOnly<SpatialEntityId>(),
+                ComponentType.ReadWrite<GunComponent.Component>(),
+                ComponentType.ReadOnly<GunComponent.HasAuthority>()
+            );
+
+            Entities.With(query).ForEach((ref SpatialEntityId entityId, ref GunComponent.Component gun) =>
             {
-                //有權限的list
+                gunDic.Add(entityId.EntityId, gun);
             });
 
             for (var i = 0; i < events.Count; ++i)
@@ -51,16 +55,21 @@ namespace Fps.Guns
                 }
 
                 var shooterSpatialID = shotInfo.ShooterEntityId;
-                
+
+                if(!gunDic.ContainsKey(shooterSpatialID))
+                {
+                    continue;
+                }
+
                 if (!workerSystem.TryGetEntity(shooterSpatialID, out var shooterEntity))
                 {
                     continue;
                 }
-                if (!gunDataForEntity.Exists(shooterEntity))
-                {
-                    continue;
-                }
-                
+                //if (!gunDataForEntity.Exists(shooterEntity))
+                //{
+                //    continue;
+                //}
+
                 var gunComponent = gunDataForEntity[shooterEntity];
 
                 var damage = GunDictionary.Get(gunComponent.GunId).ShotDamage;
