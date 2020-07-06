@@ -3,6 +3,8 @@ using Improbable;
 using Improbable.Gdk.Subscriptions;
 using Improbable.Worker.CInterop;
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 
 namespace Fps.Movement
 {
@@ -48,7 +50,7 @@ namespace Fps.Movement
         {
             // Move the player by the given delta.
             Move(request.Movement.ToVector3());
-            
+
             var positionNoOffset = transform.position - origin;
 
             // Send the update using the new position.
@@ -59,10 +61,16 @@ namespace Fps.Movement
                 Timestamp = request.Timestamp,
                 TimeDelta = request.TimeDelta
             };
+
             var update = new ServerMovement.Update { Latest = response };
             server.SendUpdate(update);
-            var positionUpdate = new Position.Update { Coords = Coordinates.FromUnityVector(positionNoOffset) };
-            spatialPosition.SendUpdate(positionUpdate);
+
+            if (Time.time - lastSpatialPositionTime > spatialPositionUpdateDelta)
+            {
+                var positionUpdate = new Position.Update { Coords = Coordinates.FromUnityVector(positionNoOffset) };
+                spatialPosition.SendUpdate(positionUpdate);
+                lastSpatialPositionTime = Time.time;
+            }
         }
 
         //確認失去寫入權
