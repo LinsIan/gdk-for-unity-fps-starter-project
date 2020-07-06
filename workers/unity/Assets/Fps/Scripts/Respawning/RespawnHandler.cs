@@ -35,7 +35,7 @@ namespace Fps.Respawning
                 Health = health.Data.MaxHealth
             };
             health.SendUpdate(healthUpdate);
-
+            
             // Move to a spawn point (position and rotation)
             var (spawnPosition, spawnYaw, spawnPitch) = Respawning.SpawnPoints.GetRandomSpawnPoint();
             var newLatest = new ServerResponse

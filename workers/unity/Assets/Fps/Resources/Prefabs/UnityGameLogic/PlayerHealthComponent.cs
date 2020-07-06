@@ -22,13 +22,18 @@ namespace Fps
         float timer = 0;
         private void Update()
         {
-            timer += Time.deltaTime;
-            if(timer >= 3)
-            {
-                timer = 0;
-                string message = "pos:" + transform.position + " ";
-                commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = message }));
-            }
+            //timer += Time.deltaTime;
+            //if(timer >= 3)
+            //{
+            //    timer = 0;
+            //    string message = "pos:" + transform.position + " ";
+            //    commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = message }));
+            //}
+        }
+
+        public void SendMessage(string message)
+        {
+            commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = message }));
         }
     }
 }

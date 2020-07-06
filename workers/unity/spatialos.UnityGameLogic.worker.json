@@ -17,7 +17,7 @@
   },
   "bridge": {
     "worker_attribute_set": {
-      "attributes": [
+      "attributes":
         "UnityGameLogic"
       ]
     },

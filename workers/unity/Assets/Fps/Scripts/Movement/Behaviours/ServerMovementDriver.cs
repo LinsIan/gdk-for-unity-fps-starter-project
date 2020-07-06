@@ -1,6 +1,7 @@
 using Fps.SchemaExtensions;
 using Improbable;
 using Improbable.Gdk.Subscriptions;
+using Improbable.Worker.CInterop;
 using UnityEngine;
 
 namespace Fps.Movement
@@ -12,7 +13,7 @@ namespace Fps.Movement
         [Require] private ClientMovementReader client;
         [Require] private PositionWriter spatialPosition;
 #pragma warning restore 649
-
+        
         [SerializeField] private float spatialPositionUpdateHz = 1.0f;
         [SerializeField, HideInInspector] private float spatialPositionUpdateDelta;
 
@@ -40,19 +41,14 @@ namespace Fps.Movement
             origin = linkedEntityComponent.Worker.Origin;
 
             client.OnLatestUpdate += OnClientUpdate;
+            //server.OnAuthorityUpdate += OnMovementAuthorityUpdate;
         }
 
-        //重要：在交出寫入權的時候要清空update事件
-        private void OnDisable()
-        {
-            //client.OnLatestUpdate -= OnClientUpdate;
-        }
-        
         private void OnClientUpdate(ClientRequest request)
         {
             // Move the player by the given delta.
             Move(request.Movement.ToVector3());
-
+            
             var positionNoOffset = transform.position - origin;
 
             // Send the update using the new position.
@@ -63,16 +59,20 @@ namespace Fps.Movement
                 Timestamp = request.Timestamp,
                 TimeDelta = request.TimeDelta
             };
-
             var update = new ServerMovement.Update { Latest = response };
             server.SendUpdate(update);
-
-            //if (Time.time - lastSpatialPositionTime > spatialPositionUpdateDelta)
-            //{
-                var positionUpdate = new Position.Update { Coords = Coordinates.FromUnityVector(positionNoOffset) };
-                spatialPosition.SendUpdate(positionUpdate);
-                lastSpatialPositionTime = Time.time;
-            //}
+            var positionUpdate = new Position.Update { Coords = Coordinates.FromUnityVector(positionNoOffset) };
+            spatialPosition.SendUpdate(positionUpdate);
         }
+
+        //確認失去寫入權
+        //private void OnMovementAuthorityUpdate(Authority authority)
+        //{
+        //    if(authority == Authority.AuthorityLossImminent)
+        //    {
+        //        GetComponent<PlayerHealthComponent>().SendMessage("失去寫入權");
+        //        server.AcknowledgeAuthorityLoss();
+        //    }
+        //}
     }
 }
