@@ -29,7 +29,7 @@ namespace Fps.Config
 
         public static EntityTemplate Player(EntityId entityId, string workerId, byte[] args)
         {
-            var client = EntityTemplate.GetWorkerAccessAttribute(workerId); 
+            var client = EntityTemplate.GetWorkerAccessAttribute(workerId);
 
             var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
 
@@ -105,7 +105,7 @@ namespace Fps.Config
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
                 ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
                 GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
-                Pickups.HealthPickup.ComponentId
+                Pickups.HealthPickup.ComponentId,FishComponent.ComponentId
             });
 
             //記分板UI需要
@@ -128,7 +128,7 @@ namespace Fps.Config
             {
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
                 ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
-                ShootingComponent.ComponentId
+                ShootingComponent.ComponentId,FishComponent.ComponentId
             });
 
             var interest = InterestTemplate.Create()
@@ -189,6 +189,7 @@ namespace Fps.Config
         {
             //資料和讀寫權限設定
             var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
+            spawnPosition.y += FishSettings.FishOffsetYDic[EFishType.NORMAL];
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = 0f.ToInt1k(),
@@ -214,7 +215,7 @@ namespace Fps.Config
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
                 ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
                 GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
-                Pickups.HealthPickup.ComponentId
+                Pickups.HealthPickup.ComponentId,FishComponent.ComponentId,
             });
 
             var interest = InterestTemplate.Create().AddQueries<Position.Component>(query);
@@ -227,6 +228,7 @@ namespace Fps.Config
         {
             //資料和讀寫權限設定
             var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
+            spawnPosition.y += FishSettings.FishOffsetYDic[EFishType.SPEED];
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = 0f.ToInt1k(),
@@ -252,7 +254,7 @@ namespace Fps.Config
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
                 ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
                 GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
-                Pickups.HealthPickup.ComponentId
+                Pickups.HealthPickup.ComponentId,FishComponent.ComponentId,
             });
 
             var interest = InterestTemplate.Create().AddQueries<Position.Component>(query);
@@ -265,6 +267,7 @@ namespace Fps.Config
         {
             //資料和讀寫權限設定
             var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
+            spawnPosition.y += FishSettings.FishOffsetYDic[EFishType.OCTOPUS];
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = 0f.ToInt1k(),
@@ -291,7 +294,7 @@ namespace Fps.Config
                 Position.ComponentId, Metadata.ComponentId, OwningWorker.ComponentId,
                 ServerMovement.ComponentId, ClientRotation.ComponentId, HealthComponent.ComponentId,
                 GunComponent.ComponentId, GunStateComponent.ComponentId, ShootingComponent.ComponentId,
-                Pickups.HealthPickup.ComponentId
+                Pickups.HealthPickup.ComponentId,FishComponent.ComponentId,
             });
 
             var interest = InterestTemplate.Create().AddQueries<Position.Component>(query);

@@ -1914,6 +1914,7 @@ GameObject:
   - component: {fileID: 6363471508016314971}
   - component: {fileID: 6254589330402964009}
   - component: {fileID: -6290380577416567240}
+  - component: {fileID: -8126949976318913962}
   - component: {fileID: 8387580638172296739}
   m_Layer: 0
   m_Name: Octopus
@@ -1982,6 +1983,18 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c38ca92f777c944cb92edb25a7f4a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8126949976318913962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420709107118157647}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f9ed5f8f68c4f4ca3672e2b9049f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!195 &8387580638172296739

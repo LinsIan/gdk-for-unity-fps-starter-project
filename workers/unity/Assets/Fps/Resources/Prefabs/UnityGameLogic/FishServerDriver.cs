@@ -10,6 +10,7 @@ using Improbable;
 
 namespace Fps
 {
+    [WorkerType(WorkerUtils.UnityGameLogic)]
     public class FishServerDriver : MonoBehaviour
     {
         [Require] private PositionWriter positionWriter;
@@ -19,6 +20,8 @@ namespace Fps
         [Require] private FishComponentReader fishComponentReader;
         [Require] private ScoreComponentCommandSender scoreCommandSender;
         [Require] private EntityId entityId;
+
+        [Require] private LogComponentCommandSender commandSender;
 
         private const float MovementRadius = 50f;
         private const float NavMeshSnapDistance = 5f;
@@ -30,32 +33,26 @@ namespace Fps
         private float score;
         private float RespawnTime = 5.0f;
 
-
         private void OnEnable()
         {
             agent = GetComponent<NavMeshAgent>();
-            health.OnHealthModifiedEvent += OnHealthModified;
-            eState = EFishState.IDLE;
             score = FishSettings.FishScoreDic[fishComponentReader.Data.Type];
             RespawnTime = FishSettings.FishRespawnTimeDic[fishComponentReader.Data.Type];
-        }
-
-        private void Start()
-        {
-            eState = EFishState.SWIM;
-            Vector3 pos = transform.position;
-            pos.y += agent.baseOffset;
-            transform.position = pos;
-            pos.y = positionWriter.Data.Coords.ToUnityVector().y + agent.baseOffset;
-            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(pos) });
-            InitialAI();
             worldBounds = FindObjectOfType<GameLogicWorkerConnector>().Bounds;
-        }
-
-        private void InitialAI()
-        {
+            health.OnHealthModifiedEvent += OnHealthModified;
+            eState = EFishState.SWIM;
+            agent.enabled = true;
+            agent.isStopped = false;
             agent.Warp(transform.position);
             SetRandomDestination();
+            commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = entityId.Id + "開啟" }));
+        }
+
+        private void OnDisable()
+        {
+            agent.enabled = false;
+            health.OnHealthModifiedEvent -= OnHealthModified;
+            commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = entityId.Id + "關閉" }));
         }
 
         private void Update()
@@ -81,7 +78,6 @@ namespace Fps
             {
                 SetRandomDestination();
             }
-
         }
 
         private void UpdateTransform()
@@ -113,7 +109,6 @@ namespace Fps
                 agent.isStopped = true;
                 SendScoreCommand(info.Modifier.ModifierId);
                 StartCoroutine(WaitForRespawn());
-
             }
             else if (eState == EFishState.DEAD)
             {
@@ -149,6 +144,7 @@ namespace Fps
 
         private IEnumerator WaitForRespawn()
         {
+            if (health.Authority != Improbable.Worker.CInterop.Authority.Authoritative) yield break;
             yield return new WaitForSeconds(RespawnTime);
             Respawn();
         }
@@ -168,12 +164,12 @@ namespace Fps
 
             //重設座標與目標
             var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
-            //if(fishComponentReader.Data.Type == EFishType.OCTOPUS){ spawnPosition = new Vector3(5, 0, 5); }
-            spawnPosition.y += agent.baseOffset;
+            spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentReader.Data.Type];
             float offsetY = spawnPosition.y - positionWriter.Data.Coords.ToUnityVector().y;
-            transform.position = new Vector3(spawnPosition.x, transform.position.y + offsetY, spawnPosition.z);
             positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
-            InitialAI();
+            agent.Warp(transform.position);
+            transform.position = new Vector3(spawnPosition.x, transform.position.y + offsetY, spawnPosition.z);
+            SetRandomDestination();
         }
     }
 }
