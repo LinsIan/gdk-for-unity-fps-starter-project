@@ -1,10 +1,7 @@
 using Fps.SchemaExtensions;
 using Improbable;
 using Improbable.Gdk.Subscriptions;
-using Improbable.Worker.CInterop;
 using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
 
 namespace Fps.Movement
 {
@@ -15,7 +12,7 @@ namespace Fps.Movement
         [Require] private ClientMovementReader client;
         [Require] private PositionWriter spatialPosition;
 #pragma warning restore 649
-        
+
         [SerializeField] private float spatialPositionUpdateHz = 1.0f;
         [SerializeField, HideInInspector] private float spatialPositionUpdateDelta;
 
@@ -43,7 +40,6 @@ namespace Fps.Movement
             origin = linkedEntityComponent.Worker.Origin;
 
             client.OnLatestUpdate += OnClientUpdate;
-            //server.OnAuthorityUpdate += OnMovementAuthorityUpdate;
         }
 
         private void OnClientUpdate(ClientRequest request)
@@ -72,15 +68,5 @@ namespace Fps.Movement
                 lastSpatialPositionTime = Time.time;
             }
         }
-
-        //確認失去寫入權
-        //private void OnMovementAuthorityUpdate(Authority authority)
-        //{
-        //    if(authority == Authority.AuthorityLossImminent)
-        //    {
-        //        GetComponent<PlayerHealthComponent>().SendMessage("失去寫入權");
-        //        server.AcknowledgeAuthorityLoss();
-        //    }
-        //}
     }
 }

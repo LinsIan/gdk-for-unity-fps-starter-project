@@ -168,7 +168,7 @@ namespace Fps.Movement
 
         private void OnServerUpdate(ServerResponse update)
         {
-            Reconcile(update.Position.ToVector3() + origin, update.Timestamp);
+            //Reconcile(update.Position.ToVector3() + origin, update.Timestamp);
         }
 
         public void ApplyMovement(Vector3 movement, Quaternion rotation, MovementSpeed movementSpeed, bool startJump)

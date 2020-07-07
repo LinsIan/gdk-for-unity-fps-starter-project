@@ -19,7 +19,6 @@
     "worker_attribute_set": {
       "attributes":
         "UnityGameLogic"
-      ]
     },
     "component_delivery": {
       "default": "RELIABLE_ORDERED",

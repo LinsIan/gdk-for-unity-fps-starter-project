@@ -20,7 +20,7 @@ MonoBehaviour:
   - ProjectName: beta_california_double_320
     AssemblyName: fish_machine_assembly
     Deployment:
-      Name: fish_deployment
+      Name: fishmachine_deployment
       SnapshotPath: snapshots/cloud.snapshot
       LaunchJson: cloud_launch_small.json
       Region: 1
