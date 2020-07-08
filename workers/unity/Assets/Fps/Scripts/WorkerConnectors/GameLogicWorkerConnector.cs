@@ -48,6 +48,9 @@ namespace Fps.WorkerConnectors
             healthPickupCreatingSystem.WorldScale = worldSize / 4;
             RandomPoint.Instance.mapScale = healthPickupCreatingSystem.WorldScale;
             healthPickupCreatingSystem.CreateHealthPickups();
+
+            RandomPoint.Instance.mapPosition = navMeshSurface.navMeshData.position;
+            RandomPoint.Instance.workerPosition = transform.position;
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()

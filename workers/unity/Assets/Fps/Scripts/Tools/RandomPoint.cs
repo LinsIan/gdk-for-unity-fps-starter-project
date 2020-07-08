@@ -8,8 +8,8 @@ public class RandomPoint : MonoBehaviour
     public float baseRadius = 150.0f;
     public float mapScale = 1;
 
-    public int gunDataCount;
-    public int gunDicCount;
+    public Vector3 mapPosition;
+    public Vector3 workerPosition;
 
     static RandomPoint _instance;
     public static RandomPoint Instance

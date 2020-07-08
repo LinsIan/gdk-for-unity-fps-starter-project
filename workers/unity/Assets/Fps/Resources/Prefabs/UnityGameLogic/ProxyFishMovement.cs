@@ -24,15 +24,21 @@ namespace Fps
         private NavMeshAgent agent;
         private LinkedEntityComponent LinkedEntityComponent;
         private Vector3 origin;
-
         private void OnEnable()
         {
-            position.OnUpdate += OnPositionUpdate;
-            rotation.OnUpdate += OnRotationUpdate;
+            //position.OnUpdate += OnPositionUpdate;
+            //rotation.OnUpdate += OnRotationUpdate;
             fishComponentReader.OnDestinationUpdate += OnDestinationUpdate;
             agent = GetComponent<NavMeshAgent>();
             LinkedEntityComponent = GetComponent<LinkedEntityComponent>();
             origin = LinkedEntityComponent.Worker.Origin;
+            if(fishComponentReader.Authority != Authority.Authoritative)
+            {
+                agent.enabled = true;
+                agent.isStopped = false;
+                agent.Warp(transform.position);
+                agent.SetDestination(fishComponentReader.Data.Destination.ToVector3() + origin);
+            }
         }
 
         private void OnPositionUpdate(Position.Update update)
@@ -41,8 +47,10 @@ namespace Fps
             {
                 return;
             }
+            //if (agent.enabled) agent.enabled = false;
             Vector3 pos = position.Data.Coords.ToUnityVector() + origin;
             transform.position = pos;
+            agent.Warp(pos);
         }
 
         private void OnRotationUpdate(ClientRotation.Update update)
@@ -63,14 +71,23 @@ namespace Fps
             {
                 return;
             }
-            agent.SetDestination(destination.ToVector3() + origin);
+            Vector3 deviation = transform.position - origin - position.Data.Coords.ToUnityVector();
             GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null)
+            if (player != null && Vector3.Distance(deviation,Vector3.zero) >=  0.01f)
             {
                 var health = player.GetComponent<PlayerHealthComponent>();
                 if (health != null)
-                    commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(health.GetEntityID(), new LogMessage { Message = "新目標" + destination.ToString() }));
+                    commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(health.GetEntityID(), new LogMessage { Message = "nav:" + RandomPoint.Instance.mapPosition.ToString() + ",worker:" + RandomPoint.Instance.workerPosition.ToString() }));
             }
+
+            Vector3 pos = position.Data.Coords.ToUnityVector() + origin;
+            transform.position = pos;
+            agent.Warp(pos);
+            agent.SetDestination(destination.ToVector3() + origin);
+
+            
+
+            
         }
 
     }

@@ -48,12 +48,12 @@ namespace Fps
             agent.enabled = true;
             agent.isStopped = false;
             agent.Warp(transform.position);
-            Swimming();
+            agent.SetDestination(fishComponentWriter.Data.Destination.ToVector3() + origin);
         }
 
         private void OnDisable()
         {
-            agent.enabled = false;
+            //agent.enabled = false;
             health.OnHealthModifiedEvent -= OnHealthModified;
         }
 
@@ -141,7 +141,7 @@ namespace Fps
                     agent.nextPosition = transform.position;
                     agent.SetDestination(hit.position);
 
-                    var update = new FishComponent.Update { Destination = (hit.position - origin).ToVector3Int() };
+                    var update = new FishComponent.Update { Destination = (hit.position - origin).ToVector3Int(), Type = fishComponentWriter.Data.Type };
                     fishComponentWriter.SendUpdate(update);
                 }
             }
