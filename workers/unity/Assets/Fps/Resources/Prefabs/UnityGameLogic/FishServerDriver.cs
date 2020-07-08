@@ -13,20 +13,22 @@ namespace Fps
     [WorkerType(WorkerUtils.UnityGameLogic)]
     public class FishServerDriver : MonoBehaviour
     {
+#pragma warning disable 649
         [Require] private PositionWriter positionWriter;
         [Require] private ClientRotationWriter rotationWriter;
         [Require] private HealthComponentReader health;
         [Require] private HealthComponentCommandSender healthCommandSender;
-        [Require] private FishComponentReader fishComponentReader;
+        [Require] private FishComponentWriter fishComponentWriter;
         [Require] private ScoreComponentCommandSender scoreCommandSender;
         [Require] private EntityId entityId;
-
-        [Require] private LogComponentCommandSender commandSender;
+#pragma warning disable 649
 
         private const float MovementRadius = 50f;
         private const float NavMeshSnapDistance = 5f;
         private const float MinRemainingDistance = 0.3f;
 
+        private LinkedEntityComponent LinkedEntityComponent;
+        private Vector3 origin;
         private EFishState eState;
         private NavMeshAgent agent;
         private Bounds worldBounds;
@@ -36,23 +38,23 @@ namespace Fps
         private void OnEnable()
         {
             agent = GetComponent<NavMeshAgent>();
-            score = FishSettings.FishScoreDic[fishComponentReader.Data.Type];
-            RespawnTime = FishSettings.FishRespawnTimeDic[fishComponentReader.Data.Type];
+            score = FishSettings.FishScoreDic[fishComponentWriter.Data.Type];
+            RespawnTime = FishSettings.FishRespawnTimeDic[fishComponentWriter.Data.Type];
             worldBounds = FindObjectOfType<GameLogicWorkerConnector>().Bounds;
             health.OnHealthModifiedEvent += OnHealthModified;
             eState = EFishState.SWIM;
+            LinkedEntityComponent = GetComponent<LinkedEntityComponent>();
+            origin = LinkedEntityComponent.Worker.Origin;
             agent.enabled = true;
             agent.isStopped = false;
             agent.Warp(transform.position);
-            SetRandomDestination();
-            commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = entityId.Id + "開啟" }));
+            Swimming();
         }
 
         private void OnDisable()
         {
             agent.enabled = false;
             health.OnHealthModifiedEvent -= OnHealthModified;
-            commandSender.SendDebugLogCommand(new LogComponent.DebugLog.Request(entityId, new LogMessage { Message = entityId.Id + "關閉" }));
         }
 
         private void Update()
@@ -82,7 +84,7 @@ namespace Fps
 
         private void UpdateTransform()
         {
-            Vector3 pos = transform.position;
+            Vector3 pos = transform.position - origin;
 
             pos.y = positionWriter.Data.Coords.ToUnityVector().y;
 
@@ -138,6 +140,9 @@ namespace Fps
                     agent.isStopped = false;
                     agent.nextPosition = transform.position;
                     agent.SetDestination(hit.position);
+
+                    var update = new FishComponent.Update { Destination = (hit.position - origin).ToVector3Int() };
+                    fishComponentWriter.SendUpdate(update);
                 }
             }
         }
@@ -164,9 +169,9 @@ namespace Fps
 
             //重設座標與目標
             var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
-            spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentReader.Data.Type];
+            spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentWriter.Data.Type];
             float offsetY = spawnPosition.y - positionWriter.Data.Coords.ToUnityVector().y;
-            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
+            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition - origin) });
             agent.Warp(transform.position);
             transform.position = new Vector3(spawnPosition.x, transform.position.y + offsetY, spawnPosition.z);
             SetRandomDestination();

@@ -204,7 +204,7 @@ namespace Fps.Config
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.NORMAL), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.NORMAL, Vector3.zero.ToVector3Int()), WorkerUtils.UnityGameLogic);
 
             entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
 
@@ -234,7 +234,7 @@ namespace Fps.Config
                 Yaw = 0f.ToInt1k(),
                 Pitch = 0f.ToInt1k()
             };
-            //spawnPosition.y += 3;
+
             float MaxHp = FishSettings.FishHealthDic[EFishType.SPEED];
 
             var entityTemplate = new EntityTemplate();
@@ -243,7 +243,7 @@ namespace Fps.Config
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.SPEED), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.SPEED, Vector3.zero.ToVector3Int()), WorkerUtils.UnityGameLogic);
 
             entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
 
@@ -283,7 +283,7 @@ namespace Fps.Config
             entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.OCTOPUS), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.OCTOPUS, Vector3.zero.ToVector3Int()), WorkerUtils.UnityGameLogic);
 
             entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
 

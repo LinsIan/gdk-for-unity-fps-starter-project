@@ -1,5 +1,7 @@
 package fps;
 
+import "fps/common.schema";
+
 enum EFishType
 {
     NORMAL = 0;
@@ -11,5 +13,6 @@ component FishComponent {
     id = 2070;
     
     EFishType type = 1;
+    fps.Vector3Int destination = 2;    
 }
     
