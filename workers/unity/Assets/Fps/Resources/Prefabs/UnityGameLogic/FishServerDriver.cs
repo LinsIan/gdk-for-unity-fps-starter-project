@@ -5,6 +5,7 @@ using Fps.Config;
 using Fps.WorkerConnectors;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.Subscriptions;
+using Improbable.Worker.CInterop;
 using Fps.SchemaExtensions;
 using Improbable;
 
@@ -21,6 +22,8 @@ namespace Fps
         [Require] private FishComponentWriter fishComponentWriter;
         [Require] private ScoreComponentCommandSender scoreCommandSender;
         [Require] private EntityId entityId;
+
+        [Require] private LogComponentCommandSender commandSender;
 #pragma warning disable 649
 
         private const float MovementRadius = 50f;
@@ -48,8 +51,7 @@ namespace Fps
 
         private void OnDisable()
         {
-            //agent.enabled = false;
-            health.OnHealthModifiedEvent -= OnHealthModified;
+            agent.enabled = false;
         }
 
         private void Update()
