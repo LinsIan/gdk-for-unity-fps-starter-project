@@ -22,8 +22,6 @@ namespace Fps
         [Require] private FishComponentWriter fishComponentWriter;
         [Require] private ScoreComponentCommandSender scoreCommandSender;
         [Require] private EntityId entityId;
-
-        [Require] private LogComponentCommandSender commandSender;
 #pragma warning disable 649
 
         private const float MovementRadius = 50f;
@@ -35,6 +33,8 @@ namespace Fps
         private Bounds worldBounds;
         private float score;
         private float RespawnTime = 5.0f;
+        float offsetY = 0;
+
 
         private void OnEnable()
         {
@@ -47,11 +47,21 @@ namespace Fps
 
             agent.enabled = true;
             agent.isStopped = false;
+            offsetY = transform.position.y - positionWriter.Data.Coords.ToUnityVector().y;
         }
 
         private void OnDisable()
         {
-            agent.enabled = false;
+            if(eState == EFishState.SWIM)
+            {
+                var pos = transform.position + transform.forward * 10;
+                transform.position = pos;
+                agent.Warp(pos);
+            }
+            
+
+            health.OnHealthModifiedEvent -= OnHealthModified;
+            agent.isStopped = true;
         }
 
         private void Update()
@@ -167,10 +177,9 @@ namespace Fps
             //重設座標與目標
             var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
             spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentWriter.Data.Type];
-            float offsetY = spawnPosition.y - positionWriter.Data.Coords.ToUnityVector().y;
             positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
             agent.Warp(transform.position);
-            transform.position = new Vector3(spawnPosition.x, transform.position.y + offsetY, spawnPosition.z);
+            transform.position = new Vector3(spawnPosition.x, transform.position.y - offsetY, spawnPosition.z);
             SetRandomDestination();
         }
     }

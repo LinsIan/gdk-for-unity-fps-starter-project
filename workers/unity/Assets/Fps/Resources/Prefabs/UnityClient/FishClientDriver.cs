@@ -19,6 +19,7 @@ namespace Fps
         private Animation.FishAnimator animator;
 
         private EFishState eState;
+        float offsetY = 0;
 
         private void OnEnable()
         {
@@ -27,12 +28,13 @@ namespace Fps
             rotation.OnUpdate += OnRotationUpdate;
             health.OnHealthModifiedEvent += OnHealthModified;
             eState = EFishState.SWIM;
+            offsetY = transform.position.y - position.Data.Coords.ToUnityVector().y;
         }
 
         private void OnPositionUpdate(Position.Update update)
         {
             Vector3 pos = position.Data.Coords.ToUnityVector();
-            pos.y = transform.position.y;
+            pos.y += offsetY;
             transform.position = pos;
         }
 

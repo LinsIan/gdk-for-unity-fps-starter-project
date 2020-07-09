@@ -218,7 +218,7 @@ namespace Fps.Config
                 Pickups.HealthPickup.ComponentId,FishComponent.ComponentId,
             });
 
-            var interest = InterestTemplate.Create().AddQueries<Position.Component>(query);
+            var interest = InterestTemplate.Create().AddQueries<FishComponent.Component>(query);
             entityTemplate.AddComponent(interest.ToSnapshot());
 
             return entityTemplate;

@@ -18,21 +18,38 @@ namespace Fps
         [Require] private PositionReader position;
         [Require] private ClientRotationReader rotation;
         [Require] private FishComponentReader fishComponentReader;
-
-        [Require] private LogComponentCommandSender commandSender;
 #pragma warning disable 649
-        
+
+        public Authority m_Authority;
+
         private NavMeshAgent agent;
-        
+        float offsetY = 0;
+
         private void OnEnable()
         {
             position.OnUpdate += OnPositionUpdate;
             rotation.OnUpdate += OnRotationUpdate;
             fishComponentReader.OnDestinationUpdate += OnDestinationUpdate;
+            fishComponentReader.OnAuthorityUpdate += OnAuthUpdate;
             agent = GetComponent<NavMeshAgent>();
             if(fishComponentReader.Authority != Authority.Authoritative)
             {
-                agent.enabled = false;
+                agent.isStopped = true;
+            }
+            offsetY = transform.position.y - position.Data.Coords.ToUnityVector().y;
+            m_Authority = fishComponentReader.Authority;
+        }
+
+        private void OnAuthUpdate(Authority authority)
+        {
+            Debug.Log( authority.ToString());
+            m_Authority = authority;
+            if(authority == Authority.Authoritative)
+            {
+                var pos = transform.position + transform.forward * 3;
+                agent.Warp(pos);
+                transform.position = pos;
+                agent.isStopped = false;
             }
         }
 
@@ -42,7 +59,9 @@ namespace Fps
             {
                 return;
             }
+
             Vector3 pos = position.Data.Coords.ToUnityVector();
+            pos.y += offsetY;
             transform.position = pos;
             agent.Warp(pos);
         }
@@ -65,10 +84,9 @@ namespace Fps
             {
                 return;
             }
-            Vector3 deviation = transform.position - position.Data.Coords.ToUnityVector();
-            Vector3 pos = position.Data.Coords.ToUnityVector();
-            transform.position = pos;
-            agent.Warp(pos);
+            //Vector3 pos = position.Data.Coords.ToUnityVector();
+            //transform.position = pos;
+            //agent.Warp(pos);
             agent.SetDestination(destination.ToVector3());
         }
 
