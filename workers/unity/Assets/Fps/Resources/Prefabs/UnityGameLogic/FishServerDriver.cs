@@ -27,8 +27,6 @@ namespace Fps
         private const float NavMeshSnapDistance = 5f;
         private const float MinRemainingDistance = 0.3f;
 
-        private LinkedEntityComponent LinkedEntityComponent;
-        private Vector3 origin;
         private EFishState eState;
         private NavMeshAgent agent;
         private Bounds worldBounds;
@@ -43,12 +41,9 @@ namespace Fps
             worldBounds = FindObjectOfType<GameLogicWorkerConnector>().Bounds;
             health.OnHealthModifiedEvent += OnHealthModified;
             eState = EFishState.SWIM;
-            LinkedEntityComponent = GetComponent<LinkedEntityComponent>();
-            origin = LinkedEntityComponent.Worker.Origin;
+
             agent.enabled = true;
             agent.isStopped = false;
-            agent.Warp(transform.position);
-            agent.SetDestination(fishComponentWriter.Data.Destination.ToVector3() + origin);
         }
 
         private void OnDisable()
@@ -84,7 +79,7 @@ namespace Fps
 
         private void UpdateTransform()
         {
-            Vector3 pos = transform.position - origin;
+            Vector3 pos = transform.position;
 
             pos.y = positionWriter.Data.Coords.ToUnityVector().y;
 
@@ -141,7 +136,7 @@ namespace Fps
                     agent.nextPosition = transform.position;
                     agent.SetDestination(hit.position);
 
-                    var update = new FishComponent.Update { Destination = (hit.position - origin).ToVector3Int(), Type = fishComponentWriter.Data.Type };
+                    var update = new FishComponent.Update { Destination = (hit.position).ToVector3Int(), Type = fishComponentWriter.Data.Type };
                     fishComponentWriter.SendUpdate(update);
                 }
             }
@@ -171,7 +166,7 @@ namespace Fps
             var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
             spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentWriter.Data.Type];
             float offsetY = spawnPosition.y - positionWriter.Data.Coords.ToUnityVector().y;
-            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition - origin) });
+            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
             agent.Warp(transform.position);
             transform.position = new Vector3(spawnPosition.x, transform.position.y + offsetY, spawnPosition.z);
             SetRandomDestination();
