@@ -28,7 +28,6 @@ namespace Fps
         private const float NavMeshSnapDistance = 5f;
         private const float MinRemainingDistance = 0.3f;
 
-        private EFishState eState;
         private NavMeshAgent agent;
         private Bounds worldBounds;
         private float score;
@@ -43,7 +42,6 @@ namespace Fps
             RespawnTime = FishSettings.FishRespawnTimeDic[fishComponentWriter.Data.Type];
             worldBounds = FindObjectOfType<GameLogicWorkerConnector>().Bounds;
             health.OnHealthModifiedEvent += OnHealthModified;
-            eState = EFishState.SWIM;
 
             agent.enabled = true;
             agent.isStopped = false;
@@ -52,12 +50,12 @@ namespace Fps
 
         private void OnDisable()
         {
-            if(eState == EFishState.SWIM)
-            {
-                var pos = transform.position + transform.forward * 10;
-                transform.position = pos;
-                agent.Warp(pos);
-            }
+            //if(fishComponentWriter.Data.State == EFishState.SWIM)
+            //{
+            //    var pos = transform.position + transform.forward * 10;
+            //    transform.position = pos;
+            //    agent.Warp(pos);
+            //}
             
 
             health.OnHealthModifiedEvent -= OnHealthModified;
@@ -66,7 +64,7 @@ namespace Fps
 
         private void Update()
         {
-            if (eState == EFishState.SWIM)
+            if (fishComponentWriter.Data.State == EFishState.SWIM)
             {
                 Swimming();
             }
@@ -114,15 +112,15 @@ namespace Fps
         {
             if (info.Died)
             {
-                eState = EFishState.DEAD;
+                fishComponentWriter.SendUpdate(new FishComponent.Update { State = EFishState.DEAD });
                 agent.isStopped = true;
                 SendScoreCommand(info.Modifier.ModifierId);
                 StartCoroutine(WaitForRespawn());
             }
-            else if (eState == EFishState.DEAD)
+            else if (fishComponentWriter.Data.State == EFishState.DEAD)
             {
                 agent.isStopped = false;
-                eState = EFishState.SWIM;
+                fishComponentWriter.SendUpdate(new FishComponent.Update { State = EFishState.DEAD });
             }
         }
 

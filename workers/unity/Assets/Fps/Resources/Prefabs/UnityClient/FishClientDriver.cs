@@ -8,17 +8,15 @@ using Improbable;
 
 namespace Fps
 {
-
     [WorkerType(WorkerUtils.UnityClient)]
     public class FishClientDriver : MonoBehaviour
     {
         [Require] private PositionReader position;
         [Require] private ClientRotationReader rotation;
-        [Require] private HealthComponentReader health;
+        //[Require] private HealthComponentReader health;
+        [Require] private FishComponentReader fishComponent;
 
         private Animation.FishAnimator animator;
-
-        private EFishState eState;
         float offsetY = 0;
 
         private void OnEnable()
@@ -26,8 +24,8 @@ namespace Fps
             animator = GetComponent<Animation.FishAnimator>();
             position.OnUpdate += OnPositionUpdate;
             rotation.OnUpdate += OnRotationUpdate;
-            health.OnHealthModifiedEvent += OnHealthModified;
-            eState = EFishState.SWIM;
+            //health.OnHealthModifiedEvent += OnHealthModified;
+            fishComponent.OnStateUpdate += OnStateUpdate;
             offsetY = transform.position.y - position.Data.Coords.ToUnityVector().y;
         }
 
@@ -45,19 +43,24 @@ namespace Fps
             float yaw = rotation.Data.Latest.Yaw.ToFloat1k();
             transform.rotation = Quaternion.Euler(pitch, yaw, roll);
         }
-        
-        private void OnHealthModified(HealthModifiedInfo info)
+
+        private void OnStateUpdate(EFishState state)
         {
-            if(info.Died)
-            {
-                eState = EFishState.DEAD;
-                animator.PlayAnimation(eState);
-            }
-            else if(eState == EFishState.DEAD)
-            {
-                eState = EFishState.SWIM;
-                animator.PlayAnimation(eState);
-            }
+            animator.PlayAnimation(state);
         }
+        
+        //private void OnHealthModified(HealthModifiedInfo info)
+        //{
+        //    if(info.Died)
+        //    {
+        //        eState = EFishState.DEAD;
+        //        animator.PlayAnimation(eState);
+        //    }
+        //    else if(eState == EFishState.DEAD)
+        //    {
+        //        eState = EFishState.SWIM;
+        //        animator.PlayAnimation(eState);
+        //    }
+        //}
     }
 }

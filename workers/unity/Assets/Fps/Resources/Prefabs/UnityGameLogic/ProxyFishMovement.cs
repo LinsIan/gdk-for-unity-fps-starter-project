@@ -42,11 +42,10 @@ namespace Fps
 
         private void OnAuthUpdate(Authority authority)
         {
-            Debug.Log( authority.ToString());
             m_Authority = authority;
             if(authority == Authority.Authoritative)
             {
-                var pos = transform.position + transform.forward * 3;
+                var pos = transform.position + transform.forward * Time.deltaTime * agent.speed * 5;
                 agent.Warp(pos);
                 transform.position = pos;
                 agent.isStopped = false;

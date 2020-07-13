@@ -9,10 +9,18 @@ enum EFishType
     OCTOPUS = 2;
 }
 
+enum EFishState
+{
+    SWIM = 0;
+    DEAD = 1;
+    IDLE = 2; 
+}
+
 component FishComponent {
     id = 2070;
     
     EFishType type = 1;
-    fps.Vector3Int destination = 2;    
+    EFishState state = 2;
+    fps.Vector3Int destination = 3;
 }
     
