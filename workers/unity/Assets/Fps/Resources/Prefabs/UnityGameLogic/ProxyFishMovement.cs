@@ -46,7 +46,7 @@ namespace Fps
         private void OnAuthUpdate(Authority authority)
         {
             m_Authority = authority;
-            if(authority == Authority.Authoritative && !IsDead)
+            if(authority == Authority.Authoritative ) //位置校正
             {
                 /*var pos = transform.position + transform.forward * Time.deltaTime * agent.speed * 3;
                 agent.Warp(pos);
@@ -56,14 +56,7 @@ namespace Fps
                 pos.y += offsetY;
                 transform.position = pos;
                 agent.Warp(pos);
-            }
-            else if(IsDead)
-            {
                 IsDead = false;
-                Vector3 pos = position.Data.Coords.ToUnityVector();
-                pos.y += offsetY;
-                transform.position = pos;
-                agent.Warp(pos);
             }
         }
 
