@@ -110,17 +110,25 @@ namespace Fps
 
         private void OnHealthModified(HealthModifiedInfo info)
         {
-            if (info.Died)
+            if (info.Died)//死亡
             {
                 fishComponentWriter.SendUpdate(new FishComponent.Update { State = EFishState.DEAD });
                 agent.isStopped = true;
                 SendScoreCommand(info.Modifier.ModifierId);
                 StartCoroutine(WaitForRespawn());
             }
-            else if (fishComponentWriter.Data.State == EFishState.DEAD)
+            else if (fishComponentWriter.Data.State == EFishState.DEAD)//重生
             {
                 agent.isStopped = false;
-                fishComponentWriter.SendUpdate(new FishComponent.Update { State = EFishState.DEAD });
+                fishComponentWriter.SendUpdate(new FishComponent.Update { State = EFishState.SWIM });
+
+                //重設座標與目標
+                var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
+                spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentWriter.Data.Type];
+                positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
+                transform.position = new Vector3(spawnPosition.x, spawnPosition.y + offsetY, spawnPosition.z);
+                agent.Warp(transform.position);
+                SetRandomDestination();
             }
         }
 
@@ -161,7 +169,7 @@ namespace Fps
 
         private void Respawn()
         {
-            //重設Health
+            //重設Health，這裡會沒觸發，先換位置後回血(在proxy)
             var modifyHealthRequest = new HealthComponent.ModifyHealth.Request(
                     entityId,
                     new HealthModifier
@@ -171,14 +179,6 @@ namespace Fps
                     }
                 );
             healthCommandSender.SendModifyHealthCommand(modifyHealthRequest);
-
-            //重設座標與目標
-            var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
-            spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentWriter.Data.Type];
-            positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
-            agent.Warp(transform.position);
-            transform.position = new Vector3(spawnPosition.x, transform.position.y - offsetY, spawnPosition.z);
-            SetRandomDestination();
         }
     }
 }

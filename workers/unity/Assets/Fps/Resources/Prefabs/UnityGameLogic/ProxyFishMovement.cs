@@ -23,7 +23,8 @@ namespace Fps
         public Authority m_Authority;
 
         private NavMeshAgent agent;
-        float offsetY = 0;
+        private float offsetY = 0;
+        private bool IsDead;
 
         private void OnEnable()
         {
@@ -31,24 +32,38 @@ namespace Fps
             rotation.OnUpdate += OnRotationUpdate;
             fishComponentReader.OnDestinationUpdate += OnDestinationUpdate;
             fishComponentReader.OnAuthorityUpdate += OnAuthUpdate;
+            fishComponentReader.OnStateUpdate += OnStateUpdate;
             agent = GetComponent<NavMeshAgent>();
             if(fishComponentReader.Authority != Authority.Authoritative)
             {
                 agent.isStopped = true;
             }
             offsetY = transform.position.y - position.Data.Coords.ToUnityVector().y;
+            IsDead = false;
             m_Authority = fishComponentReader.Authority;
         }
 
         private void OnAuthUpdate(Authority authority)
         {
             m_Authority = authority;
-            if(authority == Authority.Authoritative)
+            if(authority == Authority.Authoritative && !IsDead)
             {
-                var pos = transform.position + transform.forward * Time.deltaTime * agent.speed * 5;
+                /*var pos = transform.position + transform.forward * Time.deltaTime * agent.speed * 3;
                 agent.Warp(pos);
                 transform.position = pos;
-                agent.isStopped = false;
+                agent.isStopped = false;*/
+                Vector3 pos = position.Data.Coords.ToUnityVector();
+                pos.y += offsetY;
+                transform.position = pos;
+                agent.Warp(pos);
+            }
+            else if(IsDead)
+            {
+                IsDead = false;
+                Vector3 pos = position.Data.Coords.ToUnityVector();
+                pos.y += offsetY;
+                transform.position = pos;
+                agent.Warp(pos);
             }
         }
 
@@ -87,6 +102,14 @@ namespace Fps
             //transform.position = pos;
             //agent.Warp(pos);
             agent.SetDestination(destination.ToVector3());
+        }
+
+        private void OnStateUpdate(EFishState state)
+        {
+            if(state == EFishState.DEAD)
+            {
+                IsDead = true;
+            }
         }
 
     }
