@@ -27,7 +27,6 @@ namespace Fps.UI
         private LowHealthVignette damageVolumeSettings;
         private ScoreTextController scoreTextController;
 
-
         private void OnReceiveLog(LogComponent.DebugLog.ReceivedRequest message)
         {
             scoreTextController.Log(message.Payload.Message);

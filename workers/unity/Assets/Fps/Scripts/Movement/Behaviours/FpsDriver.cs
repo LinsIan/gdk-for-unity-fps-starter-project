@@ -96,6 +96,16 @@ namespace Fps.Movement
                 inGameManager.TryOpenSettingsMenu();
             }
 
+            if(Input.GetKeyDown(KeyCode.Tab))
+            {
+                inGameManager.SetRankingScreen(true);
+            }
+
+            if(Input.GetKeyUp(KeyCode.Tab))
+            {
+                inGameManager.SetRankingScreen(false);
+            }
+
             // Don't allow controls if in the menu.
             if (inGameManager.InEscapeMenu)
             {
@@ -191,7 +201,6 @@ namespace Fps.Movement
                     Amount = PlayerSettings.PlayerScore,
                     Owner = healthModifiedInfo.Modifier.ModifierId,
                 };
-                Debug.Log("送出加分指令");
                 scoreCommandSender.SendModifyScoreCommand(healthModifiedInfo.Modifier.ModifierId, scoreModifier);
             }
         }

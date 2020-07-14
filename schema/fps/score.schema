@@ -11,6 +11,7 @@ component ScoreComponent {
    id = 2060; 
 	
    float score = 1;
+   string name = 2;
    command improbable.gdk.core.Empty modify_score(ScoreModifier);
 }
    

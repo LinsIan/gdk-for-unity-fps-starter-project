@@ -2,6 +2,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Fps.Config;
 using Fps.WorkerConnectors;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.GameObjectCreation;
 using Improbable.Gdk.PlayerLifecycle;
@@ -47,9 +49,21 @@ namespace Fps.WorkerConnectors
 
         public void SpawnPlayer(int number)
         {
-            var serializedArgs = Encoding.ASCII.GetBytes($"Simulated Player {number}");
+            var arg = new PlayerArguments { PlayerName = $"SimulatedPlayer{number}" };
+            var serializedArgs = SerializeArguments(arg);
+            //var serializedArgs = Encoding.ASCII.GetBytes($"Simulated Player {number}");
             var sendSystem = Worker.World.GetExistingSystem<SendCreatePlayerRequestSystem>();
             sendSystem.RequestPlayerCreation(serializedArgs);
+        }
+
+        private byte[] SerializeArguments(object playerCreationArguments)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                var binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(memoryStream, playerCreationArguments);
+                return memoryStream.ToArray();
+            }
         }
 
         protected override void HandleWorkerConnectionEstablished()

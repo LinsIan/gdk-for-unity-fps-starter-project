@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Collections;
 using System.Text;
 using Fps.Config;
@@ -103,6 +105,8 @@ namespace Fps.WorkerConnectors
 
             // Set the Worker gameObject to the ClientWorker so it can access PlayerCreater reader/writers
             GameObjectCreationHelper.EnableStandardGameObjectCreation(world, entityPipeline, gameObject);
+
+            world.GetOrCreateSystem<UI.RankingSystem>();
         }
 
         private void RemovingAuthoritativePlayer()
@@ -122,9 +126,27 @@ namespace Fps.WorkerConnectors
 
         private void SendRequest()
         {
-            var serializedArgs = Encoding.ASCII.GetBytes(playerName);
+            var arg = new PlayerArguments { PlayerName = playerName };
+            var serializedArgs = SerializeArguments(arg);
+            //var serializedArgs = Encoding.ASCII.GetBytes(playerName);
             Worker.World.GetExistingSystem<SendCreatePlayerRequestSystem>()
-                .RequestPlayerCreation(serializedArgs, onPlayerResponse);
+                .RequestPlayerCreation(serializedArguments : serializedArgs, onPlayerResponse);
+        }
+
+        private byte[] SerializeArguments(object playerCreationArguments)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                var binaryFormatter = new BinaryFormatter();
+                binaryFormatter.Serialize(memoryStream, playerCreationArguments);
+                return memoryStream.ToArray();
+            }
         }
     }
+}
+
+[Serializable]
+public class PlayerArguments
+{
+    public string PlayerName = "Player";
 }

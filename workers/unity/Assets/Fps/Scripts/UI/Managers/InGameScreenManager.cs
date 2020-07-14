@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace Fps.UI
 {
@@ -9,7 +10,10 @@ namespace Fps.UI
         public GameObject Reticle;
         public GameObject Hud;
         public GameObject EscapeScreen;
+        public GameObject RankingScreen;
         public Button QuitButton;
+        public List<Text> RankingNameList;
+        public List<Text> RankingScoreList;
 
         public bool InEscapeMenu { private set; get; }
 
@@ -51,6 +55,7 @@ namespace Fps.UI
 
             SetEscapeScreen(false);
             SetPlayerAiming(false);
+            SetRankingScreen(false);
         }
 
         public void OnDisable()
@@ -84,6 +89,11 @@ namespace Fps.UI
         {
             isPlayerAiming = isAiming;
             Reticle.SetActive(!isPlayerAiming);
+        }
+
+        public void SetRankingScreen(bool isActive)
+        {
+            RankingScreen.SetActive(isActive);
         }
     }
 }

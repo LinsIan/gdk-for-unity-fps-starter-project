@@ -1,3 +1,5 @@
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using Fps.Guns;
 using Fps.Health;
 using Fps.Respawning;
@@ -27,22 +29,34 @@ namespace Fps.Config
             return template;
         }
 
+        private static T DeserializeArguments<T>(byte[] serializedArguments)
+        {
+            using (var memoryStream = new MemoryStream())
+            {
+                var binaryFormatter = new BinaryFormatter();
+                memoryStream.Write(serializedArguments, 0, serializedArguments.Length);
+                memoryStream.Seek(0, SeekOrigin.Begin);
+                return (T) binaryFormatter.Deserialize(memoryStream);
+            }
+        }
+
         public static EntityTemplate Player(EntityId entityId, string workerId, byte[] args)
         {
             var client = EntityTemplate.GetWorkerAccessAttribute(workerId);
-
             var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
 
             var serverResponse = new ServerResponse
             {
                 Position = spawnPosition.ToVector3Int()
             };
-            
+
             var rotationUpdate = new RotationUpdate
             {
                 Yaw = spawnYaw.ToInt1k(),
                 Pitch = spawnPitch.ToInt1k()
             };
+
+            var arg = DeserializeArguments<PlayerArguments>(args);
 
             var pos = new Position.Snapshot { Coords = Coordinates.FromUnityVector(spawnPosition) };
             var serverMovement = new ServerMovement.Snapshot { Latest = serverResponse };
@@ -78,7 +92,7 @@ namespace Fps.Config
             template.AddComponent(gunStateComponent, client);
             template.AddComponent(healthComponent, WorkerUtils.UnityGameLogic);
             template.AddComponent(healthRegenComponent, WorkerUtils.UnityGameLogic);
-            template.AddComponent(new ScoreComponent.Snapshot { Score = 0 }, WorkerUtils.UnityGameLogic);
+            template.AddComponent(new ScoreComponent.Snapshot { Score = 0, Name = arg.PlayerName }, WorkerUtils.UnityGameLogic);
             template.AddComponent(new LogComponent.Snapshot(), client);
 
             PlayerLifecycleHelper.AddPlayerLifecycleComponents(template, workerId, WorkerUtils.UnityGameLogic);
@@ -136,9 +150,6 @@ namespace Fps.Config
                 .AddQueries<ServerMovement.Component>(serverSelfInterest, serverRangeInterest);
 
             template.AddComponent(interest.ToSnapshot());
-
-
-
             template.SetReadAccess(WorkerUtils.UnityClient, WorkerUtils.UnityGameLogic, WorkerUtils.MobileClient);
 
             return template;
@@ -195,7 +206,7 @@ namespace Fps.Config
                 Yaw = 0f.ToInt1k(),
                 Pitch = 0f.ToInt1k()
             };
-            //spawnPosition.y += 3;
+
             float MaxHp = FishSettings.FishHealthDic[EFishType.NORMAL];
 
             var entityTemplate = new EntityTemplate();

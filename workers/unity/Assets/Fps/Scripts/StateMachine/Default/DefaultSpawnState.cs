@@ -40,7 +40,10 @@ namespace Fps.StateMachine
         private void SpawnPlayer()
         {
             ScreenManager.DefaultConnectButton.enabled = false;
-            Owner.ClientConnector.SpawnPlayer("Local Player", OnPlayerResponse);
+            string playerName = ScreenManager.NameField.text;
+            playerName = playerName.Replace(" ", "");
+            if (playerName == "") playerName = "LocalPlayer";
+            Owner.ClientConnector.SpawnPlayer(playerName, OnPlayerResponse);
             Animator.SetTrigger("Connecting");
         }
 

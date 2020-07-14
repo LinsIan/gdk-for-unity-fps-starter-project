@@ -12,6 +12,9 @@ namespace Fps.UI
         public Button QuitButton;
         public Button DefaultConnectButton;
 
+        [Header("InputField")]
+        public InputField NameField;
+
         [SerializeField] private GameObject FrontEndCamera;
 
         private GameObject currentScreen;
