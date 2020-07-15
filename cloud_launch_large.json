@@ -21,8 +21,8 @@
       {
         "layer": "UnityGameLogic",
         "rectangle_grid": {
-          "cols": 1,
-          "rows": 1
+          "cols": 2,
+          "rows": 2
         }
       }
     ]

@@ -38,6 +38,8 @@ namespace Fps.Movement
             server.OnLatestUpdate += OnServerUpdate;
             client.OnLatestUpdate += OnClientUpdate;
 
+            server.OnAuthorityUpdate += OnAuthorityUpdate;
+
             OnClientUpdate(client.Data.Latest);
             OnServerUpdate(server.Data.Latest);
         }
@@ -59,6 +61,14 @@ namespace Fps.Movement
             }
 
             Interpolate(movement.Position.ToVector3() + origin, movement.TimeDelta);
+        }
+
+        private void OnAuthorityUpdate(Authority authority)
+        {
+            if(authority == Authority.Authoritative)
+            {
+                Interpolate(server.Data.Latest.Position.ToVector3() + origin, server.Data.Latest.TimeDelta);
+            }
         }
 
         private void UpdateRotation(Quaternion targetQuaternion, float timeDelta)

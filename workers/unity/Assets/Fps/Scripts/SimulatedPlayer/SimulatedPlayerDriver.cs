@@ -84,7 +84,6 @@ namespace Fps.SimulatedPlayer
                     Amount = PlayerSettings.PlayerScore,
                     Owner = info.Modifier.ModifierId,
                 };
-                Debug.Log("送出加分指令");
                 scoreCommandSender.SendModifyScoreCommand(info.Modifier.ModifierId, scoreModifier);
             }
         }

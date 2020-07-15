@@ -169,7 +169,7 @@ namespace Fps.Movement
         private void OnServerUpdate(ServerResponse update)
         {
             //設定誤差範圍，差太多則進行位置校正，避免作弊
-            if(Vector3.Distance(update.Position.ToVector3() + origin, transform.position) >= 20f)
+            if(Vector3.Distance(update.Position.ToVector3() + origin, transform.position) >= 1f)
             {
                 Reconcile(update.Position.ToVector3() + origin, update.Timestamp);
             }

@@ -125,7 +125,8 @@ namespace Fps.Config
             //記分板UI需要
             var clientScoreInterest = InterestQuery.Query(Constraint.Component(ScoreComponent.ComponentId)).FilterResults(new[]
             {
-                ScoreComponent.ComponentId
+                ScoreComponent.ComponentId, Position.ComponentId, Metadata.ComponentId,ServerMovement.ComponentId,
+                ClientRotation.ComponentId, HealthComponent.ComponentId
             });
 
             // ClientMovement is used by the ServerMovementDriver script.
