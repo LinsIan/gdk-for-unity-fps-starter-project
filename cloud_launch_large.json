@@ -6,8 +6,8 @@
       "snapshotWritePeriodSeconds": 0
     },
     "dimensions": {
-      "xMeters": 1800,
-      "zMeters": 1800
+      "xMeters": 900,
+      "zMeters": 900
     },
     "legacy_flags": [
       {
@@ -21,8 +21,8 @@
       {
         "layer": "UnityGameLogic",
         "rectangle_grid": {
-          "cols": 2,
-          "rows": 2
+          "cols": 3,
+          "rows": 4
         }
       }
     ]
@@ -33,7 +33,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "12"
         }
       ],
       "permissions": [
@@ -47,7 +47,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "12"
         }
       ],
       "permissions": [
@@ -61,7 +61,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "12"
         }
       ],
       "permissions": [

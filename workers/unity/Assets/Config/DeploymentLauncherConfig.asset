@@ -22,7 +22,7 @@ MonoBehaviour:
     Deployment:
       Name: fishmachine_deployment
       SnapshotPath: snapshots/cloud.snapshot
-      LaunchJson: cloud_launch_small.json
+      LaunchJson: cloud_launch_large.json
       Region: 1
       Cluster: 
       DeploymentLocationType: 0

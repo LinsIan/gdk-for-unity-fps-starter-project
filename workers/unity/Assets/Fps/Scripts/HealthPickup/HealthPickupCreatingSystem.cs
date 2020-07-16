@@ -27,37 +27,41 @@ namespace Fps.HealthPickup
         
         public void CreateHealthPickups()
         {
-            Vector3 StartPoint = new Vector3();
-            for(int z = 0; z <= (AreaCol-1) * WorldScale; ++z)
-            {
-                StartPoint.z = HalfLength * WorldScale - z * CreationInterval;
-                for (int x = 0; x <= (AreaWid-1) * WorldScale; ++x)
-                {
-                    StartPoint.x = -HalfLength * WorldScale + x*CreationInterval;
-                    var healthPickup = FpsEntityTemplates.HealthPickup(StartPoint, HealthAmount);
-                    var request = new WorldCommands.CreateEntity.Request(healthPickup);
-                    commandSystem.SendCommand(request);
-                }
-            }
+            //Vector3 StartPoint = new Vector3();
+            //for(int z = 0; z <= (AreaCol-1) * WorldScale; ++z)
+            //{
+            //    StartPoint.z = HalfLength * WorldScale - z * CreationInterval;
+            //    for (int x = 0; x <= (AreaWid-1) * WorldScale; ++x)
+            //    {
+            //        StartPoint.x = -HalfLength * WorldScale + x*CreationInterval;
+            //        var healthPickup = FpsEntityTemplates.HealthPickup(StartPoint, HealthAmount);
+            //        var request = new WorldCommands.CreateEntity.Request(healthPickup);
+            //        commandSystem.SendCommand(request);
+            //    }
+            //}
 
             //fish測試
-            for(int i=0; i<5;++i)
+            for(int i=0; i<20;++i)
             {
-                var fish = FpsEntityTemplates.NormalFish();
-                var fishrequest = new WorldCommands.CreateEntity.Request(fish);
-                commandSystem.SendCommand(fishrequest);
+               var fish = FpsEntityTemplates.NormalFish();
+               var fishrequest = new WorldCommands.CreateEntity.Request(fish);
+               commandSystem.SendCommand(fishrequest);
             }
 
-            for(int i=0; i<2; ++i)
+            for(int i=0; i<9; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                 commandSystem.SendCommand(fishrequest);
             }
 
-            var octopus = FpsEntityTemplates.Octopus();
-            var octopusrequest = new WorldCommands.CreateEntity.Request(octopus);
-            commandSystem.SendCommand(octopusrequest);
+            for(int i=0; i<1; ++i)
+            {
+                var octopus = FpsEntityTemplates.Octopus();
+                var octopusrequest = new WorldCommands.CreateEntity.Request(octopus);
+                commandSystem.SendCommand(octopusrequest);
+            }
+            
 
         }
     }
