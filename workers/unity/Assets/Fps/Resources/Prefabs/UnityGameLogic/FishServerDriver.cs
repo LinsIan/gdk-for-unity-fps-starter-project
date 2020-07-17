@@ -27,12 +27,14 @@ namespace Fps
         private const float MovementRadius = 50f;
         private const float NavMeshSnapDistance = 5f;
         private const float MinRemainingDistance = 0.3f;
+        private const float PositionUpdateFreq = 0.1f;
 
         private NavMeshAgent agent;
         private Bounds worldBounds;
         private float score;
         private float RespawnTime = 5.0f;
         float offsetY = 0;
+        float updateTimer = 0;
 
 
         private void OnEnable()
@@ -46,6 +48,7 @@ namespace Fps
             agent.enabled = true;
             agent.isStopped = false;
             offsetY = transform.position.y - positionWriter.Data.Coords.ToUnityVector().y;
+            updateTimer = 0;
         }
 
         private void OnDisable()
@@ -68,7 +71,14 @@ namespace Fps
             {
                 Swimming();
             }
-            UpdateTransform();
+
+            updateTimer += Time.deltaTime;
+            if(updateTimer >= PositionUpdateFreq)
+            {
+                UpdateTransform();
+                updateTimer = 0;
+            }
+            
         }
 
         private void Swimming()

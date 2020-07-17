@@ -6,8 +6,8 @@
       "snapshotWritePeriodSeconds": 0
     },
     "dimensions": {
-      "xMeters": 900,
-      "zMeters": 900
+      "xMeters": 1200,
+      "zMeters": 1200
     },
     "legacy_flags": [
       {
@@ -33,7 +33,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "12"
+          "value": "15"
         }
       ],
       "permissions": [
@@ -47,7 +47,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "12"
+          "value": "15"
         }
       ],
       "permissions": [
@@ -61,7 +61,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "12"
+          "value": "15"
         }
       ],
       "permissions": [

@@ -41,6 +41,20 @@ namespace Fps
             {EFishType.SPEED, 0.25f },
             {EFishType.OCTOPUS, 2.5f }
         };
+
+        public static Dictionary<EFishType, float> FishSpeedDic = new Dictionary<EFishType, float>()
+        {
+            {EFishType.NORMAL, 5 },
+            {EFishType.SPEED, 8 },
+            {EFishType.OCTOPUS, 2 }
+        };
+
+        public static Dictionary<EFishType, float> FishAngularSpeedDic = new Dictionary<EFishType, float>()
+        {
+            {EFishType.NORMAL, 360 },
+            {EFishType.SPEED, 540 },
+            {EFishType.OCTOPUS, 120 }
+        };
     }
 
     public static class PlayerSettings
