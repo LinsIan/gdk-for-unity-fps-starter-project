@@ -4,9 +4,10 @@ import "fps/common.schema";
 
 type ClientRequest {
 	fps.Vector3Int movement = 1;
-	int32 timestamp = 2;
-	float time_delta = 3;
-	bool includes_jump = 4;
+        fps.Vector3Int position = 2;
+	int32 timestamp = 3;
+	float time_delta = 4;
+	bool includes_jump = 5;
 }
 
 type ServerResponse {

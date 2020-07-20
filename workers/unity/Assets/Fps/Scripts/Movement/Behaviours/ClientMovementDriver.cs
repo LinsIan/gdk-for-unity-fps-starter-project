@@ -168,10 +168,10 @@ namespace Fps.Movement
 
         private void OnServerUpdate(ServerResponse update)
         {
-            if(Vector3.Distance(update.Position.ToVector3() + origin, transform.position) >= 1.5f)
-            {
-                Reconcile(update.Position.ToVector3() + origin, update.Timestamp);
-            }
+            //if(Vector3.Distance(update.Position.ToVector3() + origin, transform.position) >= 1.5f)
+            //{
+            //    Reconcile(update.Position.ToVector3() + origin, update.Timestamp);
+            //}
         }
 
         public void ApplyMovement(Vector3 movement, Quaternion rotation, MovementSpeed movementSpeed, bool startJump)
@@ -310,6 +310,7 @@ namespace Fps.Movement
             {
                 IncludesJump = didJump,
                 Movement = movement.ToVector3Int(),
+                Position = transform.position.ToVector3Int(),
                 TimeDelta = timeDelta,
                 Timestamp = messageStamp
             };

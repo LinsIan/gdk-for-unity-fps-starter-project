@@ -65,8 +65,8 @@ namespace Fps
             isDead = (state == EFishState.DEAD);
         }
 
-            private void Update()
-            {
+        private void Update()
+        {
             if(!isDead)
             {
                 UpdateTransform();
@@ -100,7 +100,7 @@ namespace Fps
 
         private void GetNextDestination()
         {
-            if (positionQueue.Count <= 5) return;
+            if (positionQueue.Count <= 2) return;
             destination = positionQueue.Dequeue();
             var dis = destination - transform.position;
             distance = dis.magnitude;

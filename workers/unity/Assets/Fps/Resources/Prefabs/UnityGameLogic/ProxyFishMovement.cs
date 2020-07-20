@@ -41,6 +41,12 @@ namespace Fps
             offsetY = transform.position.y - position.Data.Coords.ToUnityVector().y;
             IsDead = false;
             m_Authority = fishComponentReader.Authority;
+
+            foreach (var childRenderer in gameObject.GetComponentsInChildren<Renderer>())
+            {
+                Debug.Log("關掉Render");
+                childRenderer.enabled = false;
+            }
         }
 
         private void OnAuthUpdate(Authority authority)

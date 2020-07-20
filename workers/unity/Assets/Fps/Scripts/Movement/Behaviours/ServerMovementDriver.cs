@@ -47,6 +47,14 @@ namespace Fps.Movement
             // Move the player by the given delta.
             Move(request.Movement.ToVector3());
 
+            //位置校正
+            var pos = request.Position.ToVector3() + origin;
+            pos.y = transform.position.y;
+            if (Vector3.Distance(pos, transform.position) >= 2.0f)
+            {
+                transform.position = pos;
+            }
+
             var positionNoOffset = transform.position - origin;
 
             // Send the update using the new position.

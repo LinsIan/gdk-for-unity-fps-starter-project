@@ -41,19 +41,19 @@ namespace Fps.HealthPickup
             //}
 
             //fish測試
-            for(int i=0; i<20;++i)
-            {
-               var fish = FpsEntityTemplates.NormalFish();
-               var fishrequest = new WorldCommands.CreateEntity.Request(fish);
-               commandSystem.SendCommand(fishrequest);
-            }
+            //for(int i=0; i<20;++i)
+            //{
+            //   var fish = FpsEntityTemplates.NormalFish();
+            //   var fishrequest = new WorldCommands.CreateEntity.Request(fish);
+            //   commandSystem.SendCommand(fishrequest);
+            //}
 
-            for(int i=0; i<9; ++i)
-            {
-                var fish = FpsEntityTemplates.SpeedFish();
-                var fishrequest = new WorldCommands.CreateEntity.Request(fish);
-                commandSystem.SendCommand(fishrequest);
-            }
+            //for(int i=0; i<9; ++i)
+            //{
+            //    var fish = FpsEntityTemplates.SpeedFish();
+            //    var fishrequest = new WorldCommands.CreateEntity.Request(fish);
+            //    commandSystem.SendCommand(fishrequest);
+            //}
 
             for(int i=0; i<1; ++i)
             {
