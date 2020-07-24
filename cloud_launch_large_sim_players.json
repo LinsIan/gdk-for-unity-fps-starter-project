@@ -6,8 +6,8 @@
       "snapshotWritePeriodSeconds": 0
     },
     "dimensions": {
-      "xMeters": 1800,
-      "zMeters": 1800
+      "xMeters": 1200,
+      "zMeters": 1200
     },
     "legacy_flags": [
       {
@@ -21,7 +21,7 @@
       {
         "layer": "SimulatedPlayerCoordinator",
         "rectangle_grid": {
-          "cols": 4,
+          "cols": 5,
           "rows": 5
         }
       }
@@ -33,7 +33,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "24"
+          "value": "15"
         },
         {
           "name": "fps_simulated_players_per_coordinator",

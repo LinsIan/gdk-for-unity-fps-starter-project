@@ -38,7 +38,7 @@ namespace Fps.Movement
         {
             var linkedEntityComponent = GetComponent<LinkedEntityComponent>();
             origin = linkedEntityComponent.Worker.Origin;
-
+            origin.y += transform.position.y - spatialPosition.Data.Coords.ToUnityVector().y;
             client.OnLatestUpdate += OnClientUpdate;
         }
 
@@ -49,7 +49,6 @@ namespace Fps.Movement
 
             //位置校正
             var pos = request.Position.ToVector3() + origin;
-            pos.y = transform.position.y;
             if (Vector3.Distance(pos, transform.position) >= 2.0f)
             {
                 transform.position = pos;

@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class RandomPoint : MonoBehaviour
 {
     public float baseRadius = 150.0f;
-    public float mapScale = 1;
+    public float mapScale = 0;
 
     public Vector3 mapPosition;
     public Vector3 workerPosition;

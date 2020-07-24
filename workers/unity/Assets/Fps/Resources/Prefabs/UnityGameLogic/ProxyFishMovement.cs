@@ -44,7 +44,6 @@ namespace Fps
 
             foreach (var childRenderer in gameObject.GetComponentsInChildren<Renderer>())
             {
-                Debug.Log("關掉Render");
                 childRenderer.enabled = false;
             }
         }

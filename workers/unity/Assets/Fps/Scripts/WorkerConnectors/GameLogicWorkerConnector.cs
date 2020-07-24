@@ -25,7 +25,7 @@ namespace Fps.WorkerConnectors
 
         protected async void Start()
         {
-            Application.targetFrameRate = 60;
+            Application.targetFrameRate = 30;
 
             await Connect(GetConnectionHandlerBuilder(), new ForwardingDispatcher());
             await LoadWorld();
@@ -46,8 +46,9 @@ namespace Fps.WorkerConnectors
             //Create Healthpickup & fish
             var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
             healthPickupCreatingSystem.WorldScale = worldSize / 4;
-            RandomPoint.Instance.mapScale = healthPickupCreatingSystem.WorldScale;
+            RandomPoint.Instance.mapScale = worldSize / 4;
             healthPickupCreatingSystem.CreateHealthPickups();
+
 
             RandomPoint.Instance.mapPosition = navMeshSurface.navMeshData.position;
             RandomPoint.Instance.workerPosition = transform.position;
@@ -96,6 +97,10 @@ namespace Fps.WorkerConnectors
 
             // Score
             world.GetOrCreateSystem<ScoreModifierSystem>();
+
+            //fish
+            //var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            //healthPickupCreatingSystem.worker = Worker;
         }
 
         protected override async Task LoadWorld()

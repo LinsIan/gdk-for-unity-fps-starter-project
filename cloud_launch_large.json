@@ -22,7 +22,7 @@
         "layer": "UnityGameLogic",
         "rectangle_grid": {
           "cols": 3,
-          "rows": 4
+          "rows": 3
         }
       }
     ]
@@ -34,6 +34,10 @@
         {
           "name": "world_size",
           "value": "15"
+        },
+        {
+          "name": "fish_num_per_worker",
+          "value": "0"
         }
       ],
       "permissions": [

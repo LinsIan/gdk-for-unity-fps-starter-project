@@ -47,6 +47,10 @@
         {
           "name": "world_size",
           "value": "4"
+        },
+        {
+          "name": "fish_num_per_worker",
+          "value": "2000"
         }
       ],
       "permissions": [

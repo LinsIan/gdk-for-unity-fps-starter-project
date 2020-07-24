@@ -100,7 +100,7 @@ namespace Fps
 
         private void GetNextDestination()
         {
-            if (positionQueue.Count <= 2) return;
+            if (positionQueue.Count <= 0) return;
             destination = positionQueue.Dequeue();
             var dis = destination - transform.position;
             distance = dis.magnitude;
