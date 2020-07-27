@@ -47,17 +47,7 @@ namespace Fps
             Vector3 pos = position.Data.Coords.ToUnityVector();
             pos.y += offsetY;
             positionQueue.Enqueue(pos);
-            //transform.position = pos;
         }
-
-        //private void OnRotationUpdate(ClientRotation.Update update)
-        //{
-        //    float pitch = rotation.Data.Latest.Pitch.ToFloat1k();
-        //    float roll = rotation.Data.Latest.Roll.ToFloat1k();
-        //    float yaw = rotation.Data.Latest.Yaw.ToFloat1k();
-        //    rotationQueue.Enqueue(Quaternion.Euler(pitch, yaw, roll));
-        //    //transform.rotation = Quaternion.Euler(pitch, yaw, roll);
-        //}
 
         private void OnStateUpdate(EFishState state)
         {
@@ -101,10 +91,14 @@ namespace Fps
         private void GetNextDestination()
         {
             if (positionQueue.Count <= 0) return;
-            destination = positionQueue.Dequeue();
-            var dis = destination - transform.position;
-            distance = dis.magnitude;
-            moveVector = dis.normalized;
+            do
+            {
+                destination = positionQueue.Dequeue();
+                var dis = destination - transform.position;
+                distance = dis.magnitude;
+                moveVector = dis.normalized;
+            }
+            while (positionQueue.Count >= 3);
         }
 
     }

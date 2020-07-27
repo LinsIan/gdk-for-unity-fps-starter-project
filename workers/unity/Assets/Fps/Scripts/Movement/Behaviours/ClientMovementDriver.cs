@@ -1,4 +1,5 @@
 using Fps.SchemaExtensions;
+using Improbable;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.Subscriptions;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace Fps.Movement
         [Require] private ClientMovementWriter client;
         [Require] private ClientRotationWriter rotation;
         [Require] private ServerMovementReader server;
+        [Require] private PositionReader position;
 #pragma warning restore 649
 
         [SerializeField] private float transformUpdateHz = 15.0f;
@@ -140,6 +142,7 @@ namespace Fps.Movement
         {
             var linkedEntityComponent = GetComponent<LinkedEntityComponent>();
             origin = linkedEntityComponent.Worker.Origin;
+            origin.y = transform.position.y - position.Data.Coords.ToUnityVector().y;
             server.OnLatestUpdate += OnServerUpdate;
             server.OnForcedRotationEvent += OnForcedRotation;
         }
@@ -168,10 +171,10 @@ namespace Fps.Movement
 
         private void OnServerUpdate(ServerResponse update)
         {
-            //if(Vector3.Distance(update.Position.ToVector3() + origin, transform.position) >= 1.5f)
-            //{
-            //    Reconcile(update.Position.ToVector3() + origin, update.Timestamp);
-            //}
+            if(Vector3.Distance(update.Position.ToVector3() + origin, transform.position) >= 1.0f)
+            {
+                Reconcile(update.Position.ToVector3() + origin, update.Timestamp);
+            }
         }
 
         public void ApplyMovement(Vector3 movement, Quaternion rotation, MovementSpeed movementSpeed, bool startJump)
@@ -310,11 +313,10 @@ namespace Fps.Movement
             {
                 IncludesJump = didJump,
                 Movement = movement.ToVector3Int(),
-                Position = transform.position.ToVector3Int(),
+                Position = (transform.position - origin).ToVector3Int(),
                 TimeDelta = timeDelta,
                 Timestamp = messageStamp
             };
-
             var update = new ClientMovement.Update { Latest = clientRequest };
             client.SendUpdate(update);
             lastMovementStationary = !anyMovement;

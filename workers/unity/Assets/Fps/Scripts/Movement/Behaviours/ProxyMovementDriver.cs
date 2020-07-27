@@ -1,6 +1,7 @@
 using Fps.SchemaExtensions;
 using Improbable.Gdk.Subscriptions;
 using Improbable.Worker.CInterop;
+using Improbable;
 using UnityEngine;
 
 namespace Fps.Movement
@@ -34,7 +35,8 @@ namespace Fps.Movement
         {
             LinkedEntityComponent = GetComponent<LinkedEntityComponent>();
             origin = LinkedEntityComponent.Worker.Origin;
-
+            origin.y = transform.position.y - server.Data.Latest.Position.ToVector3().y;
+            
             server.OnLatestUpdate += OnServerUpdate;
             client.OnLatestUpdate += OnClientUpdate;
 
@@ -42,6 +44,10 @@ namespace Fps.Movement
 
             OnClientUpdate(client.Data.Latest);
             OnServerUpdate(server.Data.Latest);
+            if(server.Authority != Authority.Authoritative)
+            {
+                Debug.Log(gameObject.name + ":" + origin);
+            }
         }
 
         private void OnClientUpdate(RotationUpdate rotation)
@@ -59,15 +65,21 @@ namespace Fps.Movement
             {
                 return;
             }
-
             Interpolate(movement.Position.ToVector3() + origin, movement.TimeDelta);
+
+            //if (Vector3.Distance(transform.position, movement.Position.ToVector3() + origin) > 1f)
+            //{
+            //    transform.position = movement.Position.ToVector3() + origin;
+            //}
+
         }
 
         private void OnAuthorityUpdate(Authority authority)
         {
             if(authority == Authority.Authoritative)
             {
-                Interpolate(server.Data.Latest.Position.ToVector3() + origin, server.Data.Latest.TimeDelta);
+                //Interpolate(server.Data.Latest.Position.ToVector3() + origin, server.Data.Latest.TimeDelta);
+                transform.position = server.Data.Latest.Position.ToVector3() + origin;
             }
         }
 
