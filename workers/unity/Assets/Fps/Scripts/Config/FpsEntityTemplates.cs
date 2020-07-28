@@ -211,14 +211,14 @@ namespace Fps.Config
             float MaxHp = FishSettings.FishHealthDic[EFishType.NORMAL];
 
             var entityTemplate = new EntityTemplate();
-            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new Metadata.Snapshot("NormalFish"), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new Metadata.Snapshot("NormalFish"), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.FishAI);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.NORMAL, EFishState.SWIM, spawnPosition.ToVector3Int()), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.NORMAL, EFishState.SWIM, spawnPosition.ToVector3Int()), WorkerUtils.FishAI);
 
-            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient, WorkerUtils.FishAI);
 
             //興趣範圍設定
             const int serverRadius = 150;
@@ -250,14 +250,14 @@ namespace Fps.Config
             float MaxHp = FishSettings.FishHealthDic[EFishType.SPEED];
 
             var entityTemplate = new EntityTemplate();
-            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new Metadata.Snapshot("SpeedFish"), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new Metadata.Snapshot("SpeedFish"), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.FishAI);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.SPEED, EFishState.SWIM, spawnPosition.ToVector3Int()), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.SPEED, EFishState.SWIM, spawnPosition.ToVector3Int()), WorkerUtils.FishAI);
 
-            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient, WorkerUtils.FishAI);
 
             //興趣範圍設定
             const int serverRadius = 150;
@@ -290,14 +290,14 @@ namespace Fps.Config
             float MaxHp = FishSettings.FishHealthDic[EFishType.OCTOPUS];
 
             var entityTemplate = new EntityTemplate();
-            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new Metadata.Snapshot("Octopus"), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new Position.Snapshot(Coordinates.FromUnityVector(spawnPosition)), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new Metadata.Snapshot("Octopus"), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new Persistence.Snapshot(), WorkerUtils.FishAI);
+            entityTemplate.AddComponent(new ClientRotation.Snapshot(rotationUpdate), WorkerUtils.FishAI);
             entityTemplate.AddComponent(new HealthComponent.Snapshot(MaxHp, MaxHp), WorkerUtils.UnityGameLogic);
-            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.OCTOPUS, EFishState.SWIM, spawnPosition.ToVector3Int()), WorkerUtils.UnityGameLogic);
+            entityTemplate.AddComponent(new FishComponent.Snapshot(EFishType.OCTOPUS, EFishState.SWIM, spawnPosition.ToVector3Int()), WorkerUtils.FishAI);
 
-            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient);
+            entityTemplate.SetReadAccess(WorkerUtils.UnityGameLogic, WorkerUtils.UnityClient, WorkerUtils.FishAI);
 
             //興趣範圍設定
             const int serverRadius = 150;

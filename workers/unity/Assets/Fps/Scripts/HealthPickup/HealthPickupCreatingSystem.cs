@@ -50,7 +50,7 @@ namespace Fps.HealthPickup
              }*/
         }
         
-        public void CreateHealthPickups()
+        public void CreateHealthPickupsAndFish()
         {
             //Vector3 StartPoint = new Vector3();
             //for(int z = 0; z <= (AreaCol-1) * WorldScale; ++z)
@@ -66,7 +66,7 @@ namespace Fps.HealthPickup
             //}
 
             //fish測試
-            /*
+            
             for(int i=0; i<31;++i)
             {
                var fish = FpsEntityTemplates.NormalFish();
@@ -88,7 +88,7 @@ namespace Fps.HealthPickup
                 commandSystem.SendCommand(octopusrequest);
             }
             
-            */
+            
         }
     }
 }

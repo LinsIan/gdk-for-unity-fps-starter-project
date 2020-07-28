@@ -1,7 +1,4 @@
 using Fps.Config;
-using Fps.Guns;
-using Fps.Health;
-using Fps.Metrics;
 using Fps.HealthPickup;
 using Fps.WorldTiles;
 using Improbable.Gdk.Core;
@@ -12,14 +9,16 @@ using UnityEngine;
 using System;
 using System.Threading.Tasks;
 using UnityEngine.AI;
+using Fps.Metrics;
+
 
 namespace Fps.WorkerConnectors
 {
-    public class GameLogicWorkerConnector : WorkerConnectorBase
+    public class FishAIWorkerConnector : WorkerConnectorBase
     {
         public bool DisableRenderers = true;
         public Bounds Bounds { get; private set; }
-        
+
         private int worldSize;
         NavMeshSurface navMeshSurface;
 
@@ -39,33 +38,37 @@ namespace Fps.WorkerConnectors
                     childRenderer.enabled = false;
                 }
             }
-            ////動態生成NavMesh
-            //navMeshSurface = GetComponent<NavMeshSurface>();
-            //navMeshSurface.BuildNavMesh();
 
-            ////Create Healthpickup & fish
-            //var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
-            //healthPickupCreatingSystem.WorldScale = worldSize / 4;
-            //RandomPoint.Instance.mapScale = worldSize / 4;
-            //healthPickupCreatingSystem.CreateHealthPickupsAndFish();
+            //動態生成NavMesh
+            navMeshSurface = GetComponent<NavMeshSurface>();
+            navMeshSurface.BuildNavMesh();
+
+            //Create Healthpickup & fish
+            var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            healthPickupCreatingSystem.WorldScale = worldSize / 4;
+            RandomPoint.Instance.mapScale = worldSize / 4;
+            healthPickupCreatingSystem.CreateHealthPickupsAndFish();
+
+            RandomPoint.Instance.mapPosition = navMeshSurface.navMeshData.position;
+            RandomPoint.Instance.workerPosition = transform.position;
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()
         {
             IConnectionFlow connectionFlow;
             ConnectionParameters connectionParameters;
-
-            var workerId = CreateNewWorkerId(WorkerUtils.UnityGameLogic);
+            
+            var workerId = CreateNewWorkerId(WorkerUtils.FishAI);
 
             if (Application.isEditor)
             {
                 connectionFlow = new ReceptionistFlow(workerId);
-                connectionParameters = CreateConnectionParameters(WorkerUtils.UnityGameLogic);
+                connectionParameters = CreateConnectionParameters(WorkerUtils.FishAI);
             }
             else
             {
                 connectionFlow = new ReceptionistFlow(workerId, new CommandLineConnectionFlowInitializer());
-                connectionParameters = CreateConnectionParameters(WorkerUtils.UnityGameLogic,
+                connectionParameters = CreateConnectionParameters(WorkerUtils.FishAI,
                     new CommandLineConnectionParameterInitializer());
             }
 
@@ -81,18 +84,8 @@ namespace Fps.WorkerConnectors
             PlayerLifecycleHelper.AddServerSystems(world);
             GameObjectCreationHelper.EnableStandardGameObjectCreation(world);
 
-            // Shooting
-            var shootingsystem = world.GetOrCreateSystem<ServerShootingSystem>();
-
             // Metrics
             world.GetOrCreateSystem<MetricSendSystem>();
-
-            // Health
-            world.GetOrCreateSystem<ServerHealthModifierSystem>();
-            world.GetOrCreateSystem<HealthRegenSystem>();
-
-            // Score
-            world.GetOrCreateSystem<ScoreModifierSystem>();
         }
 
         protected override async Task LoadWorld()
@@ -108,9 +101,12 @@ namespace Fps.WorkerConnectors
         }
 
         public async Task<Bounds> GetWorldBounds()
-        {   
+        {
             var worldSize = await GetWorldSize();
             return new Bounds(Worker.Origin, MapBuilder.GetWorldDimensions(worldSize));
         }
+
     }
+
 }
+

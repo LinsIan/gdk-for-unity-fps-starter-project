@@ -21,7 +21,17 @@
       {
         "layer": "UnityGameLogic",
         "rectangle_grid": {
-          "cols": 2,
+          "cols": 1,
+          "rows": 1
+        },
+        "options": {
+          "manual_worker_connection_only": true
+        }
+      },
+      {
+        "layer": "FishAI",
+        "rectangle_grid": {
+          "cols": 1,
           "rows": 1
         },
         "options": {
@@ -50,7 +60,21 @@
         },
         {
           "name": "fish_num_per_worker",
-          "value": "2000"
+          "value": "0"
+        }
+      ],
+      "permissions": [
+        {
+          "all": {}
+        }
+      ]
+    },
+    {
+      "worker_type": "FishAI",
+      "flags": [
+        {
+          "name": "world_size",
+          "value": "4"
         }
       ],
       "permissions": [
@@ -103,9 +127,11 @@
           "value": "4"
         }
       ],
-      "permissions": [{
+      "permissions": [
+        {
           "all": {}
-      }]
+        }
+      ]
     }
   ]
 }

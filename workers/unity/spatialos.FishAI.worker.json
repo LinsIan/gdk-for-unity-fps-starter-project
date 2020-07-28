@@ -2,12 +2,12 @@
   "build": {
     "tasks": [
       {
-        "name": "Codegen",
+        "name": "Codegen",  
         "steps": [{"name": "** Run ci/codegen.sh instead **", "command": "echo", "arguments": ["No-op."]}]
       },
       {
         "name": "build",
-        "steps": [{"name": "** Run ci/build-gamelogic.sh instead **", "command": "echo", "arguments": ["No-op."]}]
+        "steps": [{"name": "** Run ci/build-fishai.sh instead **", "command": "echo", "arguments": ["No-op."]}]
       },
       {
         "name": "clean",
@@ -18,7 +18,7 @@
   "bridge": {
     "worker_attribute_set": {
       "attributes": [
-        "UnityGameLogic"
+        "FishAI"
       ]
     },
     "component_delivery": {
@@ -30,39 +30,39 @@
     "default": {
       "run_type": "EXECUTABLE",
       "windows": {
-        "command": "build/worker/UnityGameLogic@Windows/UnityGameLogic@Windows.exe",
+        "command": "build/worker/FishAI@Windows/FishAI@Windows.exe",
         "arguments": [
           "+workerType",
-          "UnityGameLogic",
+          "FishAI",
           "-batchmode",
           "-nographics",
           "-logfile",
-          "../../logs/external-default-unitygamelogic.log"
+          "../../logs/external-default-fishai.log"
         ]
       },
       "macos": {
         "command": "open",
         "arguments": [
           "-n",
-          "./build/worker/UnityGameLogic@Mac/UnityGameLogic@Mac.app",
+          "./build/worker/FishAI@Mac/FishAI@Mac.app",
           "--args",
           "+workerType",
-          "UnityGameLogic",
+          "FishAI",
           "-batchmode",
           "-nographics",
           "-logfile",
-          "../../logs/external-default-unitygamelogic.log"
+          "../../logs/external-default-fishai.log"
         ]
       }
     }
   },
   "managed": {
     "windows": {
-      "artifact_name": "UnityGameLogic@Windows.zip",
-      "command": "UnityGameLogic@Windows.exe",
+      "artifact_name": "FishAI@Windows.zip",
+      "command": "FishAI@Windows.exe",
       "arguments": [
         "+workerType",
-        "UnityGameLogic",
+        "FishAI",
         "+workerId",
         "${IMPROBABLE_WORKER_ID}",
         "+receptionistHost",
@@ -78,11 +78,11 @@
       ]
     },
     "macos": {
-      "artifact_name": "UnityGameLogic@Mac.zip",
-      "command": "UnityGameLogic@Mac.app/Contents/MacOS/UnityGameLogic@Mac",
+      "artifact_name": "FishAI@Mac.zip",
+      "command": "FishAI@Mac.app/Contents/MacOS/FishAI@Mac",
       "arguments": [
         "+workerType",
-        "UnityGameLogic",
+        "FishAI",
         "+workerId",
         "${IMPROBABLE_WORKER_ID}",
         "+receptionistHost",
@@ -98,11 +98,11 @@
       ]
     },
     "linux": {
-      "artifact_name": "UnityGameLogic@Linux.zip",
-      "command": "UnityGameLogic@Linux",
+      "artifact_name": "FishAI@Linux.zip",
+      "command": "FishAI@Linux",
       "arguments": [
         "+workerType",
-        "UnityGameLogic",
+        "FishAI",
         "+workerId",
         "${IMPROBABLE_WORKER_ID}",
         "+receptionistHost",

@@ -6,6 +6,7 @@ namespace Fps.Config
         public const string MobileClient = "MobileClient";
 
         public const string UnityGameLogic = "UnityGameLogic";
+        public const string FishAI = "FishAI";
         public const string SimulatedPlayerCoordinator = "SimulatedPlayerCoordinator";
     }
 }
