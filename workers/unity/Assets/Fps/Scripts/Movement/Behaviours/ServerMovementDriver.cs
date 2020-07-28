@@ -33,7 +33,7 @@ namespace Fps.Movement
                 Debug.LogError("The Spatial Position Update Hz must be greater than 0.");
             }
         }
-
+         
         private void OnEnable()
         {
             var linkedEntityComponent = GetComponent<LinkedEntityComponent>();
@@ -51,7 +51,7 @@ namespace Fps.Movement
             var pos = request.Position.ToVector3() + origin;
             var distance = pos.y - transform.position.y;
             if (distance < 0) distance *= -1;
-            if (distance >= 0.5f)
+            if (distance >= 1.5f)
             {
                 transform.position = pos;
             }

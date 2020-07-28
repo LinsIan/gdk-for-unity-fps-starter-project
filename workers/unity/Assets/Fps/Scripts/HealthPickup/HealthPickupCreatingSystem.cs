@@ -66,7 +66,7 @@ namespace Fps.HealthPickup
             //}
 
             //fish測試
-            
+            /*
             for(int i=0; i<31;++i)
             {
                var fish = FpsEntityTemplates.NormalFish();
@@ -88,7 +88,7 @@ namespace Fps.HealthPickup
                 commandSystem.SendCommand(octopusrequest);
             }
             
-            
+            */
         }
     }
 }

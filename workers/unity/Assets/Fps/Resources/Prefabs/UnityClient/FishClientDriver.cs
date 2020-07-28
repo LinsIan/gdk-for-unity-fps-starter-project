@@ -85,7 +85,6 @@ namespace Fps
                     transform.position += moveVector * delta;
                 }
             }
-            
         }
 
         private void GetNextDestination()

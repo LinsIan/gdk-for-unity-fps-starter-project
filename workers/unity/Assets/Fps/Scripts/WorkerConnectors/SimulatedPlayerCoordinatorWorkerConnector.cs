@@ -44,7 +44,7 @@ namespace Fps.WorkerConnectors
 
         protected async void Start()
         {
-            Application.targetFrameRate = 60;
+            Application.targetFrameRate = 30;
 
             var args = CommandLineArgs.FromCommandLine();
             var deploymentName = string.Empty;

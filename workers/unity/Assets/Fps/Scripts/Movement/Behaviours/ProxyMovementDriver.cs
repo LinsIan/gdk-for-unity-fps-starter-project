@@ -67,10 +67,10 @@ namespace Fps.Movement
             }
             Interpolate(movement.Position.ToVector3() + origin, movement.TimeDelta);
 
-            //if (Vector3.Distance(transform.position, movement.Position.ToVector3() + origin) > 1f)
-            //{
-            //    transform.position = movement.Position.ToVector3() + origin;
-            //}
+            if (Vector3.Distance(transform.position, movement.Position.ToVector3() + origin) > 1.5f)
+            {
+                transform.position = movement.Position.ToVector3() + origin;
+            }
 
         }
 
