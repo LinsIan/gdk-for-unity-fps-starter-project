@@ -85,7 +85,6 @@ namespace Fps.Health
                 {
                     healthModifiedInfo.Died = true;
                 }
-
                 componentUpdateSystem.SendEvent(new HealthComponent.HealthModified.Event(healthModifiedInfo), entityId);
                 healthComponentData[entity] = health;
             }

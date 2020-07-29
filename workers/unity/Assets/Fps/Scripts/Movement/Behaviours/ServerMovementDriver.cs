@@ -38,7 +38,6 @@ namespace Fps.Movement
         {
             var linkedEntityComponent = GetComponent<LinkedEntityComponent>();
             origin = linkedEntityComponent.Worker.Origin;
-            origin.y = transform.position.y - spatialPosition.Data.Coords.ToUnityVector().y;
             client.OnLatestUpdate += OnClientUpdate;
         }
 
@@ -46,12 +45,12 @@ namespace Fps.Movement
         {
             // Move the player by the given delta.
             Move(request.Movement.ToVector3());
-
+            
             //位置校正
             var pos = request.Position.ToVector3() + origin;
             var distance = pos.y - transform.position.y;
             if (distance < 0) distance *= -1;
-            if (distance >= 1.5f)
+            if (distance >= 0.1f)
             {
                 transform.position = pos;
             }

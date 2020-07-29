@@ -29,7 +29,7 @@ public class RandomPoint : MonoBehaviour
     {
         float radius = baseRadius * mapScale;
         Vector3 randomDirection = Random.insideUnitSphere * radius;
-        randomDirection += transform.position;
+        randomDirection += workerPosition;
         NavMeshHit hit;
         Vector3 finalPosition = Vector3.zero;
         if (NavMesh.SamplePosition(randomDirection, out hit, radius, 1))
@@ -37,7 +37,7 @@ public class RandomPoint : MonoBehaviour
             finalPosition = hit.position;
         }
 
-        finalPosition.y -= transform.position.y;
+        finalPosition.y -= workerPosition.y;
         return finalPosition;
     }
 }

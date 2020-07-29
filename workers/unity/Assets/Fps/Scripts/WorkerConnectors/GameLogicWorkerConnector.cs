@@ -21,7 +21,7 @@ namespace Fps.WorkerConnectors
         public Bounds Bounds { get; private set; }
         
         private int worldSize;
-        NavMeshSurface navMeshSurface;
+        //NavMeshSurface navMeshSurface;
 
         protected async void Start()
         {
@@ -39,15 +39,12 @@ namespace Fps.WorkerConnectors
                     childRenderer.enabled = false;
                 }
             }
-            ////動態生成NavMesh
-            //navMeshSurface = GetComponent<NavMeshSurface>();
-            //navMeshSurface.BuildNavMesh();
 
-            ////Create Healthpickup & fish
+            //Create Healthpickup
             //var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
             //healthPickupCreatingSystem.WorldScale = worldSize / 4;
             //RandomPoint.Instance.mapScale = worldSize / 4;
-            //healthPickupCreatingSystem.CreateHealthPickupsAndFish();
+            //healthPickupCreatingSystem.CreateHealthPickUp();
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()

@@ -11,7 +11,7 @@ using Improbable.Worker.CInterop;
 
 namespace Fps
 {
-    [WorkerType(WorkerUtils.UnityGameLogic)]
+    [WorkerType(WorkerUtils.FishAI)]
     public class ProxyFishMovement : MonoBehaviour
     {
 #pragma warning disable 649
@@ -51,6 +51,7 @@ namespace Fps
         private void OnAuthUpdate(Authority authority)
         {
             m_Authority = authority;
+            Debug.Log(authority);
             if(authority == Authority.Authoritative ) //位置校正
             {
                 /*var pos = transform.position + transform.forward * Time.deltaTime * agent.speed * 3;
@@ -62,6 +63,7 @@ namespace Fps
                 transform.position = pos;
                 agent.Warp(pos);
                 IsDead = false;
+                
             }
         }
 

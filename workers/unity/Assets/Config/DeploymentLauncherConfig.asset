@@ -28,15 +28,4 @@ MonoBehaviour:
       DeploymentLocationType: 0
       Tags:
       - dev_login
-    SimulatedPlayerDeploymentConfigs:
-    - Name: fishmachine_deployment_sim1
-      SnapshotPath: snapshots/cloud.snapshot
-      LaunchJson: cloud_launch_large_sim_players.json
-      Region: 1
-      Cluster: 
-      DeploymentLocationType: 0
-      Tags: []
-      TargetDeploymentName: fishmachine_deployment
-      FlagPrefix: fps
-      WorkerType: SimulatedPlayerCoordinator
-      WorkerTypeId: 1
+    SimulatedPlayerDeploymentConfigs: []

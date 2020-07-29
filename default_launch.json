@@ -31,7 +31,7 @@
       {
         "layer": "FishAI",
         "rectangle_grid": {
-          "cols": 1,
+          "cols": 2,
           "rows": 1
         },
         "options": {
@@ -57,10 +57,6 @@
         {
           "name": "world_size",
           "value": "4"
-        },
-        {
-          "name": "fish_num_per_worker",
-          "value": "0"
         }
       ],
       "permissions": [
@@ -75,6 +71,10 @@
         {
           "name": "world_size",
           "value": "4"
+        },
+        {
+          "name": "fish_num",
+          "value": "5"
         }
       ],
       "permissions": [

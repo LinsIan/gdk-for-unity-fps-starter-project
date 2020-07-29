@@ -11,7 +11,7 @@ using Improbable;
 
 namespace Fps
 {
-    [WorkerType(WorkerUtils.UnityGameLogic)]
+    [WorkerType(WorkerUtils.FishAI)]
     public class FishServerDriver : MonoBehaviour
     {
 #pragma warning disable 649
@@ -42,7 +42,7 @@ namespace Fps
             agent = GetComponent<NavMeshAgent>();
             score = FishSettings.FishScoreDic[fishComponentWriter.Data.Type];
             RespawnTime = FishSettings.FishRespawnTimeDic[fishComponentWriter.Data.Type];
-            worldBounds = FindObjectOfType<GameLogicWorkerConnector>().Bounds;
+            worldBounds = FindObjectOfType<FishAIWorkerConnector>().Bounds;
             health.OnHealthModifiedEvent += OnHealthModified;
 
             agent.enabled = true;
@@ -172,7 +172,7 @@ namespace Fps
 
         private IEnumerator WaitForRespawn()
         {
-            if (health.Authority != Improbable.Worker.CInterop.Authority.Authoritative) yield break;
+            if (fishComponentWriter.Authority != Improbable.Worker.CInterop.Authority.Authoritative) yield break;
             yield return new WaitForSeconds(RespawnTime);
             Respawn();
         }

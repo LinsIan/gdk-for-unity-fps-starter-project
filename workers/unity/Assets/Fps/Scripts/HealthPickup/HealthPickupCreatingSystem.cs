@@ -34,11 +34,10 @@ namespace Fps.HealthPickup
 
         protected override void OnUpdate()
         {
-            /*if (RandomPoint.Instance.mapScale == 0) return;
+            if (RandomPoint.Instance.mapScale == 0) return;
 
-            var NumFlag = worker.GetWorkerFlag("fish_num_per_worker");
+            var NumFlag = worker.GetWorkerFlag("fish_num");
             var Num = System.Convert.ToInt32(NumFlag);
-            Debug.Log("Num:"+Num);
             if(fishNum != Num)
             {
                 for (; fishNum < Num; ++fishNum)
@@ -47,33 +46,20 @@ namespace Fps.HealthPickup
                     var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                     commandSystem.SendCommand(fishrequest);
                 }
-             }*/
+            }
         }
         
-        public void CreateHealthPickupsAndFish()
+        public void CreateFish()
         {
-            //Vector3 StartPoint = new Vector3();
-            //for(int z = 0; z <= (AreaCol-1) * WorldScale; ++z)
-            //{
-            //    StartPoint.z = HalfLength * WorldScale - z * CreationInterval;
-            //    for (int x = 0; x <= (AreaWid-1) * WorldScale; ++x)
-            //    {
-            //        StartPoint.x = -HalfLength * WorldScale + x*CreationInterval;
-            //        var healthPickup = FpsEntityTemplates.HealthPickup(StartPoint, HealthAmount);
-            //        var request = new WorldCommands.CreateEntity.Request(healthPickup);
-            //        commandSystem.SendCommand(request);
-            //    }
-            //}
-
             //fish測試
-            
-            for(int i=0; i<31;++i)
+            /*
+            for(int i=0; i<5;++i)
             {
                var fish = FpsEntityTemplates.NormalFish();
                var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                commandSystem.SendCommand(fishrequest);
             }
-
+            
             for(int i=0; i<22; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
@@ -86,9 +72,23 @@ namespace Fps.HealthPickup
                 var octopus = FpsEntityTemplates.Octopus();
                 var octopusrequest = new WorldCommands.CreateEntity.Request(octopus);
                 commandSystem.SendCommand(octopusrequest);
+            }*/
+        }
+
+        public void CreateHealthPickUp()
+        {
+            Vector3 StartPoint = new Vector3();
+            for (int z = 0; z <= (AreaCol - 1) * WorldScale; ++z)
+            {
+                StartPoint.z = HalfLength * WorldScale - z * CreationInterval;
+                for (int x = 0; x <= (AreaWid - 1) * WorldScale; ++x)
+                {
+                    StartPoint.x = -HalfLength * WorldScale + x * CreationInterval;
+                    var healthPickup = FpsEntityTemplates.HealthPickup(StartPoint, HealthAmount);
+                    var request = new WorldCommands.CreateEntity.Request(healthPickup);
+                    commandSystem.SendCommand(request);
+                }
             }
-            
-            
         }
     }
 }

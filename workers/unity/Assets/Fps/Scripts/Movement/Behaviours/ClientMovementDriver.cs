@@ -142,7 +142,6 @@ namespace Fps.Movement
         {
             var linkedEntityComponent = GetComponent<LinkedEntityComponent>();
             origin = linkedEntityComponent.Worker.Origin;
-            origin.y = transform.position.y - position.Data.Coords.ToUnityVector().y;
             server.OnLatestUpdate += OnServerUpdate;
             server.OnForcedRotationEvent += OnForcedRotation;
         }
@@ -317,6 +316,7 @@ namespace Fps.Movement
                 TimeDelta = timeDelta,
                 Timestamp = messageStamp
             };
+
             var update = new ClientMovement.Update { Latest = clientRequest };
             client.SendUpdate(update);
             lastMovementStationary = !anyMovement;

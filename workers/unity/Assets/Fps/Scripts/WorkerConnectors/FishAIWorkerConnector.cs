@@ -43,14 +43,15 @@ namespace Fps.WorkerConnectors
             navMeshSurface = GetComponent<NavMeshSurface>();
             navMeshSurface.BuildNavMesh();
 
-            //Create Healthpickup & fish
+            //Create fish
+            var randomPoint = GetComponent<RandomPoint>();
             var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
             healthPickupCreatingSystem.WorldScale = worldSize / 4;
-            RandomPoint.Instance.mapScale = worldSize / 4;
-            healthPickupCreatingSystem.CreateHealthPickupsAndFish();
+            randomPoint.mapScale = (float)worldSize / 4f;
+            healthPickupCreatingSystem.CreateFish();
 
-            RandomPoint.Instance.mapPosition = navMeshSurface.navMeshData.position;
-            RandomPoint.Instance.workerPosition = transform.position;
+            randomPoint.mapPosition = navMeshSurface.navMeshData.position;
+            randomPoint.workerPosition = transform.position;
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()
@@ -86,6 +87,10 @@ namespace Fps.WorkerConnectors
 
             // Metrics
             world.GetOrCreateSystem<MetricSendSystem>();
+
+            // fish
+            var fishSystem = world.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            fishSystem.worker = Worker;
         }
 
         protected override async Task LoadWorld()
