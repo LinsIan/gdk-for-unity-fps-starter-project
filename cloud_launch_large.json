@@ -28,8 +28,8 @@
       {
         "layer": "FishAI",
         "rectangle_grid": {
-          "cols": 4,
-          "rows": 3
+          "cols": 1,
+          "rows": 1
         }
       }
     ]

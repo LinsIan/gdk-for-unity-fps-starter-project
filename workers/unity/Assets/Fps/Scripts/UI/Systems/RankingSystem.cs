@@ -82,18 +82,18 @@ namespace Fps.UI
             Entities.With(query).ForEach((ref ScoreComponent.Component score) =>
             {
                 scoreDataList.Add(new ScoreData { Name = score.Name, Score = score.Score });
-                
             });
 
             scoreDataList.Sort(comparer);
 
             int count = 0;
-
+            
             foreach(var scoreData in scoreDataList)
             {
                 rankingNameList[count].text = "#" + (count + 1) + "    " + scoreData.Name;
                 rankingScoreList[count].text = "Score:  " + scoreData.Score.ToString();
                 ++count;
+                if (count == 10) break;
             }
 
             if (count < 10)
