@@ -28,7 +28,7 @@
       {
         "layer": "FishAI",
         "rectangle_grid": {
-          "cols": 3,
+          "cols": 4,
           "rows": 3
         }
       }
@@ -37,6 +37,20 @@
   "workers": [
     {
       "worker_type": "UnityGameLogic",
+      "flags": [
+        {
+          "name": "world_size",
+          "value": "15"
+        }
+      ],
+      "permissions": [
+        {
+          "all": {}
+        }
+      ]
+    },
+    {
+      "worker_type": "FishAI",
       "flags": [
         {
           "name": "world_size",
@@ -54,29 +68,11 @@
       ]
     },
     {
-      "worker_type": "FishAI",
-      "flags": [
-        {
-          "name": "world_size",
-          "value": "16"
-        },
-        {
-          "name": "fish_num",
-          "value": "0"
-        }
-      ],
-      "permissions": [
-        {
-          "all": {}
-        }
-      ]
-    },
-    {
       "worker_type": "UnityClient",
       "flags": [
         {
           "name": "world_size",
-          "value": "16"
+          "value": "15"
         }
       ],
       "permissions": [
@@ -90,7 +86,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "16"
+          "value": "15"
         }
       ],
       "permissions": [
