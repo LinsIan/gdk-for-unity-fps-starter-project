@@ -35,9 +35,9 @@ namespace Fps.Respawning
                 Health = health.Data.MaxHealth
             };
             health.SendUpdate(healthUpdate);
-            
+
             // Move to a spawn point (position and rotation)
-            var (spawnPosition, spawnYaw, spawnPitch) = Respawning.SpawnPoints.GetRandomSpawnPoint();
+            var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
             var newLatest = new ServerResponse
             {
                 Position = spawnPosition.ToVector3Int(),
@@ -56,8 +56,8 @@ namespace Fps.Respawning
 
             var forceRotationRequest = new RotationUpdate
             {
-                Yaw = spawnYaw.ToInt1k(),
-                Pitch = spawnPitch.ToInt1k(),
+                Yaw = 0,
+                Pitch = 0,
                 TimeDelta = 0
             };
             serverMovement.SendForcedRotationEvent(forceRotationRequest);

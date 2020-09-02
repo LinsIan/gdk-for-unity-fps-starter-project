@@ -24,8 +24,8 @@ MonoBehaviour:
       SnapshotPath: snapshots/cloud.snapshot
       LaunchJson: cloud_launch_large.json
       Region: 1
-      Cluster: 
-      DeploymentLocationType: 0
+      Cluster: gce-europe-west1-d
+      DeploymentLocationType: 1
       Tags:
       - dev_login
     SimulatedPlayerDeploymentConfigs: []

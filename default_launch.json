@@ -6,8 +6,8 @@
       "snapshotWritePeriodSeconds": 0
     },
     "dimensions": {
-      "xMeters": 500,
-      "zMeters": 500
+      "xMeters": 300,
+      "zMeters": 300
     },
     "legacy_flags": [
       {
@@ -25,7 +25,7 @@
           "rows": 1
         },
         "options": {
-          "manual_worker_connection_only": true
+          "manual_worker_connection_only": false
         }
       },
       {
@@ -35,7 +35,7 @@
           "rows": 1
         },
         "options": {
-          "manual_worker_connection_only": true
+          "manual_worker_connection_only": false
         }
       },
       {

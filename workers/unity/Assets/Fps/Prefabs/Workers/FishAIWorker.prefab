@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxConnectionAttempts: 3
-  mapTemplate: {fileID: 11400000, guid: f62fdf28a64923b4caf60e8249f24ed7, type: 2}
+  mapTemplate: {fileID: 11400000, guid: 12c586c1e30561847a334335e8b4c0c4, type: 2}
   DisableRenderers: 1
 --- !u!114 &8813246535674942241
 MonoBehaviour:

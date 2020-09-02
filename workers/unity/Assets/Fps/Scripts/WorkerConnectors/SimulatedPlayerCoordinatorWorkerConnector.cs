@@ -10,6 +10,7 @@ using Improbable.Gdk.Core;
 using Improbable.Gdk.Subscriptions;
 using Improbable.Worker.CInterop;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 namespace Fps.WorkerConnectors
@@ -70,6 +71,15 @@ namespace Fps.WorkerConnectors
             Bounds = await GetWorldBounds();
 
             await LoadWorld();
+
+            //動態生成NavMesh
+            var navMeshSurface = GetComponent<NavMeshSurface>();
+            navMeshSurface.BuildNavMesh();
+            var randomPoint = GetComponent<RandomPoint>();
+            randomPoint.mapPosition = navMeshSurface.navMeshData.position;
+            randomPoint.workerPosition = transform.position;
+            randomPoint.mapScale = worldSize / 4f;
+
             await ConnectSimulatedPlayers();
         }
 
@@ -246,7 +256,7 @@ namespace Fps.WorkerConnectors
             var entityProxies = proxies[entityId];
 
             entityProxies.Add(proxy);
-
+            
             // Disable GameObject if there is a proxy already enabled for this entity.
             if (entityProxies.Count > 1)
             {

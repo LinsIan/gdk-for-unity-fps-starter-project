@@ -2,10 +2,14 @@
     "SchemaSourceDirs": [
         "../../schema"
     ],
+    "VerboseLogging": false,
+    "CodegenLogOutputDir": "logs/",
     "CodegenOutputDir": "Assets/Generated/Source",
     "DescriptorOutputDir": "../../build/assembly/schema",
+    "SerializationOverrides": [],
     "DevAuthTokenDir": "Resources",
     "DevAuthTokenLifetimeDays": 1,
     "SaveDevAuthTokenToFile": false,
-    "SerializationOverrides": []
+    "EnvironmentPlatform": "",
+    "RuntimeVersionOverride": "14.5.4"
 }

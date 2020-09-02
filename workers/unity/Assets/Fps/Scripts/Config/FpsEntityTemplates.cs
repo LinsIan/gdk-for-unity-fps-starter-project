@@ -42,7 +42,7 @@ namespace Fps.Config
         public static EntityTemplate Player(EntityId entityId, string workerId, byte[] args)
         {
             var client = EntityTemplate.GetWorkerAccessAttribute(workerId);
-            var (spawnPosition, spawnYaw, spawnPitch) = SpawnPoints.GetRandomSpawnPoint();
+            var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
 
             var serverResponse = new ServerResponse
             {
@@ -51,8 +51,8 @@ namespace Fps.Config
 
             var rotationUpdate = new RotationUpdate
             {
-                Yaw = spawnYaw.ToInt1k(),
-                Pitch = spawnPitch.ToInt1k()
+                Yaw = 0,
+                Pitch = 0
             };
 
             var arg = DeserializeArguments<PlayerArguments>(args);
