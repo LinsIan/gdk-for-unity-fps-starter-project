@@ -1,5 +1,5 @@
 {
-  "template": "w4_r1000_e10",
+  "template": "c2standard4_std40_r1000",
   "world": {
     "chunkEdgeLengthMeters": 50,
     "snapshots": {
@@ -40,7 +40,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "15"
+          "value": "16"
         }
       ],
       "permissions": [
@@ -54,7 +54,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "15"
+          "value": "16"
         },
         {
           "name": "fish_num",
@@ -72,7 +72,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "15"
+          "value": "16"
         }
       ],
       "permissions": [
@@ -86,7 +86,7 @@
       "flags": [
         {
           "name": "world_size",
-          "value": "15"
+          "value": "16"
         }
       ],
       "permissions": [

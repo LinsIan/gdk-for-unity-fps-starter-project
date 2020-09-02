@@ -15,6 +15,8 @@ namespace Fps.WorkerConnectors
 
         [NonSerialized] internal GameObject LevelInstance;
 
+        protected int worldSize;
+
         public override void Dispose()
         {
             if (LevelInstance != null)
@@ -29,7 +31,7 @@ namespace Fps.WorkerConnectors
         // Get the world size from the config, and use it to generate the correct-sized level
         protected virtual async Task LoadWorld()
         {
-            var worldSize = await GetWorldSize();
+            worldSize = await GetWorldSize();
 
             if (worldSize <= 0)
             {

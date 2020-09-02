@@ -44,10 +44,7 @@ namespace Fps.Movement
 
             OnClientUpdate(client.Data.Latest);
             OnServerUpdate(server.Data.Latest);
-            if(server.Authority != Authority.Authoritative)
-            {
-                Debug.Log(gameObject.name + ":" + origin);
-            }
+
         }
 
         private void OnClientUpdate(RotationUpdate rotation)

@@ -10,6 +10,7 @@ using Improbable.Gdk.Core;
 using Improbable.Gdk.Subscriptions;
 using Improbable.Worker.CInterop;
 using UnityEngine;
+using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 namespace Fps.WorkerConnectors
@@ -68,7 +69,6 @@ namespace Fps.WorkerConnectors
             }
 
             Bounds = await GetWorldBounds();
-
             await LoadWorld();
             await ConnectSimulatedPlayers();
         }
@@ -246,7 +246,7 @@ namespace Fps.WorkerConnectors
             var entityProxies = proxies[entityId];
 
             entityProxies.Add(proxy);
-
+            
             // Disable GameObject if there is a proxy already enabled for this entity.
             if (entityProxies.Count > 1)
             {
