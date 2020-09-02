@@ -14,4 +14,3 @@ component ScoreComponent {
    string name = 2;
    command improbable.gdk.core.Empty modify_score(ScoreModifier);
 }
-   

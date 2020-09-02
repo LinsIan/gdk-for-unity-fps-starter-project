@@ -52,15 +52,15 @@ namespace Fps.HealthPickup
         public void CreateFish()
         {
             //fish測試
-            /*
-            for(int i=0; i<5;++i)
+            
+            for(int i=0; i<40;++i)
             {
                var fish = FpsEntityTemplates.NormalFish();
                var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                commandSystem.SendCommand(fishrequest);
             }
             
-            for(int i=0; i<22; ++i)
+            for(int i=0; i<24; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
@@ -72,7 +72,7 @@ namespace Fps.HealthPickup
                 var octopus = FpsEntityTemplates.Octopus();
                 var octopusrequest = new WorldCommands.CreateEntity.Request(octopus);
                 commandSystem.SendCommand(octopusrequest);
-            }*/
+            }
         }
 
         public void CreateHealthPickUp()

@@ -498,6 +498,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 1000210505865880527, guid: 2a8d33357edd45e48a205097b34fc6e0,
+        type: 3}
+      propertyPath: m_AfterStackBundles.Array.data[0].assemblyQualifiedName
+      value: Fps.UI.LowHealthVignette, Improbable.Fps, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8d33357edd45e48a205097b34fc6e0, type: 3}
 --- !u!4 &4532771127299994 stripped
