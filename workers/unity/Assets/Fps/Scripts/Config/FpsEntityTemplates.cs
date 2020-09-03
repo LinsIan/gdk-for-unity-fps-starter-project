@@ -2,7 +2,6 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using Fps.Guns;
 using Fps.Health;
-using Fps.Respawning;
 using Fps.SchemaExtensions;
 using Improbable;
 using Improbable.Gdk.Core;

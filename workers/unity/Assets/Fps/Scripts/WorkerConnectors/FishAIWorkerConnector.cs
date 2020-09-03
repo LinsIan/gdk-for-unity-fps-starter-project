@@ -51,7 +51,7 @@ namespace Fps.WorkerConnectors
             randomPoint.mapScale = worldSize / 4f;
             healthPickupCreatingSystem.CreateFish();
         }
-
+         
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()
         {
             IConnectionFlow connectionFlow;
@@ -89,18 +89,6 @@ namespace Fps.WorkerConnectors
             // fish
             var fishSystem = world.GetOrCreateSystem<HealthPickupCreatingSystem>();
             fishSystem.worker = Worker;
-        }
-
-        protected override async Task LoadWorld()
-        {
-            worldSize = await GetWorldSize();
-
-            if (worldSize <= 0)
-            {
-                throw new ArgumentException("Received a world size of 0 or less.");
-            }
-
-            LevelInstance = await MapBuilder.GenerateMap(mapTemplate, worldSize, transform, Worker.WorkerType);
         }
 
         public async Task<Bounds> GetWorldBounds()

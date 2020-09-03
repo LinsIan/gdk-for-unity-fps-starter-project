@@ -1,14 +1,11 @@
 using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Collections;
-using System.Text;
 using Fps.Config;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.GameObjectCreation;
 using Improbable.Gdk.PlayerLifecycle;
 using UnityEngine;
-using UnityEngine.AI;
 
 namespace Fps.WorkerConnectors
 {
@@ -34,12 +31,6 @@ namespace Fps.WorkerConnectors
             {
                 await Connect(GetConnectionHandlerBuilder(), new ForwardingDispatcher());
                 await LoadWorld();
-                var navMeshSurface = GetComponent<NavMeshSurface>();
-                navMeshSurface.BuildNavMesh();
-                var randomPoint = GetComponent<RandomPoint>();
-                randomPoint.mapPosition = navMeshSurface.navMeshData.position;
-                randomPoint.workerPosition = transform.position;
-                randomPoint.mapScale = worldSize / 4f;
                 isReadyToSpawn = true;
             }
             catch (Exception e)

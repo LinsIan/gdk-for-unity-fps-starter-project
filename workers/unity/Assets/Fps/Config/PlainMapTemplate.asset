@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a85985efa1ad9d244acbb1c15f16ad58, type: 3}
-  m_Name: PlaneMapTemplate
+  m_Name: PlainMapTemplate
   m_EditorClassIdentifier: 
   templateBitmap: {fileID: 2800000, guid: ecd5c6aa195a9b2408bb7387e347a635, type: 3}
   tileCollections:
-  - {fileID: 11400000, guid: a36683dbe4a195c49a9a3653955da416, type: 2}
+  - {fileID: 11400000, guid: 946d46542bd201c4489e91b595f5a3c4, type: 2}
   defaultTileCollection: {fileID: 11400000, guid: 946d46542bd201c4489e91b595f5a3c4,
     type: 2}
   unitSize: 1
