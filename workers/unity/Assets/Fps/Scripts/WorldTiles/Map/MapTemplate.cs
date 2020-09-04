@@ -40,7 +40,7 @@ namespace Fps.WorldTiles
             var collection = defaultTileCollection;
 
             // Offset location so 0,0 is the middle of the bitmap
-            location += new Vector2(templateBitmap.width / 2.0f - 1, templateBitmap.height / 2.0f - 1);
+            /*location += new Vector2(templateBitmap.width / 2.0f - 1, templateBitmap.height / 2.0f - 1);
             location /= unitSize;
             var texelLocation = Vector2Int.FloorToInt(location);
 
@@ -57,7 +57,7 @@ namespace Fps.WorldTiles
                         collection = defaultTileCollection;
                     }
                 }
-            }
+            }*/
 
             return collection.GetRandomTile(random);
         }
@@ -122,7 +122,7 @@ namespace Fps.WorldTiles
                         $"Tile collection with color {ColorUtility.ToHtmlStringRGBA(tileType.DisplayColor)} already exists.");
                     continue;
                 }
-
+                
                 tileLookup.Add(index, tileType);
             }
         }

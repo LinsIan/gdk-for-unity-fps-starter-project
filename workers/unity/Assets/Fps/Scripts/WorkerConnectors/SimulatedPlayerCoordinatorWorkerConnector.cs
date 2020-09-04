@@ -69,17 +69,7 @@ namespace Fps.WorkerConnectors
             }
 
             Bounds = await GetWorldBounds();
-
             await LoadWorld();
-
-            //動態生成NavMesh
-            var navMeshSurface = GetComponent<NavMeshSurface>();
-            navMeshSurface.BuildNavMesh();
-            var randomPoint = GetComponent<RandomPoint>();
-            randomPoint.mapPosition = navMeshSurface.navMeshData.position;
-            randomPoint.workerPosition = transform.position;
-            randomPoint.mapScale = worldSize / 4f;
-
             await ConnectSimulatedPlayers();
         }
 

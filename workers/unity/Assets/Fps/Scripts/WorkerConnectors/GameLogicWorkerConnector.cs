@@ -19,9 +19,6 @@ namespace Fps.WorkerConnectors
     {
         public bool DisableRenderers = true;
         public Bounds Bounds { get; private set; }
-        
-        private int worldSize;
-        //NavMeshSurface navMeshSurface;
 
         protected async void Start()
         {
@@ -39,12 +36,6 @@ namespace Fps.WorkerConnectors
                     childRenderer.enabled = false;
                 }
             }
-
-            //Create Healthpickup
-            //var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
-            //healthPickupCreatingSystem.WorldScale = worldSize / 4;
-            //RandomPoint.Instance.mapScale = worldSize / 4;
-            //healthPickupCreatingSystem.CreateHealthPickUp();
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()
