@@ -9,6 +9,7 @@ using Improbable.Gdk.GameObjectCreation;
 using Improbable.Gdk.PlayerLifecycle;
 using Improbable.Worker.CInterop;
 using UnityEngine;
+using System;
 using System.Threading.Tasks;
 using UnityEngine.AI;
 
@@ -18,8 +19,9 @@ namespace Fps.WorkerConnectors
     {
         public bool DisableRenderers = true;
         public Bounds Bounds { get; private set; }
-
-        NavMeshSurface navMeshSurface;
+        
+        private int worldSize;
+        //NavMeshSurface navMeshSurface;
 
         protected async void Start()
         {
@@ -30,13 +32,6 @@ namespace Fps.WorkerConnectors
 
             Bounds = await GetWorldBounds();
 
-            var navMeshSurface = GetComponent<NavMeshSurface>();
-            navMeshSurface.BuildNavMesh();
-            var randomPoint = GetComponent<RandomPoint>();
-            randomPoint.mapPosition = navMeshSurface.navMeshData.position;
-            randomPoint.workerPosition = transform.position;
-            randomPoint.mapScale = worldSize / 4f;
-
             if (DisableRenderers)
             {
                 foreach (var childRenderer in LevelInstance.GetComponentsInChildren<Renderer>())
@@ -44,6 +39,12 @@ namespace Fps.WorkerConnectors
                     childRenderer.enabled = false;
                 }
             }
+
+            //Create Healthpickup
+            //var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
+            //healthPickupCreatingSystem.WorldScale = worldSize / 4;
+            //RandomPoint.Instance.mapScale = worldSize / 4;
+            //healthPickupCreatingSystem.CreateHealthPickUp();
         }
 
         private IConnectionHandlerBuilder GetConnectionHandlerBuilder()
@@ -89,6 +90,18 @@ namespace Fps.WorkerConnectors
 
             // Score
             world.GetOrCreateSystem<ScoreModifierSystem>();
+        }
+
+        protected override async Task LoadWorld()
+        {
+            worldSize = await GetWorldSize();
+
+            if (worldSize <= 0)
+            {
+                throw new ArgumentException("Received a world size of 0 or less.");
+            }
+
+            LevelInstance = await MapBuilder.GenerateMap(mapTemplate, worldSize, transform, Worker.WorkerType);
         }
 
         public async Task<Bounds> GetWorldBounds()

@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxConnectionAttempts: 3
-  mapTemplate: {fileID: 11400000, guid: d8e86be465cd6194abe37c3e907d65d3, type: 2}
+  mapTemplate: {fileID: 11400000, guid: 12c586c1e30561847a334335e8b4c0c4, type: 2}
   IpAddress: 

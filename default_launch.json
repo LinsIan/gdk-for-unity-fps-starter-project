@@ -25,7 +25,7 @@
           "rows": 1
         },
         "options": {
-          "manual_worker_connection_only": true
+          "manual_worker_connection_only": false
         }
       },
       {
@@ -35,7 +35,7 @@
           "rows": 1
         },
         "options": {
-          "manual_worker_connection_only": true
+          "manual_worker_connection_only": false
         }
       },
       {

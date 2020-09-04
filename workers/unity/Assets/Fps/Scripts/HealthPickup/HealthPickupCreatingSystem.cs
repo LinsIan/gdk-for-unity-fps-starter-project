@@ -53,21 +53,21 @@ namespace Fps.HealthPickup
         {
             //fish測試
             
-            for(int i=0; i<10;++i)
+            for(int i=0; i<40;++i)
             {
                var fish = FpsEntityTemplates.NormalFish();
                var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                commandSystem.SendCommand(fishrequest);
             }
             
-            for(int i=0; i<4; ++i)
+            for(int i=0; i<24; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                 commandSystem.SendCommand(fishrequest);
             }
 
-            for(int i=0; i<1; ++i)
+            for(int i=0; i<2; ++i)
             {
                 var octopus = FpsEntityTemplates.Octopus();
                 var octopusrequest = new WorldCommands.CreateEntity.Request(octopus);
