@@ -44,9 +44,7 @@ namespace Fps.Movement
         private CameraSettings cameraSettings = new CameraSettings
         {
             PitchSpeed = 1.0f,
-            YawSpeed = 1.0f,
-            MinPitch = -80.0f,
-            MaxPitch = 60.0f
+            YawSpeed = 1.0f
         };
 
         private bool isRequestingRespawn;
@@ -138,12 +136,6 @@ namespace Fps.Movement
             var yawDelta = controller.YawDelta;
             var pitchDelta = controller.PitchDelta;
 
-            // Modifiers
-            var isAiming = controller.IsAiming;
-            var isSprinting = controller.AreSprinting;
-
-            var isJumpPressed = controller.JumpPressed;
-
             // Events
             var shootPressed = controller.ShootPressed;
             var shootHeld = controller.ShootHeld;
@@ -152,18 +144,8 @@ namespace Fps.Movement
             // Update the pitch speed with that of the gun if aiming.
             var yawSpeed = cameraSettings.YawSpeed;
             var pitchSpeed = cameraSettings.PitchSpeed;
-            if (isAiming)
-            {
-                yawSpeed = currentGun.CurrentGunSettings.AimYawSpeed;
-                pitchSpeed = currentGun.CurrentGunSettings.AimPitchSpeed;
-            }
 
             //Mediator
-            var movementSpeed = isAiming
-                ? MovementSpeed.Walk
-                : isSprinting
-                    ? MovementSpeed.Sprint
-                    : MovementSpeed.Run;
             var yawChange = yawDelta * yawSpeed;
             var pitchChange = pitchDelta * -pitchSpeed;
             var currentPitch = pitchTransform.transform.localEulerAngles.x;
@@ -173,25 +155,18 @@ namespace Fps.Movement
                 newPitch -= 360;
             }
 
-            newPitch = Mathf.Clamp(newPitch, -cameraSettings.MaxPitch, -cameraSettings.MinPitch);
-            pitchTransform.localRotation = Quaternion.Euler(newPitch, 0, 0);
-            var currentYaw = transform.eulerAngles.y;
+            var currentYaw = movement.RotatedBody.eulerAngles.y;
             var newYaw = currentYaw + yawChange;
-            var rotation = Quaternion.Euler(newPitch, newYaw, 0);
+            var rotation = Quaternion.Euler(0, newYaw, 0);
 
-            //Check for sprint cooldown
-            if (!movement.HasSprintedRecently)
-            {
-                HandleShooting(shootPressed, shootHeld);
-            }
+            HandleShooting(shootPressed, shootHeld);
 
-            Aiming(isAiming);
+            
 
             var wasGroundedBeforeMovement = movement.IsGrounded;
-            movement.ApplyMovement(toMove, rotation, movementSpeed, isJumpPressed);
-            Animations(isJumpPressed && wasGroundedBeforeMovement);
+            movement.ApplyMovement(toMove, rotation, MovementSpeed.Run, false);
         }
-
+        
         private void OnHealthModified(HealthModifiedInfo healthModifiedInfo)
         {
             if(healthModifiedInfo.Died)
@@ -236,22 +211,11 @@ namespace Fps.Movement
 
         private void FireShot(GunSettings gunSettings)
         {
-            var ray = shotRayProvider.GetShotRay(gunState.Data.IsAiming, camera);
-            shooting.FireShot(gunSettings.ShotRange, ray);
+            var gunSocket = GetComponentInChildren<GunSocket>().GunTransform;
+            shooting.FireShot(gunSettings.ShotRange, gunSocket);
             shooting.InitiateCooldown(gunSettings.ShotCooldown);
         }
 
-        private void Aiming(bool shouldBeAiming)
-        {
-            if (shouldBeAiming != gunState.Data.IsAiming)
-            {
-                var update = new GunStateComponent.Update
-                {
-                    IsAiming = shouldBeAiming
-                };
-                gunState.SendUpdate(update);
-            }
-        }
 
         private void Animations(bool isJumping)
         {
@@ -268,9 +232,7 @@ namespace Fps.Movement
 
         private void OnForcedRotation(RotationUpdate forcedRotation)
         {
-            var newPitch = Mathf.Clamp(forcedRotation.Pitch.ToFloat1k(), -cameraSettings.MaxPitch,
-                -cameraSettings.MinPitch);
-            pitchTransform.localRotation = Quaternion.Euler(newPitch, 0, 0);
+            pitchTransform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }

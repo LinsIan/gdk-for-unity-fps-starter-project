@@ -27,7 +27,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4323650176391204}
   - {fileID: 7450142387778287261}
   m_Father: {fileID: 4955140760145538}
   m_RootOrder: 0
@@ -41,7 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4955140760145538}
-  - component: {fileID: 114826729342771434}
   m_Layer: 11
   m_Name: FirstPersonBody
   m_TagString: Untagged
@@ -62,21 +60,8 @@ Transform:
   m_Children:
   - {fileID: 4620716434285874}
   m_Father: {fileID: 4244229316102358}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114826729342771434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574605872312582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a8ca0457c25f7e4dba291b1221aa0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  socketOffset: {fileID: 4323650176391204}
 --- !u!1 &1594793910609908
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,14 +85,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594793910609908}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0055, y: -0.0025, z: -0.075}
+  m_LocalRotation: {x: 0.38268343, y: -0, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: -0.0055, y: 7.5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4532771127299994}
-  m_Father: {fileID: 4620716434285874}
+  m_Father: {fileID: 4244229316102358}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!1 &1627949407420470
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,6 +137,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4323650176391204}
   - {fileID: 4955140760145538}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -191,8 +177,8 @@ MonoBehaviour:
   cameraSettings:
     PitchSpeed: 1.75
     YawSpeed: 1.75
-    MinPitch: -75
-    MaxPitch: 85
+    MinPitch: 45
+    MaxPitch: 45
 --- !u!114 &114318485812647952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +265,7 @@ MonoBehaviour:
   rotationUpdateHz: 15
   transformUpdateDelta: 0.06666667
   rotationUpdateDelta: 0.06666667
+  bodyTransform: {fileID: 4955140760145538}
   movementSettings:
     MovementSpeed:
       WalkSpeed: 2.5
@@ -498,6 +485,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 896626365763983101, guid: 2a8d33357edd45e48a205097b34fc6e0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1000210505865880527, guid: 2a8d33357edd45e48a205097b34fc6e0,
         type: 3}
       propertyPath: m_AfterStackBundles.Array.data[0].assemblyQualifiedName
@@ -563,7 +555,7 @@ PrefabInstance:
     - target: {fileID: 1371366245061083600, guid: 99c1c836e4262284d9b458f03442a4f6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1371366245061083600, guid: 99c1c836e4262284d9b458f03442a4f6,
         type: 3}

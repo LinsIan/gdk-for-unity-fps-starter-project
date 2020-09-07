@@ -11,6 +11,8 @@ namespace Fps.Guns
 
         public GunHandle Gun { get; private set; }
 
+        public Transform GunTransform { get { return gunSocket; } }
+
         private GameObject instantiatedGun;
 
         public void InformOfGun(GunSettings settings)

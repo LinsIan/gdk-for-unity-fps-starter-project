@@ -31,6 +31,10 @@ namespace Fps.Movement
         protected virtual void Awake()
         {
             characterController = GetComponent<CharacterController>();
+            if (characterController == null)
+            {
+                characterController = GetComponentInChildren<CharacterController>();
+            }
             MotorExtension = GetComponent<MotorSlopeExtension>();
         }
 

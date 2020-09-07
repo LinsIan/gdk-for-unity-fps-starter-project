@@ -23,11 +23,21 @@ namespace Fps.WorkerConnectors
         protected async void Start()
         {
             Application.targetFrameRate = 30;
-
+            
             await Connect(GetConnectionHandlerBuilder(), new ForwardingDispatcher());
             await LoadWorld();
 
             Bounds = await GetWorldBounds();
+
+            //動態生成NavMesh
+            var navMeshSurface = GetComponent<NavMeshSurface>();
+            navMeshSurface.BuildNavMesh();
+            var randomPoint = GetComponent<RandomPoint>();
+            randomPoint.mapPosition = navMeshSurface.navMeshData.position;
+            randomPoint.workerPosition = transform.position;
+            randomPoint.mapScale = worldSize / 4f;
+            Debug.Log(randomPoint.mapScale);
+
 
             if (DisableRenderers)
             {

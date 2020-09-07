@@ -19,6 +19,8 @@ namespace Fps.Movement
         [SerializeField] private float rotationUpdateHz = 15.0f;
         [SerializeField] [HideInInspector] private float transformUpdateDelta;
         [SerializeField] [HideInInspector] private float rotationUpdateDelta;
+        [SerializeField] private Transform bodyTransform;
+
 
         [SerializeField]
         private MovementSettings movementSettings = new MovementSettings
@@ -76,6 +78,11 @@ namespace Fps.Movement
                 }
             }
             get => currentYaw;
+        }
+
+        public Transform RotatedBody
+        {
+            get => bodyTransform;
         }
 
         private float CurrentPitch
@@ -165,7 +172,7 @@ namespace Fps.Movement
             var x = rotationConstraints.XAxisRotation ? forcedRotation.Pitch.ToFloat1k() : 0;
             var y = rotationConstraints.YAxisRotation ? forcedRotation.Yaw.ToFloat1k() : 0;
             var z = rotationConstraints.ZAxisRotation ? forcedRotation.Roll.ToFloat1k() : 0;
-            transform.rotation = Quaternion.Euler(x, y, z);
+           bodyTransform.rotation = Quaternion.Euler(x, y, z);
         }
 
         private void OnServerUpdate(ServerResponse update)
@@ -228,7 +235,6 @@ namespace Fps.Movement
                 toMove = Vector3.Lerp(momentumMovement, aerialMovement, movementSettings.AirControlModifier);
             }
 
-
             // Jumping
             if (jumpedThisFrame)
             {
@@ -267,7 +273,7 @@ namespace Fps.Movement
             var x = rotationConstraints.XAxisRotation ? rotation.eulerAngles.x : 0;
             var y = rotationConstraints.YAxisRotation ? rotation.eulerAngles.y : 0;
             var z = rotationConstraints.ZAxisRotation ? rotation.eulerAngles.z : 0;
-            transform.rotation = Quaternion.Euler(x, y, z);
+            bodyTransform.rotation = Quaternion.Euler(x, y, z);
             CurrentPitch = rotation.eulerAngles.x;
             CurrentYaw = rotation.eulerAngles.y;
             CurrentRoll = rotation.eulerAngles.z;

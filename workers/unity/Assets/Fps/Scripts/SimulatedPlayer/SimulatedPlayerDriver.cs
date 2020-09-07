@@ -193,7 +193,7 @@ namespace Fps.SimulatedPlayer
 
                 if (shooting.IsShooting(true) && Mathf.Abs(Quaternion.Angle(targetRotation, transform.rotation)) < 5)
                 {
-                    shooting.FireShot(200f, new Ray(gunOrigin, transform.forward));
+                    //shooting.FireShot(200f, new Ray(gunOrigin, transform.forward));
                     shooting.InitiateCooldown(0.2f);
                     lastShotTime = Time.time;
                 }

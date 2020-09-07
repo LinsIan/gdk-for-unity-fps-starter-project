@@ -70,13 +70,12 @@ namespace Fps.Guns
             gunSettings = settings;
         }
 
-        public void FireShot(float range, Ray ray)
+        public void FireShot(float range, Transform origin)
         {
-            var hitLocation = ray.origin + ray.direction * range;
+            var hitLocation = origin.position + origin.forward * range;
             var hitSomething = false;
             var entityId = new EntityId(0);
-
-            if (Physics.Raycast(ray, out var hit, range, shootingLayerMask))
+            if (Physics.Raycast(origin.position, origin.forward, out var hit, range, shootingLayerMask))
             {
                 hitSomething = true;
                 hitLocation = hit.point;
@@ -93,7 +92,7 @@ namespace Fps.Guns
                 ShooterEntityId = self_entityId,
                 HitSomething = hitSomething,
                 HitLocation = (hitLocation - workerOrigin).ToVector3Int(),
-                HitOrigin = (ray.origin - workerOrigin).ToVector3Int(),
+                HitOrigin = (origin.position - workerOrigin).ToVector3Int(),
             };
             shooting.SendShotsEvent(shotInfo);
         }
