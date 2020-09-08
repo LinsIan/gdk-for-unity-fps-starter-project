@@ -60,10 +60,9 @@ namespace Fps
                 agent.isStopped = false;*/
                 Vector3 pos = position.Data.Coords.ToUnityVector();
                 pos.y += offsetY;
-                transform.position = pos;
                 agent.Warp(pos);
+                transform.position = pos;
                 IsDead = false;
-                
             }
         }
 

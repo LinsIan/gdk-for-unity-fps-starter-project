@@ -96,8 +96,8 @@ namespace Fps.Config
 
             PlayerLifecycleHelper.AddPlayerLifecycleComponents(template, workerId, WorkerUtils.UnityGameLogic);
 
-            const int serverRadius = 150;
-            var clientRadius = workerId.Contains(WorkerUtils.MobileClient) ? 60 : 150;
+            const int serverRadius = 1500;
+            var clientRadius = workerId.Contains(WorkerUtils.MobileClient) ? 600 : 1500;
 
             // Position, Metadata, OwningWorker and ServerMovement are included in all queries, since these
             // components are required by the GameObject creator.

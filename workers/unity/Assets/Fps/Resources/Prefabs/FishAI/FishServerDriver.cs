@@ -59,8 +59,6 @@ namespace Fps
             //    transform.position = pos;
             //    agent.Warp(pos);
             //}
-            
-
             health.OnHealthModifiedEvent -= OnHealthModified;
             agent.isStopped = true;
         }
@@ -70,15 +68,13 @@ namespace Fps
             if (fishComponentWriter.Data.State == EFishState.SWIM)
             {
                 Swimming();
+                updateTimer += Time.deltaTime;
+                if (updateTimer >= PositionUpdateFreq)
+                {
+                    UpdateTransform();
+                    updateTimer = 0;
+                }
             }
-
-            updateTimer += Time.deltaTime;
-            if(updateTimer >= PositionUpdateFreq)
-            {
-                UpdateTransform();
-                updateTimer = 0;
-            }
-            
         }
 
         private void Swimming()
@@ -129,16 +125,16 @@ namespace Fps
             }
             else if (fishComponentWriter.Data.State == EFishState.DEAD)//重生
             {
-                agent.isStopped = false;
-                fishComponentWriter.SendUpdate(new FishComponent.Update { State = EFishState.SWIM });
-
                 //重設座標與目標
                 var spawnPosition = RandomPoint.Instance.RandomNavmeshLocation();
                 spawnPosition.y += FishSettings.FishOffsetYDic[fishComponentWriter.Data.Type];
+                Debug.Log(spawnPosition);
                 positionWriter?.SendUpdate(new Position.Update { Coords = Coordinates.FromUnityVector(spawnPosition) });
+                agent.Warp(new Vector3(spawnPosition.x, spawnPosition.y + offsetY, spawnPosition.z));
                 transform.position = new Vector3(spawnPosition.x, spawnPosition.y + offsetY, spawnPosition.z);
-                agent.Warp(transform.position);
+                agent.isStopped = false;
                 SetRandomDestination();
+                fishComponentWriter.SendUpdate(new FishComponent.Update { State = EFishState.SWIM });
             }
         }
 

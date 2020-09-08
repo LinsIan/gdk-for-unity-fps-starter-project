@@ -12,7 +12,7 @@ namespace Fps
     public class FishClientDriver : MonoBehaviour
     {
         [Require] private PositionReader position;
-        //[Require] private ClientRotationReader rotation;
+        [Require] private ClientRotationReader rotation;
         [Require] private FishComponentReader fishComponent;
         
         private Animation.FishAnimator animator;
@@ -52,6 +52,23 @@ namespace Fps
         private void OnStateUpdate(EFishState state)
         {
             animator.PlayAnimation(state);
+            Debug.Log(state);
+            if(isDead && state != EFishState.DEAD)
+            {
+                positionQueue.Clear();
+                rotationQueue.Clear();
+                distance = 0;
+
+                Vector3 pos = position.Data.Coords.ToUnityVector();
+                pos.y += offsetY;
+                transform.position = pos;
+
+                float pitch = rotation.Data.Latest.Pitch.ToFloat1k();
+                float roll = rotation.Data.Latest.Roll.ToFloat1k();
+                float yaw = rotation.Data.Latest.Yaw.ToFloat1k();
+                transform.rotation = Quaternion.Euler(pitch, yaw, roll);
+            }
+
             isDead = (state == EFishState.DEAD);
         }
 
