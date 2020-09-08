@@ -8,7 +8,7 @@ using Improbable.Gdk.Core;
 using Improbable.Gdk.GameObjectCreation;
 using Improbable.Gdk.PlayerLifecycle;
 using UnityEngine;
-using UnityEngine.AI;
+//using UnityEngine.AI;
 
 namespace Fps.WorkerConnectors
 {
@@ -27,17 +27,16 @@ namespace Fps.WorkerConnectors
         {
             Application.targetFrameRate = 60;
         }
-
+        
         public async void Connect()
         {
             try
             {
                 await Connect(GetConnectionHandlerBuilder(), new ForwardingDispatcher());
                 await LoadWorld();
-                var navMeshSurface = GetComponent<NavMeshSurface>();
-                navMeshSurface.BuildNavMesh();
-                var randomPoint = GetComponent<RandomPoint>();
-                randomPoint.mapPosition = navMeshSurface.navMeshData.position;
+                //var navMeshSurface = GetComponent<NavMeshSurface>();
+                //navMeshSurface.BuildNavMesh();
+                var randomPoint = RandomPoint.Instance;
                 randomPoint.workerPosition = transform.position;
                 randomPoint.mapScale = worldSize / 4f;
                 isReadyToSpawn = true;

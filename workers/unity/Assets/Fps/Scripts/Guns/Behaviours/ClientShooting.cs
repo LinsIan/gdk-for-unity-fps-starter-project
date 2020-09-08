@@ -13,7 +13,6 @@ namespace Fps.Guns
 #pragma warning restore 649
 
         [SerializeField] private LayerMask shootingLayerMask;
-
         [SerializeField] private float gunTriggerAllowance = 0.2f;
         private float nextShotTime;
         private GunSettings gunSettings;

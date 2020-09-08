@@ -1,14 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public class RandomPoint : MonoBehaviour
+public class RandomPoint
 {
     public float baseRadius = 150.0f;
     public float mapScale = 0;
-
-    public Vector3 mapPosition;
     public Vector3 workerPosition;
 
     static RandomPoint _instance;
@@ -16,6 +11,10 @@ public class RandomPoint : MonoBehaviour
     {
         get
         {
+            if(_instance == null)
+            {
+                _instance = new RandomPoint();
+            }
             return _instance;
         }
     }
@@ -27,17 +26,8 @@ public class RandomPoint : MonoBehaviour
 
     public Vector3 RandomNavmeshLocation()
     {
-        float radius = baseRadius * mapScale;
-        Vector3 randomDirection = Random.insideUnitSphere * radius;
-        randomDirection += workerPosition;
-        NavMeshHit hit;
-        Vector3 finalPosition = Vector3.zero;
-        if (NavMesh.SamplePosition(randomDirection, out hit, radius, 1))
-        {
-            finalPosition = hit.position;
-        }
-
-        finalPosition.y -= workerPosition.y;
-        return finalPosition;
+        float radius = baseRadius * mapScale - 10;
+        Vector3 randomDirection = new Vector3(Random.Range(-radius, radius), 0, Random.Range(-radius, radius));
+        return randomDirection;
     }
 }

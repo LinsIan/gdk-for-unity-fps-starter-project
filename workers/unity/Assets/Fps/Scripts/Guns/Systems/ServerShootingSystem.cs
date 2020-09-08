@@ -65,10 +65,6 @@ namespace Fps.Guns
                 {
                     continue;
                 }
-                //if (!gunDataForEntity.Exists(shooterEntity))
-                //{
-                //    continue;
-                //}
 
                 var gunComponent = gunDataForEntity[shooterEntity];
 

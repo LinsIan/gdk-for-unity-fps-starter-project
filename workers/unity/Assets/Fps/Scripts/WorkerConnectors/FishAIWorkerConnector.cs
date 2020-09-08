@@ -43,10 +43,9 @@ namespace Fps.WorkerConnectors
             navMeshSurface.BuildNavMesh();
 
             //Create fish
-            var randomPoint = GetComponent<RandomPoint>();
+            var randomPoint = RandomPoint.Instance;
             var healthPickupCreatingSystem = Worker.World.GetOrCreateSystem<HealthPickupCreatingSystem>();
             healthPickupCreatingSystem.WorldScale = worldSize / 4;
-            randomPoint.mapPosition = navMeshSurface.navMeshData.position;
             randomPoint.workerPosition = transform.position;
             randomPoint.mapScale = worldSize / 4f;
             healthPickupCreatingSystem.CreateFish();

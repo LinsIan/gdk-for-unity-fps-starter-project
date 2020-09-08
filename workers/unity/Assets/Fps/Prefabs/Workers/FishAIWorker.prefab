@@ -58,7 +58,6 @@ GameObject:
   - component: {fileID: 5571120343096996940}
   - component: {fileID: -4416427537731073737}
   - component: {fileID: 8813246535674942241}
-  - component: {fileID: 5490711716724797857}
   m_Layer: 0
   m_Name: FishAIWorker
   m_TagString: Untagged
@@ -125,19 +124,3 @@ MonoBehaviour:
   m_VoxelSize: 0.10333333
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &5490711716724797857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6458944181895911178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a11bb51941adc52488ba7672ddc514a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseRadius: 150
-  mapScale: 1
-  mapPosition: {x: 0, y: 0, z: 0}
-  workerPosition: {x: 0, y: 0, z: 0}

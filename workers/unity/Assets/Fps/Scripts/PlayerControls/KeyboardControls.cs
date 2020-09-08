@@ -18,9 +18,6 @@ namespace Fps.PlayerControls
 
         public float YawDelta => Input.GetAxis("Mouse X");
         public float PitchDelta => Input.GetAxis("Mouse Y");
-        //public bool IsAiming => Input.GetMouseButton(1);
-        //public bool AreSprinting => Input.GetKey(KeyCode.LeftShift) && Forward && !Backward;
-        //public bool JumpPressed => Input.GetKeyDown(KeyCode.Space);
         public bool ShootPressed => Input.GetMouseButtonDown(0);
         public bool ShootHeld => Input.GetMouseButton(0);
         public bool MenuPressed => Input.GetKeyDown(KeyCode.Escape);

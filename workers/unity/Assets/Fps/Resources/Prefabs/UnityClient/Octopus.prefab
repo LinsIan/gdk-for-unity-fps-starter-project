@@ -1914,7 +1914,6 @@ GameObject:
   - component: {fileID: 6363471508016314971}
   - component: {fileID: -4640120106272760793}
   - component: {fileID: -1923430865788406091}
-  - component: {fileID: 6254589330402964009}
   m_Layer: 0
   m_Name: Octopus
   m_TagString: Untagged
@@ -1983,19 +1982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9f2cb14aeb44b4c9a45d78cb99bee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &6254589330402964009
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6420709107118157647}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.777169, y: 7.985675, z: 11.408461}
-  m_Center: {x: 0.19975138, y: 0.2900052, z: 0.1742506}
 --- !u!1 &6420723615020557399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,6 +2085,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6416861277754435955}
   - component: {fileID: 6411812028159489431}
+  - component: {fileID: 734924414717209678}
   m_Layer: 0
   m_Name: Mesh_FP40001_Box
   m_TagString: Untagged
@@ -2173,6 +2160,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -1.1804875, y: -0.22432789, z: 0.10028088}
     m_Extent: {x: 1.2386428, y: 1.0828344, z: 1.622454}
   m_DirtyAABB: 0
+--- !u!65 &734924414717209678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422021650685942509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.971916, y: 7.985675, z: 11.295618}
+  m_Center: {x: 0.10237789, y: 0.2900052, z: 0.11782932}
 --- !u!1 &6422023941836055765
 GameObject:
   m_ObjectHideFlags: 0

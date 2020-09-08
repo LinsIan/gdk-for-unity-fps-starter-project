@@ -2,7 +2,6 @@ using Fps.Config;
 using Fps.Guns;
 using Fps.Health;
 using Fps.Metrics;
-using Fps.HealthPickup;
 using Fps.WorldTiles;
 using Improbable.Gdk.Core;
 using Improbable.Gdk.GameObjectCreation;
@@ -11,7 +10,6 @@ using Improbable.Worker.CInterop;
 using UnityEngine;
 using System;
 using System.Threading.Tasks;
-using UnityEngine.AI;
 
 namespace Fps.WorkerConnectors
 {
@@ -30,14 +28,9 @@ namespace Fps.WorkerConnectors
             Bounds = await GetWorldBounds();
 
             //動態生成NavMesh
-            var navMeshSurface = GetComponent<NavMeshSurface>();
-            navMeshSurface.BuildNavMesh();
-            var randomPoint = GetComponent<RandomPoint>();
-            randomPoint.mapPosition = navMeshSurface.navMeshData.position;
+            var randomPoint = RandomPoint.Instance;
             randomPoint.workerPosition = transform.position;
             randomPoint.mapScale = worldSize / 4f;
-            Debug.Log(randomPoint.mapScale);
-
 
             if (DisableRenderers)
             {

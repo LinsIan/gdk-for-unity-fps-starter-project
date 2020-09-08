@@ -25,7 +25,7 @@ MonoBehaviour:
       LaunchJson: cloud_launch_large.json
       Region: 1
       Cluster: gce-europe-west1-d
-      DeploymentLocationType: 1
+      DeploymentLocationType: 0
       Tags:
       - dev_login
     SimulatedPlayerDeploymentConfigs: []

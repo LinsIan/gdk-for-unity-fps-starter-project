@@ -9,7 +9,7 @@ namespace Fps.HealthPickup
 {
     public class HealthPickupCreatingSystem : ComponentSystem
     {
-        public int WorldScale = 6;
+        public int WorldScale = 4;
         private int AreaCol = 9;
         private int AreaWid = 9;
         private uint HealthAmount = 50;
@@ -53,21 +53,21 @@ namespace Fps.HealthPickup
         {
             //fish測試
             
-            for(int i=0; i<4;++i)
+            for(int i=0; i<25;++i)
             {
                var fish = FpsEntityTemplates.NormalFish();
                var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                commandSystem.SendCommand(fishrequest);
             }
             
-            for(int i=0; i<2; ++i)
+            for(int i=0; i<13; ++i)
             {
                 var fish = FpsEntityTemplates.SpeedFish();
                 var fishrequest = new WorldCommands.CreateEntity.Request(fish);
                 commandSystem.SendCommand(fishrequest);
             }
 
-            for(int i=0; i<1; ++i)
+            for(int i=0; i<2; ++i)
             {
                 var octopus = FpsEntityTemplates.Octopus();
                 var octopusrequest = new WorldCommands.CreateEntity.Request(octopus);
